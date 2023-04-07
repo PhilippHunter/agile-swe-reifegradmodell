@@ -1,1 +1,15 @@
-<p>question works!</p>
+<p-card>
+    <h2 class="m-0">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam
+        deserunt quisquam?
+    </h2>
+</p-card>
+<p-card>
+    <div class="flex flex-column gap-3">
+        <div *ngFor="let category of categories" class="field-checkbox">
+            <p-radioButton [inputId]="category.key" name="category" [value]="category"
+                [(ngModel)]="selectedCategory"></p-radioButton>
+            <label [for]="category.key" class="ml-2">{{ category.name }}</label>
+        </div>
+    </div>
+</p-card>
