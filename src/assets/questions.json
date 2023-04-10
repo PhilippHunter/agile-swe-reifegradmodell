@@ -1,0 +1,22 @@
+{
+    "processes": [
+        {
+            "title": "Tägliche Aktualisierung der Tasks",
+            "answers": [
+                "Es gibt keine Übersicht wer an was entwickelt",
+                "Die Entwickler tauschen sich unregelmäßig aus wer an was arbeitet",
+                "Die Entwickler tauschen sich regelmäßig aus wer an was arbeitet",
+                "Die Entwickler haben eine konkrete Übersicht der Tasks und aktualisieren wer was bearbeitet",
+                "Die Entwickler haben eine detaillierte Übersicht der Tasks und verschiedene Status der Bearbeitung. Stetig aktualisiert."
+            ]
+        },
+        {
+            "title": "test",
+            "answers": []
+        }
+    ],
+    "organisation": [],
+    "technology": [],
+    "skills_culture": [],
+    "strategy": []
+}
