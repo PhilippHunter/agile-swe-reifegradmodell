@@ -10,6 +10,7 @@ import { MenubarModule } from 'primeng/menubar';
 import { InputTextModule } from 'primeng/inputtext';
 import { RadioButtonModule } from 'primeng/radiobutton';
 import { CardModule } from 'primeng/card';
+import { DividerModule } from 'primeng/divider';
 
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
@@ -35,6 +36,7 @@ import { NavigationComponent } from './navigation/navigation.component';
     MenubarModule,
     RadioButtonModule,
     CardModule,
+    DividerModule,
     InputTextModule,
     AppRoutingModule
   ],

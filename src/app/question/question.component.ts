@@ -8,13 +8,15 @@ import { Component, OnInit } from '@angular/core';
 export class QuestionComponent implements OnInit {
   categories: any[] = [
     
-    { name: 'Accounting', key: 'A' },
+    { name: 'Es findet kaum Austausch im Entwicklerteam statt (jeder Arbeitet für sich an seinen Aufgaben)', key: '0' },
     
-    { name: 'Marketing', key: 'M' },
+    { name: 'Das gesamte Entwicklerteam hat die Möglichkeit sich untereinander abzustimmen', key: '1' },
     
-    { name: 'Production', key: 'P' },
+    { name: 'Es gibt einen festgelegten Rahmen zur regelmäßigen Besprechung (bsp. wöchentlich)', key: '2' },
     
-    { name: 'Research', key: 'R' }
+    { name: 'Es finden jeden Tag zu festgelegter Uhrzeit im kompletten Team Dailys statt. ', key: '3' },
+    
+    { name: 'Es finden jeden Tag zu festgelegter Uhrzeit im  Team Dailys statt. Es wird auf eine kurze Dauer und Effektivität geachtet.', key: '4' }
     
   ];
   
