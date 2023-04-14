@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as questions from '../../assets/questions.json';
 
 @Component({
   selector: 'app-question',
@@ -23,6 +24,6 @@ export class QuestionComponent implements OnInit {
   selectedCategory: any = null;
 
   ngOnInit(): void {
-
+    console.log(questions);
   }
 }
