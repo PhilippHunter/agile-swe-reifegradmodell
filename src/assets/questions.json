@@ -4,23 +4,17 @@
       "title": "Tägliche Aktualisierung der Tasks",
       "cite": "",
       "answers": [
-        {"score": "0", "question": "Es gibt keine Übersicht wer an was entwickelt"},
-        {"score": "1", "question": "Die Entwickler tauschen sich unregelmäßig aus wer an was arbeitet"},
-        {"score": "2", "question": "Die Entwickler tauschen sich regelmäßig aus wer an was arbeitet"},
-        {"score": "3", "question": "Die Entwickler haben eine konkrete Übersicht der Tasks und aktualisieren wer was bearbeitet"},
-        {"score": "4", "question": "Die Entwickler haben eine detaillierte Übersicht der Tasks und verschiedene Status der Bearbeitung. Stetig aktualisiert."}
+        {"score": 0, "question": "Es gibt keine Übersicht wer an was entwickelt"},
+        {"score": 1, "question": "Die Entwickler tauschen sich unregelmäßig aus wer an was arbeitet"},
+        {"score": 2, "question": "Die Entwickler tauschen sich regelmäßig aus wer an was arbeitet"},
+        {"score": 3, "question": "Die Entwickler haben eine konkrete Übersicht der Tasks und aktualisieren wer was bearbeitet"},
+        {"score": 4, "question": "Die Entwickler haben eine detaillierte Übersicht der Tasks und verschiedene Status der Bearbeitung. Stetig aktualisiert."}
       ]
     },
     {
       "title": "test",
       "cite": "",
-      "answers": {
-        "0": "",
-        "1": "",
-        "2": "",
-        "3": "",
-        "4": ""
-      }
+      "answers": []
     }
   ],
   "organisation": [],
