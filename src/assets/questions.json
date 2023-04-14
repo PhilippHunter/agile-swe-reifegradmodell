@@ -4,11 +4,11 @@
       "title": "Tägliche Aktualisierung der Tasks",
       "cite": "",
       "answers": [
-        {"score": 0, "question": "Es gibt keine Übersicht wer an was entwickelt"},
-        {"score": 1, "question": "Die Entwickler tauschen sich unregelmäßig aus wer an was arbeitet"},
-        {"score": 2, "question": "Die Entwickler tauschen sich regelmäßig aus wer an was arbeitet"},
-        {"score": 3, "question": "Die Entwickler haben eine konkrete Übersicht der Tasks und aktualisieren wer was bearbeitet"},
-        {"score": 4, "question": "Die Entwickler haben eine detaillierte Übersicht der Tasks und verschiedene Status der Bearbeitung. Stetig aktualisiert."}
+        {"score": 0, "text": "Es gibt keine Übersicht wer an was entwickelt"},
+        {"score": 1, "text": "Die Entwickler tauschen sich unregelmäßig aus wer an was arbeitet"},
+        {"score": 2, "text": "Die Entwickler tauschen sich regelmäßig aus wer an was arbeitet"},
+        {"score": 3, "text": "Die Entwickler haben eine konkrete Übersicht der Tasks und aktualisieren wer was bearbeitet"},
+        {"score": 4, "text": "Die Entwickler haben eine detaillierte Übersicht der Tasks und verschiedene Status der Bearbeitung. Stetig aktualisiert."}
       ]
     },
     {
@@ -17,8 +17,54 @@
       "answers": []
     }
   ],
-  "organisation": [],
-  "technology": [],
+  "organisation": [
+    {
+      "title": "orga Aktualisierung der Tasks",
+      "cite": "",
+      "answers": [
+        {"score": 0, "text": "Es gibt keine Übersicht wer an was entwickelt"},
+        {"score": 1, "text": "Die Entwickler tauschen sich unregelmäßig aus wer an was arbeitet"},
+        {"score": 2, "text": "Die Entwickler tauschen sich regelmäßig aus wer an was arbeitet"},
+        {"score": 3, "text": "Die Entwickler haben eine konkrete Übersicht der Tasks und aktualisieren wer was bearbeitet"},
+        {"score": 4, "text": "Die Entwickler haben eine detaillierte Übersicht der Tasks und verschiedene Status der Bearbeitung. Stetig aktualisiert."}
+      ]
+    },
+    {
+      "title": "orga 2 Aktualisierung der Tasks",
+      "cite": "",
+      "answers": [
+        {"score": 0, "text": "Es gibt keine Übersicht wer an was entwickelt"},
+        {"score": 1, "text": "Die Entwickler tauschen sich unregelmäßig aus wer an was arbeitet"},
+        {"score": 2, "text": "Die Entwickler tauschen sich regelmäßig aus wer an was arbeitet"},
+        {"score": 3, "text": "Die Entwickler haben eine konkrete Übersicht der Tasks und aktualisieren wer was bearbeitet"},
+        {"score": 4, "text": "Die Entwickler haben eine detaillierte Übersicht der Tasks und verschiedene Status der Bearbeitung. Stetig aktualisiert."}
+      ]
+    },
+    {
+      "title": "orga 3 Aktualisierung der Tasks",
+      "cite": "",
+      "answers": [
+        {"score": 0, "text": "Es gibt keine Übersicht wer an was entwickelt"},
+        {"score": 1, "text": "Die Entwickler tauschen sich unregelmäßig aus wer an was arbeitet"},
+        {"score": 2, "text": "Die Entwickler tauschen sich regelmäßig aus wer an was arbeitet"},
+        {"score": 3, "text": "Die Entwickler haben eine konkrete Übersicht der Tasks und aktualisieren wer was bearbeitet"},
+        {"score": 4, "text": "Die Entwickler haben eine detaillierte Übersicht der Tasks und verschiedene Status der Bearbeitung. Stetig aktualisiert."}
+      ]
+    }
+  ],
+  "technology": [
+    {
+      "title": "techno Aktualisierung der Tasks",
+      "cite": "",
+      "answers": [
+        {"score": 0, "text": "Es gibt keine Übersicht wer an was entwickelt"},
+        {"score": 1, "text": "Die Entwickler tauschen sich unregelmäßig aus wer an was arbeitet"},
+        {"score": 2, "text": "Die Entwickler tauschen sich regelmäßig aus wer an was arbeitet"},
+        {"score": 3, "text": "Die Entwickler haben eine konkrete Übersicht der Tasks und aktualisieren wer was bearbeitet"},
+        {"score": 4, "text": "Die Entwickler haben eine detaillierte Übersicht der Tasks und verschiedene Status der Bearbeitung. Stetig aktualisiert."}
+      ]
+    }
+],
   "skills_culture": [],
   "strategy": []
 }
