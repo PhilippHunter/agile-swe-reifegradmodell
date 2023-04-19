@@ -227,147 +227,246 @@
   ],
   "skills_culture": [
     {
-      "title": "xxxxxxxxxxxxxxxxxxxxxxxx",
+      "title": "Agiles Mindset",
       "cite": "",
       "answers": [
-        {"score": 0, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
-        {"score": 1, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
-        {"score": 2, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
-        {"score": 3, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
-        {"score": 4, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"}
+        {"score": 0, "text": "Haben die Mitglieder des Entwicklungsteams ein grundlegendes Verständnis von agilen Werte- und Prinzipien?"},
+        {"score": 1, "text": "Setzen die Mitglieder des Entwicklungsteams agile Werte und Prinzipien bewusst in ihrem täglichen Arbeitsalltag um?"},
+        {"score": 2, "text": "Wird das agile Mindset im gesamten Unternehmen gelebt und unterstützt, inklusive Führungsebene?"},
+        {"score": 3, "text": "Nutzen die Mitglieder des Entwicklungsteams ihr agiles Mindset, um kontinuierlich ihre Arbeitsweisen zu verbessern und Anpassungen vorzunehmen?"},
+        {"score": 4, "text": "Wird das agile Mindset proaktiv genutzt, um neue Geschäftsmöglichkeiten zu identifizieren und zu nutzen sowie den Wertbeitrag des Entwicklungsteams zu maximieren?"}
       ]
     },
     {
-      "title": "xxxxxxxxxxxxxxxxxxxxxxxx",
+      "title": "Schulungen zur Agilen SWE",
       "cite": "",
       "answers": [
-        {"score": 0, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
-        {"score": 1, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
-        {"score": 2, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
-        {"score": 3, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
-        {"score": 4, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"}
+        {"score": 0, "text": "Bietet das Unternehmen Schulungen zur agilen Softwareentwicklung für seine Mitarbeiter an, um ihre Fähigkeiten in diesem Bereich zu verbessern?"},
+        {"score": 1, "text": "Wurden Schulungen zur agilen Softwareentwicklung bereits in das Weiterbildungsprogramm des Unternehmens aufgenommen und in regelmäßigen Abständen angeboten?"},
+        {"score": 2, "text": "Werden Schulungen zur agilen Softwareentwicklung für alle Mitarbeiter des Unternehmens verpflichtend angeboten, um ein einheitliches Verständnis und Wissen in diesem Bereich zu gewährleisten?"},
+        {"score": 3, "text": "Werden Schulungen zur agilen Softwareentwicklung regelmäßig von erfahrenen Mitarbeitern des Unternehmens geleitet und auf individuelle Bedürfnisse der Teilnehmer abgestimmt?"},
+        {"score": 4, "text": "Werden Schulungen zur agilen Softwareentwicklung regelmäßig evaluiert und angepasst, um sicherzustellen, dass sie den aktuellen Bedürfnissen und Anforderungen des Unternehmens entsprechen?"}
       ]
     },
     {
-      "title": "xxxxxxxxxxxxxxxxxxxxxxxx",
-      "cite": "",
+      "title": "Einbezug von Mitarbeitenden (Entwicklern) bei Formulierung der Unternehmensziele",
+      "cite": "https://link.springer.com/content/pdf/10.1007/s11612-020-00522-0.pdf",
       "answers": [
-        {"score": 0, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
-        {"score": 1, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
-        {"score": 2, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
-        {"score": 3, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
-        {"score": 4, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"}
+        {"score": 0, "text": "Unternehmensziele werden außerhalb des Projektteams bestimmt"},
+        {"score": 1, "text": "Unternehmensziele werden außerhalb definiert, jeder hat überblick und kann Kritik üben"},
+        {"score": 2, "text": "Unternehmensziele werden mit Projektteams besprochen + Diskussionen"},
+        {"score": 3, "text": "Unternehmensziele werden zsm mit Projektteams formuliert."},
+        {"score": 4, "text": "Unternehmensziele werden ausschließlich in Projektteams formuliert und zusammengeführt"}
       ]
     },
     {
-      "title": "xxxxxxxxxxxxxxxxxxxxxxxx",
-      "cite": "",
+      "title": "Alle Mitarbeitenden sollen aktiv mitgestalten (Unternehmenskultur zu verbessern)",
+      "cite": "https://link.springer.com/content/pdf/10.1007/s11612-020-00522-0.pdf",
       "answers": [
-        {"score": 0, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
-        {"score": 1, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
-        {"score": 2, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
-        {"score": 3, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
-        {"score": 4, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"}
+        {"score": 0, "text": "Die Unternehmenskultur ist nicht veränderbar."},
+        {"score": 1, "text": "manche Mitarbeitenden haben Einfluss auf Veränderung im Unternehmen."},
+        {"score": 2, "text": "Es gibt Möglichkeiten zur Kommunikation bei Problemen und Änderungswünschen."},
+        {"score": 3, "text": "Es gibt für jeden Mitarbeitenden die gleichen Möglichkeiten Probleme und Änderungswünsche offen zu kommunizieren."},
+        {"score": 4, "text": "Probleme und Änderungswünsche werden umgehend berücksichtigt und diskutiert."}
       ]
     },
     {
-      "title": "xxxxxxxxxxxxxxxxxxxxxxxx",
-      "cite": "",
+      "title": "Besprechung von Konflikten",
+      "cite": "https://link.springer.com/content/pdf/10.1007/s11612-020-00522-0.pdf",
       "answers": [
-        {"score": 0, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
-        {"score": 1, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
-        {"score": 2, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
-        {"score": 3, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
-        {"score": 4, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"}
+        {"score": 0, "text": "Es gibt keine Struktur zur Problembesprechung."},
+        {"score": 1, "text": "Probleme können offen geäußert werden."},
+        {"score": 2, "text": "Probleme können offen geäußert werden. Es gibt Abläufe zur Berücksichtigung dieser."},
+        {"score": 3, "text": "Es gibt im Projektteam eine ausgewiesene Person zur Besprechung von Konflikten im Team."},
+        {"score": 4, "text": "Es finden regelmäßige Retrospektiven zur Besprechung von Abläufen, Konflikten und dem Entwicklungsprozess statt. Von unabhängigem moderiert."}
       ]
     },{
-      "title": "xxxxxxxxxxxxxxxxxxxxxxxx",
-      "cite": "",
+      "title": "Gute Möglichkeit zur Weiterbildung",
+      "cite": "https://link.springer.com/content/pdf/10.1007/s11612-020-00522-0.pdf",
       "answers": [
-        {"score": 0, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
-        {"score": 1, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
-        {"score": 2, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
-        {"score": 3, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
-        {"score": 4, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"}
+        {"score": 0, "text": "Es gibt keine Möglichkeiten zur Weiterbildung."},
+        {"score": 1, "text": "Mitarbeiter müssen sich selbst um Weiterbildungsoptionen kümmern."},
+        {"score": 2, "text": "Vereinzelt werden Weiterbildungen für Mitarbeite angeboten."},
+        {"score": 3, "text": "Mitarbeiter haben in ihren Bereichen Weiterbildungsoptionen."},
+        {"score": 4, "text": "Jeder Mitarbeiter hat ständige Möglichkeiten sich in allen Bereichen weiterzubilden."}
       ]
     },
     {
-      "title": "xxxxxxxxxxxxxxxxxxxxxxxx",
-      "cite": "",
+      "title": "In einer konstanten Geschwindigkeit arbeiten",
+      "cite": "https://t73f.de/hochschule/thesis/2016_philipp.pdf, Kapitel 2.6",
       "answers": [
-        {"score": 0, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
-        {"score": 1, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
-        {"score": 2, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
-        {"score": 3, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
-        {"score": 4, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"}
+        {"score": 0, "text": "Können Teams ihre Arbeitsgeschwindigkeit durchgängig und stabil halten?"},
+        {"score": 1, "text": "Werden Ressourcen und Kapazitäten im Team gut geplant und eingesetzt, um die Arbeitsgeschwindigkeit zu stabilisieren?"},
+        {"score": 2, "text": "Sind Prozesse und Arbeitsabläufe im Team etabliert und dokumentiert, um die konstante Arbeitsgeschwindigkeit zu ermöglichen?"},
+        {"score": 3, "text": "Werden regelmäßige Retrospektiven durchgeführt, um Schwankungen in der Arbeitsgeschwindigkeit zu identifizieren und zu beheben?"},
+        {"score": 4, "text": "Führen Teams kontinuierliche Experimente und Anpassungen an ihren Prozessen und Arbeitsabläufen durch, um die Konstante Arbeitsgeschwindigkeit zu verbessern?"}
+      ]
+    },
+    {
+      "title": "Team selbst organisiert arbeiten und verbessern lassen",
+      "cite": "https://t73f.de/hochschule/thesis/2016_philipp.pdf, Kapitel 2.6",
+      "answers": [
+        {"score": 0, "text": "Können Teams ihre Arbeitsaufgaben selbstständig planen und priorisieren?"},
+        {"score": 1, "text": "Werden klare Verantwortlichkeiten und Entscheidungsbefugnisse innerhalb der Teams festgelegt?"},
+        {"score": 2, "text": "Sind Prozesse und Arbeitsabläufe im Team etabliert und dokumentiert?"},
+        {"score": 3, "text": "Werden regelmäßige Retrospektiven durchgeführt, um die Selbstorganisation im Team zu verbessern?"},
+        {"score": 4, "text": "Führen Teams kontinuierliche Experimente und Anpassungen an ihren Prozessen und Arbeitsabläufen durch, um die Selbstorganisation zu verbessern?"}
+      ]
+    },
+    {
+      "title": "Mitarbeiter kommunizieren offen und werden durch Führungskraft unterstützt und gefördert",
+      "cite": "https://cs.emis.de/LNI/Proceedings/Proceedings263/161.pdf",
+      "answers": [
+        {"score": 0, "text": "Keine Kommunikation zwischen Mitarbeitern und Führungskräften."},
+        {"score": 1, "text": "Nötigste Kommunikation zwischen Mitarbeitern und Führungskräften."},
+        {"score": 2, "text": "Kommunikation zwischen Mitarbeitern und Führungskräften ist in normalen Maß."},
+        {"score": 3, "text": "Kommunikation zwischen Mitarbeitern und Führungskräften ist in normalen Maß; Mitarbeiter werden unterstützt."},
+        {"score": 4, "text": "Kommunikation und Transparenz stehen im Vordergrund; Mitarbeiter werden gefördert und unterstützt."}
+      ]
+    },
+    {
+      "title": "Feedback-Kultur",
+      "cite": "https://cs.emis.de/LNI/Proceedings/Proceedings263/161.pdf",
+      "answers": [
+        {"score": 0, "text": "Keine Feedack Kultur vorhanden."},
+        {"score": 1, "text": "Feedback Kultur nur selten in Verwendung."},
+        {"score": 2, "text": "Feedback Kultur wird überdurschnittlich oft genutzt."},
+        {"score": 3, "text": "Feedback Kultur wird begrüßt und in die Tat umgesetzt."},
+        {"score": 4, "text": "Feedback Kultur ist fester Bestandteil und nicht mehr wegzudenken. Umsetzungen werden häufig und zügig gemacht."}
+      ]
+    },
+    {
+      "title": "Kontinuierliche, fachliche und technische Weiterentwicklungen",
+      "cite": "https://cs.emis.de/LNI/Proceedings/Proceedings263/161.pdf",
+      "answers": [
+        {"score": 0, "text": "Es passiert keine fachliche oder technische Weiterentwicklung."},
+        {"score": 1, "text": "Fachliche oder technische Weiterentwicklung findet sporadisch statt."},
+        {"score": 2, "text": "Fachliche und technische Weiterentwicklung wird im Industrie Standard durchgeführt."},
+        {"score": 3, "text": "Fachliche und Technische Weiterentwicklung wird oft überprüft und umgesetzt."},
+        {"score": 4, "text": "Die fachliche und technische Umsetzung findet oft und auf dem aktuellsten Niveau statt."}
       ]
     }
   ],
   "strategy": [
     {
-      "title": "xxxxxxxxxxxxxxxxxxxxxxxx",
-      "cite": "",
+      "title": "Primäres Ziel: Produkt voll auf Kundenwünsche abstimmen.",
+      "cite": "https://link.springer.com/content/pdf/10.1007/s11612-020-00522-0.pdf",
       "answers": [
-        {"score": 0, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
-        {"score": 1, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
-        {"score": 2, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
-        {"score": 3, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
-        {"score": 4, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"}
+        {"score": 0, "text": "Es gehen keine klaren Ziele hervor. Immer andere Zielsetzung."},
+        {"score": 1, "text": "Das primäre Ziel ist es die SW zu entwicklen und Projekt schnell abzuschließen."},
+        {"score": 2, "text": "Das Ziel ist die vorher definierten Anforderungen gut zu treffen."},
+        {"score": 3, "text": "Das Ziel ist gute SW Qualität und regelmäßige Zwischenstände."},
+        {"score": 4, "text": "Das Ziel ist die SW in kleinen Inkrementen nach Kundenwunsch zu entwickeln. Nach jedem Inkrement werden neue Kundenwünsche berücksichtigt und in die SWE eingeflossen."}
       ]
     },
     {
-      "title": "xxxxxxxxxxxxxxxxxxxxxxxx",
-      "cite": "",
+      "title": "Individuelle Kundenbedürfnisse werden konstant berücksichtigt. Schnelle, flexible Entscheidungen treffen",
+      "cite": "https://link.springer.com/content/pdf/10.1007/s11612-020-00522-0.pdf",
       "answers": [
-        {"score": 0, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
-        {"score": 1, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
-        {"score": 2, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
-        {"score": 3, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
-        {"score": 4, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"}
+        {"score": 0, "text": "Es können keine Veränderungen berücksichtigt werden"},
+        {"score": 1, "text": "Veränderungen werden nur bedingt berücksichtigt."},
+        {"score": 2, "text": "Es gibt Prozesse für Veränderungen der Anforderungen, allerdings große Verschiebungen."},
+        {"score": 3, "text": "Kundenfeedback werden stetig abgefragt, um Veränderungen mit aufzunehmen und einzupflegen."},
+        {"score": 4, "text": "Der SWE Prozess ist auf kurze, optimierte Sprintdauer ausgelegt. Nach jedem Sprint -> Review und neue Inputs vom Kunden"}
       ]
     },
     {
-      "title": "xxxxxxxxxxxxxxxxxxxxxxxx",
-      "cite": "",
+      "title": "Mitarbeitende führen Aufwandsabschätzung selbst durch werden mit der Zeit besser",
+      "cite": "https://link.springer.com/content/pdf/10.1007/s11612-020-00522-0.pdf",
       "answers": [
-        {"score": 0, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
-        {"score": 1, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
-        {"score": 2, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
-        {"score": 3, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
-        {"score": 4, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"}
+        {"score": 0, "text": "Es wird keinerlei Aufwandsabschätzung durchgeführt."},
+        {"score": 1, "text": "Jeder Entwickler schätzt für sich selbst ab."},
+        {"score": 2, "text": "einzelne Teammitglieder führen Aufwandabschätzung der Aufgaben durch."},
+        {"score": 3, "text": "Aufwandsabschätzung wird im gesamten Team durchgeführt und diskutiert."},
+        {"score": 4, "text": "Aufwandsabschätzung ist regelmäßiger Teil vor Entwicklungszyklus (planning). Alle geplanten Aufgaben werden geschätzt."}
       ]
     },
     {
-      "title": "xxxxxxxxxxxxxxxxxxxxxxxx",
-      "cite": "",
+      "title": "persönliche Ziele für jeden Mitarbeiter klar abgesteckt",
+      "cite": "https://link.springer.com/content/pdf/10.1007/s11612-020-00522-0.pdf",
       "answers": [
-        {"score": 0, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
-        {"score": 1, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
-        {"score": 2, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
-        {"score": 3, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
-        {"score": 4, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"}
+        {"score": 0, "text": "Es wird nicht über persönliche Ziele gesprochen."},
+        {"score": 1, "text": "Mitarbeiter können bei Bedarf austausch über persönliche Ziele führen. Nicht vorgesehen."},
+        {"score": 2, "text": "Es gibt vereinzelten Austausch zu persönlichen Zielen von Mitarbeitenden."},
+        {"score": 3, "text": "Mitarbeiter führen in ihren Bereichen regelmäßige Gespräche zu Zielen."},
+        {"score": 4, "text": "Mitarbeiter führen regelmäßige Gespräche zu persönlichen Zielen in allen möglichen Bereichen im Unternehmen (möglichkeit zum Wechsel)."}
       ]
     },
     {
-      "title": "xxxxxxxxxxxxxxxxxxxxxxxx",
-      "cite": "",
+      "title": "Sehr eng mit Kunden zusammenarbeiten",
+      "cite": "https://t73f.de/hochschule/thesis/2016_philipp.pdf, Kapitel 2.6",
       "answers": [
-        {"score": 0, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
-        {"score": 1, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
-        {"score": 2, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
-        {"score": 3, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
-        {"score": 4, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"}
+        {"score": 0, "text": "Haben Teams eine enge Beziehung zu ihren Kunden aufgebaut und treten regelmäßig in Kontakt mit ihnen?"},
+        {"score": 1, "text": "Werden spezifische Mechanismen genutzt, um die Anforderungen und Bedürfnisse der Kunden zu erfassen und in die Entwicklung einzubeziehen?"},
+        {"score": 2, "text": "Sind feste Kundenkontaktpunkte und Feedback-Schleifen etabliert, um die enge Zusammenarbeit zu gewährleisten?"},
+        {"score": 3, "text": "Werden regelmäßige Kunden-Demos und -Präsentationen durchgeführt, um das Feedback und die Zufriedenheit der Kunden zu messen?"},
+        {"score": 4, "text": "Nutzen Teams fortschrittliche Technologien und Methoden, um die enge Zusammenarbeit mit ihren Kunden zu verbessern und zu vertiefen?"}
       ]
     },
     {
-      "title": "xxxxxxxxxxxxxxxxxxxxxxxx",
-      "cite": "",
+      "title": "Kundenbedürfnisse und -befriedigung an oberster Stelle",
+      "cite": "https://t73f.de/hochschule/thesis/2016_philipp.pdf, Kapitel 2.6",
       "answers": [
-        {"score": 0, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
-        {"score": 1, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
-        {"score": 2, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
-        {"score": 3, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
-        {"score": 4, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"}
+        {"score": 0, "text": "Können Teams die Bedürfnisse und Anforderungen ihrer Kunden genau erfassen und in ihre Entwicklungsarbeit einbeziehen?"},
+        {"score": 1, "text": "Werden spezifische Mechanismen genutzt, um die Kundenbedürfnisse zu erfassen, zu priorisieren und zu verfolgen?"},
+        {"score": 2, "text": "Sind Prozesse und Arbeitsabläufe im Team etabliert und dokumentiert, um die Kundenbedürfnisse und -befriedigung zu gewährleisten?"},
+        {"score": 3, "text": "Werden regelmäßige Kunden-Demos und -Präsentationen durchgeführt, um die Kundenbedürfnisse und -befriedigung zu überprüfen und zu verbessern?"},
+        {"score": 4, "text": "Nutzen Teams fortschrittliche Technologien und Methoden, um die Kundenbedürfnisse und -befriedigung zu optimieren und zu maximieren?"}
+      ]
+    },
+    {
+      "title": "Früh und häufig Software an Kunden liefern",
+      "cite": "https://t73f.de/hochschule/thesis/2016_philipp.pdf, Kapitel 2.6",
+      "answers": [
+        {"score": 0, "text": "Können Teams häufig Softwareauslieferungen durchführen, ohne dabei die Qualität der Software zu beeinträchtigen?"},
+        {"score": 1, "text": "Werden spezifische Mechanismen genutzt, um die Qualität und Integrität der Software während der häufigen Auslieferungen sicherzustellen?"},
+        {"score": 2, "text": "Sind Prozesse und Arbeitsabläufe im Team etabliert und dokumentiert, um die frühen und häufigen Softwareauslieferungen zu ermöglichen und zu unterstützen?"},
+        {"score": 3, "text": "Werden regelmäßige Überprüfungen und Anpassungen der Prozesse und Arbeitsabläufe durchgeführt, um die frühen und häufigen Softwareauslieferungen zu verbessern und zu optimieren?"},
+        {"score": 4, "text": "Nutzen Teams fortschrittliche Technologien und Methoden, um die frühen und häufigen Softwareauslieferungen noch weiter zu beschleunigen und zu verbessern?"}
+      ]
+    },
+    {
+      "title": "Veränderungen akzeptieren und darauf reagieren",
+      "cite": "https://t73f.de/hochschule/thesis/2016_philipp.pdf, Kapitel 2.6",
+      "answers": [
+        {"score": 0, "text": "Können Teams schnell und flexibel auf Veränderungen in ihren Anforderungen und Umgebungen reagieren?"},
+        {"score": 1, "text": "Werden spezifische Mechanismen genutzt, um Veränderungen in Anforderungen und Umgebungen zu erkennen und zu verarbeiten?"},
+        {"score": 2, "text": "Sind Prozesse und Arbeitsabläufe im Team etabliert und dokumentiert, um die Akzeptanz von Veränderungen zu fördern und zu unterstützen?"},
+        {"score": 3, "text": "Werden regelmäßige Retrospektiven durchgeführt, um die Fähigkeit des Teams, Veränderungen zu akzeptieren und darauf zu reagieren, zu verbessern?"},
+        {"score": 4, "text": "Nutzen Teams fortschrittliche Technologien und Methoden, um ihre Flexibilität und ihre Fähigkeit, auf Veränderungen zu reagieren, weiter zu verbessern?"}
+      ]
+    },
+    {
+      "title": "Nur Dinge implementieren, die implementiert werden müssen und Nutzen für Kunden haben",
+      "cite": "https://t73f.de/hochschule/thesis/2016_philipp.pdf, Kapitel 2.6",
+      "answers": [
+        {"score": 0, "text": "Können Teams sicherstellen, dass sie nur die wichtigsten und wertvollsten Anforderungen und Funktionen implementieren?"},
+        {"score": 1, "text": "Werden spezifische Mechanismen genutzt, um die Priorisierung der Anforderungen und Funktionen zu unterstützen und sicherzustellen, dass nur die wichtigsten und wertvollsten implementiert werden?"},
+        {"score": 2, "text": "Sind Prozesse und Arbeitsabläufe im Team etabliert und dokumentiert, um sicherzustellen, dass nur die Anforderungen und Funktionen implementiert werden, die tatsächlich einen Nutzen für den Kunden haben?"},
+        {"score": 3, "text": "Werden regelmäßige Kunden-Feedbacks und -Tests durchgeführt, um sicherzustellen, dass nur die wirklich wichtigen und wertvollen Anforderungen und Funktionen implementiert werden?"},
+        {"score": 4, "text": "Nutzen Teams fortschrittliche Technologien und Methoden, um sicherzustellen, dass sie nur die wirklich wichtigen und wertvollen Anforderungen und Funktionen implementieren und damit den Nutzen für den Kunden maximieren?"}
+      ]
+    },
+    {
+      "title": "Erreichbarkeit der Informationen",
+      "cite": "https://link.springer.com/chapter/10.1007/978-3-642-61101-8_11",
+      "answers": [
+        {"score": 0, "text": "Es gibt keine Informationen."},
+        {"score": 1, "text": "Informationen sind schwer und nicht für jeden erreichbar."},
+        {"score": 2, "text": "Informationen sind schwer aber für jeden erreichbar."},
+        {"score": 3, "text": "Informationen sind schnell, unkompliziert aber nicht für jeden erreichbar."},
+        {"score": 4, "text": "Informationen sind schnell, unkompliziert und für jeden erreichbar."}
+      ]
+    },
+    {
+      "title": "Messung der Produktsqualität",
+      "cite": "https://link.springer.com/chapter/10.1007/978-3-642-61101-8_11",
+      "answers": [
+        {"score": 0, "text": "Qualität der Produkte wird nicht gemessen."},
+        {"score": 1, "text": "Qualität wird gemmessen, aber weder in Fehlerraten noch in Kundenzufriedenheit."},
+        {"score": 2, "text": "Qualität wird nur in Fehlerraten gemessen."},
+        {"score": 3, "text": "Qualität wird sowohl in Fehlerraten als auch in Kundenzufriedenheit oder nur kurz fristige Kundenzufriedenheit gemessen."},
+        {"score": 4, "text": "Qualität wird in langfristiger Kundenzufriedenheit gemessen."}
       ]
     }
   ]
