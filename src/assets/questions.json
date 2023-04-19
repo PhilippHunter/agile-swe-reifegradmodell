@@ -170,6 +170,141 @@
   ],
   "technology": [
     {
+      "title": "Aufgabenmanagement-Tools",
+      "cite": "",
+      "answers": [
+        {"score": 0, "text": "Es werden keine Aufgabenmanagment Tools benutzt."},
+        {"score": 1, "text": "Aufgabenmanagment Tools werden nur selten benutzt."},
+        {"score": 2, "text": "Aufgabenmanagment Tools werden hauptsächlich für die Aufgabenverteilung benutzt."},
+        {"score": 3, "text": "Aufgabenmanagment Tools werden auschließlich für die Aufgabenverteilung genutzt."},
+        {"score": 4, "text": "Aufgabenmanagment Tools werden auschließlich für die Aufgabenverteilung genutzt und alle Auswertungsstatistiken werden benutzt."}
+      ]
+    },
+    {
+      "title": "Kommunikationstools (Teams, Zoom, Slack, ...)",
+      "cite": "",
+      "answers": [
+        {"score": 0, "text": "Verfügt das Unternehmen über geeignete Kommunikationstools, die es den Mitarbeitern ermöglichen, im Rahmen der agilen Softwareentwicklung miteinander zu kommunizieren?"},
+        {"score": 1, "text": "Sind die Kommunikationstools im Unternehmen für die agilen Methoden und Prozesse geeignet und werden sie von den Mitarbeitern aktiv genutzt, um im Rahmen der agilen Softwareentwicklung zu kommunizieren?"},
+        {"score": 2, "text": "Sind die Kommunikationstools im Unternehmen für die agilen Methoden und Prozesse standardisiert und werden sie von allen Teams im Unternehmen einheitlich genutzt, um im Rahmen der agilen Softwareentwicklung zu kommunizieren?"},
+        {"score": 3, "text": "Sind die Kommunikationstools im Unternehmen für die agilen Methoden und Prozesse gut bekannt und werden sie von allen Mitarbeitern im Unternehmen sicher und effektiv genutzt, um im Rahmen der agilen Softwareentwicklung zu kommunizieren?"},
+        {"score": 4, "text": "Führt das Unternehmen regelmäßig Reviews der Kommunikationstools durch, um sicherzustellen, dass sie immer noch für die agilen Methoden und Prozesse geeignet sind und von allen Mitarbeitern effektiv genutzt werden?"}
+      ]
+    },
+    {
+      "title": "Zeiterfassungstools",
+      "cite": "",
+      "answers": [
+        {"score": 0, "text": "Werden Zeiterfassungstools genutzt?"},
+        {"score": 1, "text": "Werden Zeiterfassungstools regelmäßig und zielgerichtet genutzt?"},
+        {"score": 2, "text": "Werden Zeiterfassungstools standardisiert und in allen Projekten eingesetzt?"},
+        {"score": 3, "text": "Werden Zeiterfassungstools effektiv und effizient genutzt, um die Entwicklung zu optimieren und zu verbessern?"},
+        {"score": 4, "text": "Werden Zeiterfassungstools kontinuierlich weiterentwickelt und angepasst, um die besten Ergebnisse zu erzielen?"}
+      ]
+    },
+    {
+      "title": "Feedback Tools",
+      "cite": "",
+      "answers": [
+        {"score": 0, "text": "Es werden keine Feedback Tools verwendet."},
+        {"score": 1, "text": "Feedback Tools sind vorhanden, werden aber nicht ausgewertet oder genutzt."},
+        {"score": 2, "text": "Feedback Tools sind vorhanden, werden sporadisch ausgewertet und umgesetzt."},
+        {"score": 3, "text": "Feedback Tools sind vorhanden, werden genutzt und umgesetzt"},
+        {"score": 4, "text": "Feedback Tools werden verwendet, besprochen und zügig umgesetzt."}
+      ]
+    },
+    {
+      "title": "Online Workshops zur Weiterbildung",
+      "cite": "",
+      "answers": [
+        {"score": 0, "text": "Werden Online-Workshops angeboten?"},
+        {"score": 1, "text": "Werden Online-Workshops regelmäßig und zielgerichtet genutzt?"},
+        {"score": 2, "text": "Werden Online-Workshops standardisiert und in allen Projekten eingesetzt?"},
+        {"score": 3, "text": "Werden Online-Workshops effektiv und effizient genutzt, um die Entwicklung zu optimieren und zu verbessern?"},
+        {"score": 4, "text": "Werden Online-Workshops kontinuierlich weiterentwickelt und angepasst, um die besten Ergebnisse zu erzielen?"}
+      ]
+    }
+  ],
+  "skills_culture": [
+    {
+      "title": "xxxxxxxxxxxxxxxxxxxxxxxx",
+      "cite": "",
+      "answers": [
+        {"score": 0, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
+        {"score": 1, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
+        {"score": 2, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
+        {"score": 3, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
+        {"score": 4, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"}
+      ]
+    },
+    {
+      "title": "xxxxxxxxxxxxxxxxxxxxxxxx",
+      "cite": "",
+      "answers": [
+        {"score": 0, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
+        {"score": 1, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
+        {"score": 2, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
+        {"score": 3, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
+        {"score": 4, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"}
+      ]
+    },
+    {
+      "title": "xxxxxxxxxxxxxxxxxxxxxxxx",
+      "cite": "",
+      "answers": [
+        {"score": 0, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
+        {"score": 1, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
+        {"score": 2, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
+        {"score": 3, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
+        {"score": 4, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"}
+      ]
+    },
+    {
+      "title": "xxxxxxxxxxxxxxxxxxxxxxxx",
+      "cite": "",
+      "answers": [
+        {"score": 0, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
+        {"score": 1, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
+        {"score": 2, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
+        {"score": 3, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
+        {"score": 4, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"}
+      ]
+    },
+    {
+      "title": "xxxxxxxxxxxxxxxxxxxxxxxx",
+      "cite": "",
+      "answers": [
+        {"score": 0, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
+        {"score": 1, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
+        {"score": 2, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
+        {"score": 3, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
+        {"score": 4, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"}
+      ]
+    },{
+      "title": "xxxxxxxxxxxxxxxxxxxxxxxx",
+      "cite": "",
+      "answers": [
+        {"score": 0, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
+        {"score": 1, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
+        {"score": 2, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
+        {"score": 3, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
+        {"score": 4, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"}
+      ]
+    },
+    {
+      "title": "xxxxxxxxxxxxxxxxxxxxxxxx",
+      "cite": "",
+      "answers": [
+        {"score": 0, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
+        {"score": 1, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
+        {"score": 2, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
+        {"score": 3, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
+        {"score": 4, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"}
+      ]
+    }
+  ],
+  "strategy": [
+    {
       "title": "xxxxxxxxxxxxxxxxxxxxxxxx",
       "cite": "",
       "answers": [
@@ -235,7 +370,5 @@
         {"score": 4, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"}
       ]
     }
-  ],
-  "skills_culture": [],
-  "strategy": []
+  ]
 }
