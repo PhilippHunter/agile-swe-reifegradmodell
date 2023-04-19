@@ -80,49 +80,159 @@
   ],
   "organisation": [
     {
-      "title": "orga Aktualisierung der Tasks",
-      "cite": "",
+      "title": "Agile Transition Team",
+      "cite": "Hier fehlt Quelle!",
       "answers": [
-        {"score": 0, "text": "Es gibt keine Übersicht wer an was entwickelt"},
-        {"score": 1, "text": "Die Entwickler tauschen sich unregelmäßig aus wer an was arbeitet"},
-        {"score": 2, "text": "Die Entwickler tauschen sich regelmäßig aus wer an was arbeitet"},
-        {"score": 3, "text": "Die Entwickler haben eine konkrete Übersicht der Tasks und aktualisieren wer was bearbeitet"},
-        {"score": 4, "text": "Die Entwickler haben eine detaillierte Übersicht der Tasks und verschiedene Status der Bearbeitung. Stetig aktualisiert."}
+        {"score": 0, "text": "Gibt es ein dediziertes Team, das sich ausschließlich mit der Einführung agiler Methoden und Prozesse im Unternehmen befasst?"},
+        {"score": 1, "text": "Verfügt das Unternehmen/Abteilung über ein Team, das sich mit der Einführung und Umsetzung agiler Methoden und Prozesse befasst, und hat dieses Team klare Ziele und Verantwortlichkeiten?"},
+        {"score": 2, "text": "Sind die Ziele und Verantwortlichkeiten des Agile Transition Teams im Unternehmen festgelegt und dokumentiert und werden diese regelmäßig überprüft und gegebenenfalls angepasst?"},
+        {"score": 3, "text": "Ist das Agile Transition Team im Unternehmen gut ausgebildet und erfahren und kann es daher die Einführung agiler Methoden und Prozesse erfolgreich vorantreiben und Schwierigkeiten schnell und effektiv lösen?"},
+        {"score": 4, "text": "Führt das Agile Transition Team im Unternehmen regelmäßige Retrospektiven durch, um die Einführung agiler Methoden und Prozesse kontinuierlich zu verbessern und zu optimieren?"}
       ]
     },
     {
-      "title": "orga 2 Aktualisierung der Tasks",
-      "cite": "",
+      "title": "Agile Coach in der Abteilung",
+      "cite": "Hier fehlt Quelle!",
       "answers": [
-        {"score": 0, "text": "Es gibt keine Übersicht wer an was entwickelt"},
-        {"score": 1, "text": "Die Entwickler tauschen sich unregelmäßig aus wer an was arbeitet"},
-        {"score": 2, "text": "Die Entwickler tauschen sich regelmäßig aus wer an was arbeitet"},
-        {"score": 3, "text": "Die Entwickler haben eine konkrete Übersicht der Tasks und aktualisieren wer was bearbeitet"},
-        {"score": 4, "text": "Die Entwickler haben eine detaillierte Übersicht der Tasks und verschiedene Status der Bearbeitung. Stetig aktualisiert."}
+        {"score": 0, "text": "Verfügt das Unternehmen/Abteilung über einen dedizierten Agile Coach, der das Unternehmen bei der Einführung agiler Methoden und Prozesse unterstützt?"},
+        {"score": 1, "text": "Verfügt das Unternehmen über einen Agile Coach, der das Unternehmen bei der Einführung und Umsetzung agiler Methoden und Prozesse unterstützt und hat dieser klare Ziele und Verantwortlichkeiten?"},
+        {"score": 2, "text": "Sind die Ziele und Verantwortlichkeiten des Agile Coaches im Unternehmen festgelegt und dokumentiert und werden diese regelmäßig überprüft und gegebenenfalls angepasst?"},
+        {"score": 3, "text": "Ist der Agile Coach im Unternehmen gut ausgebildet und erfahren und kann er daher das Unternehmen erfolgreich bei der Einführung agiler Methoden und Prozesse unterstützen und Schwierigkeiten schnell und effektiv lösen?"},
+        {"score": 4, "text": "Führt der Agile Coach im Unternehmen regelmäßige Retrospektiven durch, um die Einführung agiler Methoden und Prozesse kontinuierlich zu verbessern und zu optimieren?."}
       ]
     },
     {
-      "title": "orga 3 Aktualisierung der Tasks",
-      "cite": "",
+      "title": "Priorisierte Übersicht aller Produktanforderungen",
+      "cite": "https://link.springer.com/content/pdf/10.1007/s11612-020-00522-0.pdf",
       "answers": [
-        {"score": 0, "text": "Es gibt keine Übersicht wer an was entwickelt"},
-        {"score": 1, "text": "Die Entwickler tauschen sich unregelmäßig aus wer an was arbeitet"},
-        {"score": 2, "text": "Die Entwickler tauschen sich regelmäßig aus wer an was arbeitet"},
-        {"score": 3, "text": "Die Entwickler haben eine konkrete Übersicht der Tasks und aktualisieren wer was bearbeitet"},
-        {"score": 4, "text": "Die Entwickler haben eine detaillierte Übersicht der Tasks und verschiedene Status der Bearbeitung. Stetig aktualisiert."}
+        {"score": 0, "text": "Es gib eine Übersicht aller Kundenanforderungen."},
+        {"score": 1, "text": "Die Kundenanforderungen werden zu Beginn in konkrete Entwicklungsaufgaben überführt (Übersicht vorhanden)"},
+        {"score": 2, "text": "Die Aufgaben werden regelmäßig von/mit Entwicklern in Aufgaben formuliert."},
+        {"score": 3, "text": "Es gibt einen Product Owner, der die Aufgaben pflegt und die Übersicht aktuell hält."},
+        {"score": 4, "text": "Es gibt einen Product Owner, der die Aufgaben täglich Pflegt, kategorisiert, priorisiert und mit Entwicklern abstimmt."}
+      ]
+    },
+    {
+      "title": "Kick-Off-Workshop zum sammeln der Anforderung (alle Stakeholder)",
+      "cite": "https://link.springer.com/content/pdf/10.1007/s11612-020-00522-0.pdf",
+      "answers": [
+        {"score": 0, "text": "Es findet keinerlei interaktiver Kundenaustausch zu Anforderungen statt"},
+        {"score": 1, "text": "Die Anforderungen kommen vom Kunden und werden teilweise zur Diskussion gestellt (hin und her Kommunikation)"},
+        {"score": 2, "text": "Ausgewählte Personen des Projekts führen Austausch mit Kunden zu Anforderungen durch."},
+        {"score": 3, "text": "Zu Beginn findet ein Workshop aller beteiligten statt, um die Anforderungen vollständig festzulegen"},
+        {"score": 4, "text": "Zu Beginn findet mit allen Stakeholdern ein Workshop statt. Ergebnisse werden festgehalten. Jedoch für grundlegende Veränderungen offen"}
+      ]
+    },
+    {
+      "title": "Klar definierte Rollen im Projekt",
+      "cite": "https://link.springer.com/content/pdf/10.1007/s11612-020-00522-0.pdf",
+      "answers": [
+        {"score": 0, "text": "Es gibt kein klar abgrenzbares Entwicklerteam."},
+        {"score": 1, "text": "Das Projektteam besteht aus definierten Personen, keine klaren Rollen, jeder macht alles."},
+        {"score": 2, "text": "Das Projektteam besteht aus definierten Personen, einige haben Spezialgebiet."},
+        {"score": 3, "text": "Das Projektteam enthält klare Rollen, werden nicht vollständig besetzt/durchgezogen."},
+        {"score": 4, "text": "Das Team besteht aus klaren Rollen, jede Rolle ist ausreichend besetzt und vertretbar, niemand muss springen."}
+      ]
+    },
+    {
+      "title": "Formulieren von User Stories",
+      "cite": "https://link.springer.com/content/pdf/10.1007/s11612-020-00522-0.pdf",
+      "answers": [
+        {"score": 0, "text": "User Stories werden nicht oder nur sporadisch benutzt."},
+        {"score": 1, "text": "User Stories werden genutzt, enthalten aber nur grobe Anforderungen."},
+        {"score": 2, "text": "User Stories sind detaillierter und enthalten spezifische Anforderungen zum Produkt."},
+        {"score": 3, "text": "User Stories werden regelmäßig erstellt und überprüft, um die Qualität sicherzustellen."},
+        {"score": 4, "text": "User Stories sind umfassend und ausreichend geprüft und dienen zur Kommunikation und Planung gemeinsam mit dem Kunden."}
+      ]
+    },
+    {
+      "title": "Bereichsübergreifende Teams",
+      "cite": "https://cs.emis.de/LNI/Proceedings/Proceedings263/161.pdf",
+      "answers": [
+        {"score": 0, "text": "Das Projektteam hat keine klaren Bereichsdefinitionen (einzelne Personen arbeiten interdisziplinär)."},
+        {"score": 1, "text": "Das Team besteht hauptsächlich aus Entwicklern, andere Bereiche arbeiten ihm zu."},
+        {"score": 2, "text": "Das Team besteht hauptsächlich aus Entwicklern, bestimmte Spezialisten stehen zu verfügung."},
+        {"score": 3, "text": "Das Team besteht aus interdisziplinären Teilen (Devs, Designer,…) vereinzelt werden Spezialisten herangezogen"},
+        {"score": 4, "text": "Das Team besteht vollständig aus interdisziplinären Teilen (alles abgedeckt)."}
+      ]
+    },
+    {
+      "title": "Pair-Programming",
+      "cite": ["https://link.springer.com/book/10.1007/978-3-658-33395-9", "https://mediatum.ub.tum.de/doc/1094277/file.pdf"],
+      "answers": [
+        {"score": 0, "text": "Die Programierer arbeiten allein und finden keine Pair-Programming statt."},
+        {"score": 1, "text": "Das Pair-Programming findet nur für neur Mitarbeiterinnen statt."},
+        {"score": 2, "text": "Die Programmiere arbeiten hauptsächlich allein. Bei den schwierigen Aufgaben wenden sich die Mitarbeiter gelegntlich an den Experten für ein Pair-Programming."},
+        {"score": 3, "text": "Das Pair-Programming finden regelmässig mit festen Terminen zwischen zwei Team-Mitarglieder regelmäsig statt."},
+        {"score": 4, "text": "Mindestens zwei Team-Mitarglieder arbeiten eng zusammen und tauschen sich öfter beim Pair-Programming ihr Wissen aus."}
       ]
     }
   ],
   "technology": [
     {
-      "title": "techno Aktualisierung der Tasks",
+      "title": "xxxxxxxxxxxxxxxxxxxxxxxx",
       "cite": "",
       "answers": [
-        {"score": 0, "text": "Es gibt keine Übersicht wer an was entwickelt"},
-        {"score": 1, "text": "Die Entwickler tauschen sich unregelmäßig aus wer an was arbeitet"},
-        {"score": 2, "text": "Die Entwickler tauschen sich regelmäßig aus wer an was arbeitet"},
-        {"score": 3, "text": "Die Entwickler haben eine konkrete Übersicht der Tasks und aktualisieren wer was bearbeitet"},
-        {"score": 4, "text": "Die Entwickler haben eine detaillierte Übersicht der Tasks und verschiedene Status der Bearbeitung. Stetig aktualisiert."}
+        {"score": 0, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
+        {"score": 1, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
+        {"score": 2, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
+        {"score": 3, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
+        {"score": 4, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"}
+      ]
+    },
+    {
+      "title": "xxxxxxxxxxxxxxxxxxxxxxxx",
+      "cite": "",
+      "answers": [
+        {"score": 0, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
+        {"score": 1, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
+        {"score": 2, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
+        {"score": 3, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
+        {"score": 4, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"}
+      ]
+    },
+    {
+      "title": "xxxxxxxxxxxxxxxxxxxxxxxx",
+      "cite": "",
+      "answers": [
+        {"score": 0, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
+        {"score": 1, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
+        {"score": 2, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
+        {"score": 3, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
+        {"score": 4, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"}
+      ]
+    },
+    {
+      "title": "xxxxxxxxxxxxxxxxxxxxxxxx",
+      "cite": "",
+      "answers": [
+        {"score": 0, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
+        {"score": 1, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
+        {"score": 2, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
+        {"score": 3, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
+        {"score": 4, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"}
+      ]
+    },
+    {
+      "title": "xxxxxxxxxxxxxxxxxxxxxxxx",
+      "cite": "",
+      "answers": [
+        {"score": 0, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
+        {"score": 1, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
+        {"score": 2, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
+        {"score": 3, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
+        {"score": 4, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"}
+      ]
+    },
+    {
+      "title": "xxxxxxxxxxxxxxxxxxxxxxxx",
+      "cite": "",
+      "answers": [
+        {"score": 0, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
+        {"score": 1, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
+        {"score": 2, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
+        {"score": 3, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"},
+        {"score": 4, "text": "xxxxxxxxxxxxxxxxxxxxxxxx"}
       ]
     }
   ],
