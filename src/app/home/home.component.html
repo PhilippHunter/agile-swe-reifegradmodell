@@ -1,1 +1,121 @@
-<p>home works!</p>
+<!-- Hero -->
+<div class="hero">
+    <div class="hero-text">
+        <h1>Wie agil ist Ihre Entwicklung?</h1>
+        <p>Finden Sie es heraus!</p>
+    </div>
+</div>
+
+<!-- Features -->
+<div class="features">
+    <div class="flex flex-column gap-3 pb-3">
+        <p-card>
+            <ng-template pTemplate="header">
+                <div class="flex flex-row align-items-center shadow-3 gap-3 p-3">
+                    <i class="pi pi-check-circle"></i>
+                    <h2>Schnell & Einfach</h2>
+                </div>
+            </ng-template>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur alias ut, dolore assumenda, placeat
+                sed unde nesciunt natus atque rerum recusandae, dolorum asperiores fuga autem! Saepe atque rem nesciunt
+                amet.</p>
+        </p-card>
+        <p-card>
+            <ng-template pTemplate="header">
+                <div class="flex flex-row align-items-center shadow-3 gap-3 p-3">
+                    <i class="pi pi-sort"></i>
+                    <h2>Individuelle Schwerpunkte</h2>
+                </div>
+            </ng-template>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur alias ut, dolore assumenda, placeat
+                sed unde nesciunt natus atque rerum recusandae, dolorum asperiores fuga autem! Saepe atque rem nesciunt
+                amet.</p>
+        </p-card>
+        <p-card>
+            <ng-template pTemplate="header">
+                <div class="flex flex-row align-items-center shadow-3 gap-3 p-3">
+                    <i class="pi pi-chart-pie"></i>
+                    <h2>Übersichtliche Ergebnisse</h2>
+                </div>
+            </ng-template>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur alias ut, dolore assumenda, placeat
+                sed unde nesciunt natus atque rerum recusandae, dolorum asperiores fuga autem! Saepe atque rem nesciunt
+                amet.</p>
+        </p-card>
+        <p-card>
+            <ng-template pTemplate="header">
+                <div class="flex flex-row align-items-center shadow-3 gap-3 p-3">
+                    <i class="pi pi-users"></i>
+                    <h2>In Zusammenarbeit mit Experten</h2>
+                </div>
+            </ng-template>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur alias ut, dolore assumenda, placeat
+                sed unde nesciunt natus atque rerum recusandae, dolorum asperiores fuga autem! Saepe atque rem nesciunt
+                amet.</p>
+        </p-card>
+    </div>
+</div>
+
+<p-divider></p-divider>
+
+<!-- Experts -->
+<div class="experts">
+    <h1 class="flex align-items-center justify-content-center pt-3">Experten</h1>
+    <div class="flex flex-row flex-wrap align-items-center justify-content-center gap-3">
+        <p-card header="Advanced Card" [style]="{ width: '360px' }">
+            <ng-template pTemplate="header">
+                <img alt="Card" src="https://primefaces.org/cdn/primeng/images/usercard.png" />
+            </ng-template>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae
+                numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis
+                esse, cupiditate neque
+                quas!
+            </p>
+        </p-card>
+        <p-card header="Advanced Card" [style]="{ width: '360px' }">
+            <ng-template pTemplate="header">
+                <img alt="Card" src="https://primefaces.org/cdn/primeng/images/usercard.png" />
+            </ng-template>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae
+                numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis
+                esse, cupiditate neque
+                quas!
+            </p>
+        </p-card>
+        <p-card header="Advanced Card" [style]="{ width: '360px' }">
+            <ng-template pTemplate="header">
+                <img alt="Card" src="https://primefaces.org/cdn/primeng/images/usercard.png" />
+            </ng-template>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae
+                numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis
+                esse, cupiditate neque
+                quas!
+            </p>
+        </p-card>
+        <p-card header="Advanced Card" [style]="{ width: '360px' }">
+            <ng-template pTemplate="header">
+                <img alt="Card" src="https://primefaces.org/cdn/primeng/images/usercard.png" />
+            </ng-template>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae
+                numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis
+                esse, cupiditate neque
+                quas!
+            </p>
+        </p-card>
+    </div>
+</div>
+
+<p-divider></p-divider>
+
+<!-- Call-to-Action -->
+<div class="cta mb-3">
+    <div class="flex flex-column gap-3 align-items-center">
+        <h1>Hier zu den Fragen</h1>
+        <p-button label="Los geht's!" icon="pi pi-pencil" iconPos="right" styleClass="p-button-lg"
+            (click)="navigateSurvey()"></p-button>
+    </div>
+</div>
