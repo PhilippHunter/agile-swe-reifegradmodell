@@ -170,7 +170,7 @@
   ],
   "technology": [
     {
-      "title": "Aufgabenmanagement-Tools",
+      "title": "Werden Aufgabenmanagement Tool für die Entwicklung verwendet?",
       "cite": "",
       "answers": [
         {"score": 0, "text": "Es werden keine Aufgabenmanagment Tools benutzt."},
@@ -181,7 +181,7 @@
       ]
     },
     {
-      "title": "Kommunikationstools (Teams, Zoom, Slack, ...)",
+      "title": "Werden Kommunikationstools wie Teams, Zoom, Slack, etc. verwendet?)",
       "cite": "",
       "answers": [
         {"score": 0, "text": "Verfügt das Unternehmen über geeignete Kommunikationstools, die es den Mitarbeitern ermöglichen, im Rahmen der agilen Softwareentwicklung miteinander zu kommunizieren?"},
@@ -192,18 +192,18 @@
       ]
     },
     {
-      "title": "Zeiterfassungstools",
+      "title": "Werden Zeiterfassungstools, um den Entwicklungsprozess zu kontrollieren?",
       "cite": "",
       "answers": [
-        {"score": 0, "text": "Werden Zeiterfassungstools genutzt?"},
-        {"score": 1, "text": "Werden Zeiterfassungstools regelmäßig und zielgerichtet genutzt?"},
-        {"score": 2, "text": "Werden Zeiterfassungstools standardisiert und in allen Projekten eingesetzt?"},
-        {"score": 3, "text": "Werden Zeiterfassungstools effektiv und effizient genutzt, um die Entwicklung zu optimieren und zu verbessern?"},
-        {"score": 4, "text": "Werden Zeiterfassungstools kontinuierlich weiterentwickelt und angepasst, um die besten Ergebnisse zu erzielen?"}
+        {"score": 0, "text": "Es werden keine Zeiterfassungstools genutzt."},
+        {"score": 1, "text": "Es werden Zeiterfassungstools regelmäßig und zielgerichtet genutzt."},
+        {"score": 2, "text": "Es werden Zeiterfassungstools standardisiert und in allen Projekten eingesetzt."},
+        {"score": 3, "text": "Es werden Zeiterfassungstools effektiv und effizient genutzt, um die Entwicklung zu optimieren und zu verbessern."},
+        {"score": 4, "text": "Es werden Zeiterfassungstools kontinuierlich weiterentwickelt und angepasst, um die besten Ergebnisse zu erzielen."}
       ]
     },
     {
-      "title": "Feedback Tools",
+      "title": "Werden Feedback Tools verwendet?",
       "cite": "",
       "answers": [
         {"score": 0, "text": "Es werden keine Feedback Tools verwendet."},
@@ -214,14 +214,14 @@
       ]
     },
     {
-      "title": "Online Workshops zur Weiterbildung",
+      "title": "Werden Online Workshops zur Weiterbildung angeboten?",
       "cite": "",
       "answers": [
-        {"score": 0, "text": "Werden Online-Workshops angeboten?"},
-        {"score": 1, "text": "Werden Online-Workshops regelmäßig und zielgerichtet genutzt?"},
-        {"score": 2, "text": "Werden Online-Workshops standardisiert und in allen Projekten eingesetzt?"},
-        {"score": 3, "text": "Werden Online-Workshops effektiv und effizient genutzt, um die Entwicklung zu optimieren und zu verbessern?"},
-        {"score": 4, "text": "Werden Online-Workshops kontinuierlich weiterentwickelt und angepasst, um die besten Ergebnisse zu erzielen?"}
+        {"score": 0, "text": "Es werden keine Online-Workshops angeboten"},
+        {"score": 1, "text": "Es werden Online-Workshops regelmäßig und zielgerichtet genutzt."},
+        {"score": 2, "text": "Es werden Online-Workshops standardisiert und in allen Projekten eingesetzt."},
+        {"score": 3, "text": "Es werden Online-Workshops effektiv und effizient genutzt, um die Entwicklung zu optimieren und zu verbessern."},
+        {"score": 4, "text": "Es werden Online-Workshops kontinuierlich weiterentwickelt und angepasst, um die besten Ergebnisse zu erzielen."}
       ]
     }
   ],
