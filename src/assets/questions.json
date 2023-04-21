@@ -1,18 +1,18 @@
 {
   "processes": [
     {
-      "title": "Flexible Anforderungsaufnahme",
+      "title": "Wie flexibel ist Ihre Anforderungsaufnahme?",
       "cite": "Hier fehlt Quelle!",
       "answers": [
-        {"score": 0, "text": "Werden Anforderungen während des Projekts ad-hoc und ohne festgelegte Prozesse aufgenommen?"},
-        {"score": 1, "text": "Werden Anforderungen während des Projekts nach einem festgelegten Verfahren aufgenommen, um sicherzustellen, dass alle relevanten Informationen berücksichtigt werden?"},
-        {"score": 2, "text": "Werden Anforderungen während des Projekts nach einem festgelegten und dokumentierten Verfahren aufgenommen, um sicherzustellen, dass alle Beteiligten dasselbe Verständnis davon haben, wie Anforderungen aufgenommen werden?t"},
-        {"score": 3, "text": "Werden Anforderungen während des Projekts nach einem festgelegten und bewährten Verfahren aufgenommen, das im Team gut verstanden und angewendet wird?"},
-        {"score": 4, "text": "Werden Anforderungen während des Projekts nach einem festgelegten und ständig verbesserten Verfahren aufgenommen, das das Projektziel unterstützt und die Zufriedenheit des Kunden sicherstellt?"}
+        {"score": 0, "text": "Anforderungen werden während des Projekts ad-hoc und ohne festgelegte Prozesse aufgenommen."},
+        {"score": 1, "text": "Anforderungen werden während des Projekts nach einem festgelegten Verfahren aufgenommen, um sicherzustellen, dass alle relevanten Informationen berücksichtigt werden."},
+        {"score": 2, "text": "Anforderungen werden während des Projekts nach einem festgelegten und dokumentierten Verfahren aufgenommen, um sicherzustellen, dass alle Beteiligten dasselbe Verständnis davon haben, wie Anforderungen aufgenommen werden."},
+        {"score": 3, "text": "Anforderungen werden während des Projekts nach einem festgelegten und bewährten Verfahren aufgenommen, das im Team gut verstanden und angewendet wird."},
+        {"score": 4, "text": "Anforderungen werden während des Projekts nach einem festgelegten und ständig verbesserten Verfahren aufgenommen, das das Projektziel unterstützt und die Zufriedenheit des Kunden sicherstellt."}
       ]
     },
     {
-      "title": "Tägliche, kurze Besprechung zur Entwicklung im Team (Dailys)",
+      "title": "Finden in den Teams tagliche, kurze Besprechung zur Entwicklung (Dailys) statt?",
       "cite": "https://link.springer.com/content/pdf/10.1007/s11612-020-00522-0.pdf",
       "answers": [
         {"score": 0, "text": "Es findet kaum Austausch im Entwicklerteam statt (jeder Arbeitet für sich an seinen Aufgaben)."},
@@ -23,10 +23,10 @@
       ]
     },
     {
-      "title": "Regelmäßige Tests der Implementierung (SW-Testing)",
+      "title": "Wie stark ist das Testen der Software im Entwicklungsprozess integriert?",
       "cite": "https://link.springer.com/content/pdf/10.1007/s11612-020-00522-0.pdf",
       "answers": [
-        {"score": 0, "text": "Neue Features sowie die allgemeine Funktion der SW wird nicht getestet."},
+        {"score": 0, "text": "Neue Features sowie die allgemeine Funktion der SW werden nicht getestet."},
         {"score": 1, "text": "Neue Features sowie allgemeine Funktionen werden hin und wieder überprüft."},
         {"score": 2, "text": "Es gibt klare Vorgaben zu Softwaretests, welche von einem Testteam berücksichtigt werden."},
         {"score": 3, "text": "Die Verantwortung der Softwaretests liegt im gesamten Entwicklerteam. Jeder befolgt klare Vorgaben."},
@@ -34,7 +34,7 @@
       ]
     },
     {
-      "title": "Tägliche Aktualisierung der Tasks",
+      "title": "Wie lässt sich die Übersicht der aktuellen Tasks im Team beschreiben?",
       "cite": "https://link.springer.com/content/pdf/10.1007/s11612-020-00522-0.pdf",
       "answers": [
         {"score": 0, "text": "Es gibt keine Übersicht wer an was entwickelt"},
@@ -45,18 +45,18 @@
       ]
     },
     {
-      "title": "Regelmäßige Demonstration der SW vor allen Stakeholdern",
+      "title": "Wie sehr sind die Stakeholder durch Demonstrationen des Softwarestandes im Entwicklungsprozess involviert?",
       "cite": "https://link.springer.com/content/pdf/10.1007/s11612-020-00522-0.pdf",
       "answers": [
-        {"score": 0, "text": "Die SW wird am Ende ausgeliefert und nicht extra demonstriert."},
-        {"score": 1, "text": "Die SW wird am Ende ausgeliefert und sorgfältig demonstriert."},
-        {"score": 2, "text": "Die SW wird auf Anfrage dem Kunden demonstriert."},
-        {"score": 3, "text": "Die SW wird regelmäßig (festgelegt) dem Kunden demonstriert."},
-        {"score": 4, "text": "Die SW wird regelmäßig allen Stakeholdern (inkl. allen Entwicklern) demonstriert und feedback wird eingeholt."}
+        {"score": 0, "text": "Die Software wird am Ende ausgeliefert und nicht extra demonstriert."},
+        {"score": 1, "text": "Die Software wird am Ende ausgeliefert und sorgfältig demonstriert."},
+        {"score": 2, "text": "Die Software wird auf Anfrage dem Kunden auch während der Entwicklungsphase demonstriert."},
+        {"score": 3, "text": "Die Software wird regelmäßig (festgelegt) dem Kunden demonstriert."},
+        {"score": 4, "text": "Die Software wird regelmäßig allen Stakeholdern (inkl. allen Entwicklern) demonstriert und feedback wird eingeholt."}
       ]
     },
     {
-      "title": "Refactoring",
+      "title": "Wie häufig wird bestehender Code im laufe des Projekts überarbeitet und verbessert?",
       "cite": "https://link.springer.com/book/10.1007/978-3-658-33395-9",
       "answers": [
         {"score": 0, "text": "Der Quellcode und dessen Dokumentation werden nicht überarbeitet."},
@@ -67,7 +67,7 @@
       ]
     },
     {
-      "title": "Code-Review",
+      "title": "Wird neuer Code durch andere Entwicklungspersonen überprüft und validiert?",
       "cite": "https://link.springer.com/book/10.1007/978-3-658-33395-9",
       "answers": [
         {"score": 0, "text": "Neue Codeabschnitte und alle Codeänderung werden nicht überprüft."},
