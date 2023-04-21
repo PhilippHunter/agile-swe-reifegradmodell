@@ -1,18 +1,18 @@
 {
   "processes": [
     {
-      "title": "Flexible Anforderungsaufnahme",
+      "title": "Wie flexibel ist Ihre Anforderungsaufnahme?",
       "cite": "Hier fehlt Quelle!",
       "answers": [
-        {"score": 0, "text": "Werden Anforderungen während des Projekts ad-hoc und ohne festgelegte Prozesse aufgenommen?"},
-        {"score": 1, "text": "Werden Anforderungen während des Projekts nach einem festgelegten Verfahren aufgenommen, um sicherzustellen, dass alle relevanten Informationen berücksichtigt werden?"},
-        {"score": 2, "text": "Werden Anforderungen während des Projekts nach einem festgelegten und dokumentierten Verfahren aufgenommen, um sicherzustellen, dass alle Beteiligten dasselbe Verständnis davon haben, wie Anforderungen aufgenommen werden?t"},
-        {"score": 3, "text": "Werden Anforderungen während des Projekts nach einem festgelegten und bewährten Verfahren aufgenommen, das im Team gut verstanden und angewendet wird?"},
-        {"score": 4, "text": "Werden Anforderungen während des Projekts nach einem festgelegten und ständig verbesserten Verfahren aufgenommen, das das Projektziel unterstützt und die Zufriedenheit des Kunden sicherstellt?"}
+        {"score": 0, "text": "Anforderungen werden während des Projekts ad-hoc und ohne festgelegte Prozesse aufgenommen."},
+        {"score": 1, "text": "Anforderungen werden während des Projekts nach einem festgelegten Verfahren aufgenommen, um sicherzustellen, dass alle relevanten Informationen berücksichtigt werden."},
+        {"score": 2, "text": "Anforderungen werden während des Projekts nach einem festgelegten und dokumentierten Verfahren aufgenommen, um sicherzustellen, dass alle Beteiligten dasselbe Verständnis davon haben, wie Anforderungen aufgenommen werden."},
+        {"score": 3, "text": "Anforderungen werden während des Projekts nach einem festgelegten und bewährten Verfahren aufgenommen, das im Team gut verstanden und angewendet wird."},
+        {"score": 4, "text": "Anforderungen werden während des Projekts nach einem festgelegten und ständig verbesserten Verfahren aufgenommen, das das Projektziel unterstützt und die Zufriedenheit des Kunden sicherstellt."}
       ]
     },
     {
-      "title": "Tägliche, kurze Besprechung zur Entwicklung im Team (Dailys)",
+      "title": "Finden in den Teams tagliche, kurze Besprechung zur Entwicklung (Dailys) statt?",
       "cite": "https://link.springer.com/content/pdf/10.1007/s11612-020-00522-0.pdf",
       "answers": [
         {"score": 0, "text": "Es findet kaum Austausch im Entwicklerteam statt (jeder Arbeitet für sich an seinen Aufgaben)."},
@@ -23,10 +23,10 @@
       ]
     },
     {
-      "title": "Regelmäßige Tests der Implementierung (SW-Testing)",
+      "title": "Wie stark ist das Testen der Software im Entwicklungsprozess integriert?",
       "cite": "https://link.springer.com/content/pdf/10.1007/s11612-020-00522-0.pdf",
       "answers": [
-        {"score": 0, "text": "Neue Features sowie die allgemeine Funktion der SW wird nicht getestet."},
+        {"score": 0, "text": "Neue Features sowie die allgemeine Funktion der SW werden nicht getestet."},
         {"score": 1, "text": "Neue Features sowie allgemeine Funktionen werden hin und wieder überprüft."},
         {"score": 2, "text": "Es gibt klare Vorgaben zu Softwaretests, welche von einem Testteam berücksichtigt werden."},
         {"score": 3, "text": "Die Verantwortung der Softwaretests liegt im gesamten Entwicklerteam. Jeder befolgt klare Vorgaben."},
@@ -34,7 +34,7 @@
       ]
     },
     {
-      "title": "Tägliche Aktualisierung der Tasks",
+      "title": "Wie lässt sich die Übersicht der aktuellen Tasks im Team beschreiben?",
       "cite": "https://link.springer.com/content/pdf/10.1007/s11612-020-00522-0.pdf",
       "answers": [
         {"score": 0, "text": "Es gibt keine Übersicht wer an was entwickelt"},
@@ -45,18 +45,18 @@
       ]
     },
     {
-      "title": "Regelmäßige Demonstration der SW vor allen Stakeholdern",
+      "title": "Wie sehr sind die Stakeholder durch Demonstrationen des Softwarestandes im Entwicklungsprozess involviert?",
       "cite": "https://link.springer.com/content/pdf/10.1007/s11612-020-00522-0.pdf",
       "answers": [
-        {"score": 0, "text": "Die SW wird am Ende ausgeliefert und nicht extra demonstriert."},
-        {"score": 1, "text": "Die SW wird am Ende ausgeliefert und sorgfältig demonstriert."},
-        {"score": 2, "text": "Die SW wird auf Anfrage dem Kunden demonstriert."},
-        {"score": 3, "text": "Die SW wird regelmäßig (festgelegt) dem Kunden demonstriert."},
-        {"score": 4, "text": "Die SW wird regelmäßig allen Stakeholdern (inkl. allen Entwicklern) demonstriert und feedback wird eingeholt."}
+        {"score": 0, "text": "Die Software wird am Ende ausgeliefert und nicht extra demonstriert."},
+        {"score": 1, "text": "Die Software wird am Ende ausgeliefert und sorgfältig demonstriert."},
+        {"score": 2, "text": "Die Software wird auf Anfrage dem Kunden auch während der Entwicklungsphase demonstriert."},
+        {"score": 3, "text": "Die Software wird regelmäßig (festgelegt) dem Kunden demonstriert."},
+        {"score": 4, "text": "Die Software wird regelmäßig allen Stakeholdern (inkl. allen Entwicklern) demonstriert und feedback wird eingeholt."}
       ]
     },
     {
-      "title": "Refactoring",
+      "title": "Wie häufig wird bestehender Code im laufe des Projekts überarbeitet und verbessert?",
       "cite": "https://link.springer.com/book/10.1007/978-3-658-33395-9",
       "answers": [
         {"score": 0, "text": "Der Quellcode und dessen Dokumentation werden nicht überarbeitet."},
@@ -67,7 +67,7 @@
       ]
     },
     {
-      "title": "Code-Review",
+      "title": "Wird neuer Code durch andere Entwicklungspersonen überprüft und validiert?",
       "cite": "https://link.springer.com/book/10.1007/978-3-658-33395-9",
       "answers": [
         {"score": 0, "text": "Neue Codeabschnitte und alle Codeänderung werden nicht überprüft."},
@@ -80,51 +80,51 @@
   ],
   "organisation": [
     {
-      "title": "Agile Transition Team",
-      "cite": "Hier fehlt Quelle!",
+      "title": "Wird ein Agile Transition Team gewinnbringend eingesetzt?",
+      "cite": "Schwaber, K., & Beedle, M. (2002). Agile Software Development with Scrum. Prentice Hall",
       "answers": [
-        {"score": 0, "text": "Gibt es ein dediziertes Team, das sich ausschließlich mit der Einführung agiler Methoden und Prozesse im Unternehmen befasst?"},
-        {"score": 1, "text": "Verfügt das Unternehmen/Abteilung über ein Team, das sich mit der Einführung und Umsetzung agiler Methoden und Prozesse befasst, und hat dieses Team klare Ziele und Verantwortlichkeiten?"},
-        {"score": 2, "text": "Sind die Ziele und Verantwortlichkeiten des Agile Transition Teams im Unternehmen festgelegt und dokumentiert und werden diese regelmäßig überprüft und gegebenenfalls angepasst?"},
-        {"score": 3, "text": "Ist das Agile Transition Team im Unternehmen gut ausgebildet und erfahren und kann es daher die Einführung agiler Methoden und Prozesse erfolgreich vorantreiben und Schwierigkeiten schnell und effektiv lösen?"},
-        {"score": 4, "text": "Führt das Agile Transition Team im Unternehmen regelmäßige Retrospektiven durch, um die Einführung agiler Methoden und Prozesse kontinuierlich zu verbessern und zu optimieren?"}
+        {"score": 0, "text": "Es gibt ein dediziertes Team, das sich ausschließlich mit der Einführung agiler Methoden und Prozesse im Unternehmen befasst."},
+        {"score": 1, "text": "Das Unternehmen/Abteilung verfügt über ein Team, welches sich mit der Einführung und Umsetzung agiler Methoden und Prozesse befasst, und  zudem klare Ziele und Verantwortlichkeiten hat."},
+        {"score": 2, "text": "Die Ziele und Verantwortlichkeiten des Agile Transition Teams sind im Unternehmen festgelegt und dokumentiert und werden regelmäßig überprüft und gegebenenfalls angepasst."},
+        {"score": 3, "text": "Das Agile Transition Team ist im Unternehmen gut ausgebildet und erfahren und kann daher die Einführung agiler Methoden und Prozesse erfolgreich vorantreiben und Schwierigkeiten schnell und effektiv lösen."},
+        {"score": 4, "text": "Das Agile Transition Team führt im Unternehmen regelmäßige Retrospektiven durch, um die Einführung agiler Methoden und Prozesse kontinuierlich zu verbessern und zu optimieren."}
       ]
     },
     {
-      "title": "Agile Coach in der Abteilung",
-      "cite": "Hier fehlt Quelle!",
+      "title": "Wird ein Agile Coach in der Abteilung gewinnbringend eingesetzt?",
+      "cite": "Highsmith, J. (2002). Agile Software Development Ecosystems. Addison-Wesley",
       "answers": [
-        {"score": 0, "text": "Verfügt das Unternehmen/Abteilung über einen dedizierten Agile Coach, der das Unternehmen bei der Einführung agiler Methoden und Prozesse unterstützt?"},
-        {"score": 1, "text": "Verfügt das Unternehmen über einen Agile Coach, der das Unternehmen bei der Einführung und Umsetzung agiler Methoden und Prozesse unterstützt und hat dieser klare Ziele und Verantwortlichkeiten?"},
-        {"score": 2, "text": "Sind die Ziele und Verantwortlichkeiten des Agile Coaches im Unternehmen festgelegt und dokumentiert und werden diese regelmäßig überprüft und gegebenenfalls angepasst?"},
-        {"score": 3, "text": "Ist der Agile Coach im Unternehmen gut ausgebildet und erfahren und kann er daher das Unternehmen erfolgreich bei der Einführung agiler Methoden und Prozesse unterstützen und Schwierigkeiten schnell und effektiv lösen?"},
-        {"score": 4, "text": "Führt der Agile Coach im Unternehmen regelmäßige Retrospektiven durch, um die Einführung agiler Methoden und Prozesse kontinuierlich zu verbessern und zu optimieren?."}
+        {"score": 0, "text": "Das Unternehmen/Abteilung verfügt über einen dedizierten Agile Coach, der das Unternehmen bei der Einführung agiler Methoden und Prozesse unterstützt."},
+        {"score": 1, "text": "Das Unternehmen verfügt über einen Agile Coach, der das Unternehmen bei der Einführung und Umsetzung agiler Methoden und Prozesse unterstützt und  zudem klare Ziele und Verantwortlichkeiten hat."},
+        {"score": 2, "text": "Die Ziele und Verantwortlichkeiten des Agile Coaches sind im Unternehmen festgelegt und dokumentiert und werden regelmäßig überprüft und gegebenenfalls angepasst."},
+        {"score": 3, "text": "Der Agile Coach ist im Unternehmen gut ausgebildet und erfahren und kann daher das Unternehmen erfolgreich bei der Einführung agiler Methoden und Prozesse unterstützen und Schwierigkeiten schnell und effektiv lösen."},
+        {"score": 4, "text": "Der Agile Coach führt im Unternehmen regelmäßige Retrospektiven durch, um die Einführung agiler Methoden und Prozesse kontinuierlich zu verbessern und zu optimieren."}
       ]
     },
     {
-      "title": "Priorisierte Übersicht aller Produktanforderungen",
+      "title": "Existiert eine priorisierte Übersicht aller Produktanforderungen?",
       "cite": "https://link.springer.com/content/pdf/10.1007/s11612-020-00522-0.pdf",
       "answers": [
         {"score": 0, "text": "Es gib eine Übersicht aller Kundenanforderungen."},
-        {"score": 1, "text": "Die Kundenanforderungen werden zu Beginn in konkrete Entwicklungsaufgaben überführt (Übersicht vorhanden)"},
+        {"score": 1, "text": "Die Kundenanforderungen werden zu Beginn in konkrete Entwicklungsaufgaben überführt (Übersicht vorhanden)."},
         {"score": 2, "text": "Die Aufgaben werden regelmäßig von/mit Entwicklern in Aufgaben formuliert."},
         {"score": 3, "text": "Es gibt einen Product Owner, der die Aufgaben pflegt und die Übersicht aktuell hält."},
-        {"score": 4, "text": "Es gibt einen Product Owner, der die Aufgaben täglich Pflegt, kategorisiert, priorisiert und mit Entwicklern abstimmt."}
+        {"score": 4, "text": "Es gibt einen Product Owner, der die Aufgaben täglich pflegt, kategorisiert, priorisiert und mit Entwicklern abstimmt."}
       ]
     },
     {
-      "title": "Kick-Off-Workshop zum sammeln der Anforderung (alle Stakeholder)",
+      "title": "Werden Kick-Off-Workshops zum Sammeln der Anforderung (alle Stakeholder) durchgeführt?",
       "cite": "https://link.springer.com/content/pdf/10.1007/s11612-020-00522-0.pdf",
       "answers": [
         {"score": 0, "text": "Es findet keinerlei interaktiver Kundenaustausch zu Anforderungen statt"},
-        {"score": 1, "text": "Die Anforderungen kommen vom Kunden und werden teilweise zur Diskussion gestellt (hin und her Kommunikation)"},
+        {"score": 1, "text": "Die Anforderungen kommen vom Kunden und werden teilweise zur Diskussion gestellt (hin und her Kommunikation)."},
         {"score": 2, "text": "Ausgewählte Personen des Projekts führen Austausch mit Kunden zu Anforderungen durch."},
-        {"score": 3, "text": "Zu Beginn findet ein Workshop aller beteiligten statt, um die Anforderungen vollständig festzulegen"},
-        {"score": 4, "text": "Zu Beginn findet mit allen Stakeholdern ein Workshop statt. Ergebnisse werden festgehalten. Jedoch für grundlegende Veränderungen offen"}
+        {"score": 3, "text": "Zu Beginn findet ein Workshop aller Beteiligten statt, um die Anforderungen vollständig festzulegen."},
+        {"score": 4, "text": "Zu Beginn findet mit allen Stakeholdern ein Workshop statt. Ergebnisse werden festgehalten. Jedoch für grundlegende Veränderungen offen."}
       ]
     },
     {
-      "title": "Klar definierte Rollen im Projekt",
+      "title": "Werden Rollen in Projekten klar definiert?",
       "cite": "https://link.springer.com/content/pdf/10.1007/s11612-020-00522-0.pdf",
       "answers": [
         {"score": 0, "text": "Es gibt kein klar abgrenzbares Entwicklerteam."},
@@ -135,7 +135,7 @@
       ]
     },
     {
-      "title": "Formulieren von User Stories",
+      "title": "Werden User Stories ausformuliert?",
       "cite": "https://link.springer.com/content/pdf/10.1007/s11612-020-00522-0.pdf",
       "answers": [
         {"score": 0, "text": "User Stories werden nicht oder nur sporadisch benutzt."},
@@ -146,25 +146,25 @@
       ]
     },
     {
-      "title": "Bereichsübergreifende Teams",
+      "title": "Existieren bereichsübergreifende Teams (z.B. aus Devs, Designern, Business, etc.)?",
       "cite": "https://cs.emis.de/LNI/Proceedings/Proceedings263/161.pdf",
       "answers": [
         {"score": 0, "text": "Das Projektteam hat keine klaren Bereichsdefinitionen (einzelne Personen arbeiten interdisziplinär)."},
         {"score": 1, "text": "Das Team besteht hauptsächlich aus Entwicklern, andere Bereiche arbeiten ihm zu."},
-        {"score": 2, "text": "Das Team besteht hauptsächlich aus Entwicklern, bestimmte Spezialisten stehen zu verfügung."},
+        {"score": 2, "text": "Das Team besteht hauptsächlich aus Entwicklern, bestimmte Spezialisten stehen zur Verfügung."},
         {"score": 3, "text": "Das Team besteht aus interdisziplinären Teilen (Devs, Designer,…) vereinzelt werden Spezialisten herangezogen"},
         {"score": 4, "text": "Das Team besteht vollständig aus interdisziplinären Teilen (alles abgedeckt)."}
       ]
     },
     {
-      "title": "Pair-Programming",
+      "title": "Wird das Prinzip des Pair-Programmings angewendet?",
       "cite": ["https://link.springer.com/book/10.1007/978-3-658-33395-9", "https://mediatum.ub.tum.de/doc/1094277/file.pdf"],
       "answers": [
-        {"score": 0, "text": "Die Programierer arbeiten allein und finden keine Pair-Programming statt."},
-        {"score": 1, "text": "Das Pair-Programming findet nur für neur Mitarbeiterinnen statt."},
-        {"score": 2, "text": "Die Programmiere arbeiten hauptsächlich allein. Bei den schwierigen Aufgaben wenden sich die Mitarbeiter gelegntlich an den Experten für ein Pair-Programming."},
-        {"score": 3, "text": "Das Pair-Programming finden regelmässig mit festen Terminen zwischen zwei Team-Mitarglieder regelmäsig statt."},
-        {"score": 4, "text": "Mindestens zwei Team-Mitarglieder arbeiten eng zusammen und tauschen sich öfter beim Pair-Programming ihr Wissen aus."}
+        {"score": 0, "text": "Die Programierer arbeiten allein und somit findet kein Pair-Programming statt."},
+        {"score": 1, "text": "Das Pair-Programming wird nur für neue Mitarbeiter angewendet."},
+        {"score": 2, "text": "Die Programmierer arbeiten hauptsächlich allein. Bei den schwierigen Aufgaben wenden sich die Mitarbeiter gelegentlich an den Experten für ein Pair-Programming."},
+        {"score": 3, "text": "Das Pair-Programming findet regelmäßig mit festen Terminen zwischen zwei Team-Mitgliedern statt."},
+        {"score": 4, "text": "Mindestens zwei Team-Mitglieder arbeiten eng zusammen und tauschen sich öfter beim Pair-Programming ihr Wissen aus."}
       ]
     }
   ],
