@@ -227,51 +227,51 @@
   ],
   "skills_culture": [
     {
-      "title": "Agiles Mindset",
+      "title": "Wird das agile Mindset genutzt?",
       "cite": "",
       "answers": [
-        {"score": 0, "text": "Haben die Mitglieder des Entwicklungsteams ein grundlegendes Verständnis von agilen Werte- und Prinzipien?"},
-        {"score": 1, "text": "Setzen die Mitglieder des Entwicklungsteams agile Werte und Prinzipien bewusst in ihrem täglichen Arbeitsalltag um?"},
-        {"score": 2, "text": "Wird das agile Mindset im gesamten Unternehmen gelebt und unterstützt, inklusive Führungsebene?"},
-        {"score": 3, "text": "Nutzen die Mitglieder des Entwicklungsteams ihr agiles Mindset, um kontinuierlich ihre Arbeitsweisen zu verbessern und Anpassungen vorzunehmen?"},
-        {"score": 4, "text": "Wird das agile Mindset proaktiv genutzt, um neue Geschäftsmöglichkeiten zu identifizieren und zu nutzen sowie den Wertbeitrag des Entwicklungsteams zu maximieren?"}
+        {"score": 0, "text": "Die Mitglieder des Entwicklungsteams haben ein grundlegendes Verständnis von agilen Werte- und Prinzipien."},
+        {"score": 1, "text": "Die Mitglieder des Entwicklungsteams setzen agile Werte und Prinzipien bewusst in ihrem täglichen Arbeitsalltag um."},
+        {"score": 2, "text": "Das agile Mindset im gesamten Unternehmen wird  gelebt und unterstützt, inklusive Führungsebene."},
+        {"score": 3, "text": "Die Mitglieder des Entwicklungsteams nutzen ihr agiles Mindset, um kontinuierlich ihre Arbeitsweisen zu verbessern und Anpassungen vorzunehmen."},
+        {"score": 4, "text": "Das agile Mindset wird proaktiv genutzt, um neue Geschäftsmöglichkeiten zu identifizieren und zu nutzen sowie den Wertbeitrag des Entwicklungsteams zu maximieren."}
       ]
     },
     {
-      "title": "Schulungen zur Agilen SWE",
+      "title": "Werden Schulungen zur agilen Softwareentwicklung benutzt?",
       "cite": "",
       "answers": [
-        {"score": 0, "text": "Bietet das Unternehmen Schulungen zur agilen Softwareentwicklung für seine Mitarbeiter an, um ihre Fähigkeiten in diesem Bereich zu verbessern?"},
-        {"score": 1, "text": "Wurden Schulungen zur agilen Softwareentwicklung bereits in das Weiterbildungsprogramm des Unternehmens aufgenommen und in regelmäßigen Abständen angeboten?"},
-        {"score": 2, "text": "Werden Schulungen zur agilen Softwareentwicklung für alle Mitarbeiter des Unternehmens verpflichtend angeboten, um ein einheitliches Verständnis und Wissen in diesem Bereich zu gewährleisten?"},
-        {"score": 3, "text": "Werden Schulungen zur agilen Softwareentwicklung regelmäßig von erfahrenen Mitarbeitern des Unternehmens geleitet und auf individuelle Bedürfnisse der Teilnehmer abgestimmt?"},
-        {"score": 4, "text": "Werden Schulungen zur agilen Softwareentwicklung regelmäßig evaluiert und angepasst, um sicherzustellen, dass sie den aktuellen Bedürfnissen und Anforderungen des Unternehmens entsprechen?"}
+        {"score": 0, "text": "Das Unternehmen bietet Schulungen zur agilen Softwareentwicklung für seine Mitarbeiter an, um ihre Fähigkeiten in diesem Bereich zu verbessern"},
+        {"score": 1, "text": "Schulungen wurden zur agilen Softwareentwicklung bereits in das Weiterbildungsprogramm des Unternehmens aufgenommen und in regelmäßigen Abständen angeboten."},
+        {"score": 2, "text": "Schulungen werden zur agilen Softwareentwicklung für alle Mitarbeiter des Unternehmens verpflichtend angeboten, um ein einheitliches Verständnis und Wissen in diesem Bereich zu gewährleisten."},
+        {"score": 3, "text": "Schulungen werden zur agilen Softwareentwicklung regelmäßig von erfahrenen Mitarbeitern des Unternehmens geleitet und auf individuelle Bedürfnisse der Teilnehmer abgestimmt."},
+        {"score": 4, "text": "Schulungen werden zur agilen Softwareentwicklung regelmäßig evaluiert und angepasst, um sicherzustellen, dass sie den aktuellen Bedürfnissen und Anforderungen des Unternehmens entsprechen."}
       ]
     },
     {
-      "title": "Einbezug von Mitarbeitenden (Entwicklern) bei Formulierung der Unternehmensziele",
+      "title": "Wie werden Unternehmensziele in Projektteams formuliert und zusammengeführt?",
       "cite": "https://link.springer.com/content/pdf/10.1007/s11612-020-00522-0.pdf",
       "answers": [
-        {"score": 0, "text": "Unternehmensziele werden außerhalb des Projektteams bestimmt"},
+        {"score": 0, "text": "Unternehmensziele werden außerhalb des Projektteams bestimmt."},
         {"score": 1, "text": "Unternehmensziele werden außerhalb definiert, jeder hat überblick und kann Kritik üben"},
-        {"score": 2, "text": "Unternehmensziele werden mit Projektteams besprochen + Diskussionen"},
+        {"score": 2, "text": "Unternehmensziele werden mit Projektteams besprochen + Diskussionen."},
         {"score": 3, "text": "Unternehmensziele werden zsm mit Projektteams formuliert."},
-        {"score": 4, "text": "Unternehmensziele werden ausschließlich in Projektteams formuliert und zusammengeführt"}
+        {"score": 4, "text": "Unternehmensziele werden ausschließlich in Projektteams formuliert und zusammengeführt."}
       ]
     },
     {
-      "title": "Alle Mitarbeitenden sollen aktiv mitgestalten (Unternehmenskultur zu verbessern)",
+      "title": "Werden Probleme und Änderungswünsche im Unternehmen berücksichtigt und diskutiert?",
       "cite": "https://link.springer.com/content/pdf/10.1007/s11612-020-00522-0.pdf",
       "answers": [
         {"score": 0, "text": "Die Unternehmenskultur ist nicht veränderbar."},
-        {"score": 1, "text": "manche Mitarbeitenden haben Einfluss auf Veränderung im Unternehmen."},
+        {"score": 1, "text": "Manche Mitarbeitenden haben Einfluss auf Veränderung im Unternehmen."},
         {"score": 2, "text": "Es gibt Möglichkeiten zur Kommunikation bei Problemen und Änderungswünschen."},
         {"score": 3, "text": "Es gibt für jeden Mitarbeitenden die gleichen Möglichkeiten Probleme und Änderungswünsche offen zu kommunizieren."},
         {"score": 4, "text": "Probleme und Änderungswünsche werden umgehend berücksichtigt und diskutiert."}
       ]
     },
     {
-      "title": "Besprechung von Konflikten",
+      "title": "Werden die Probleme und Konfilikte im Unternehmen diskutiert?",
       "cite": "https://link.springer.com/content/pdf/10.1007/s11612-020-00522-0.pdf",
       "answers": [
         {"score": 0, "text": "Es gibt keine Struktur zur Problembesprechung."},
@@ -281,7 +281,7 @@
         {"score": 4, "text": "Es finden regelmäßige Retrospektiven zur Besprechung von Abläufen, Konflikten und dem Entwicklungsprozess statt. Von unabhängigem moderiert."}
       ]
     },{
-      "title": "Gute Möglichkeit zur Weiterbildung",
+      "title": "Steht Weiterbildungsmöglichkeiten für die Mitarbeiter zur Verfügung?",
       "cite": "https://link.springer.com/content/pdf/10.1007/s11612-020-00522-0.pdf",
       "answers": [
         {"score": 0, "text": "Es gibt keine Möglichkeiten zur Weiterbildung."},
@@ -292,29 +292,29 @@
       ]
     },
     {
-      "title": "In einer konstanten Geschwindigkeit arbeiten",
+      "title": "Wie wird Arbeitsgeschwindigkeit im Unternehmen geregelt?",
       "cite": "https://t73f.de/hochschule/thesis/2016_philipp.pdf, Kapitel 2.6",
       "answers": [
-        {"score": 0, "text": "Können Teams ihre Arbeitsgeschwindigkeit durchgängig und stabil halten?"},
-        {"score": 1, "text": "Werden Ressourcen und Kapazitäten im Team gut geplant und eingesetzt, um die Arbeitsgeschwindigkeit zu stabilisieren?"},
-        {"score": 2, "text": "Sind Prozesse und Arbeitsabläufe im Team etabliert und dokumentiert, um die konstante Arbeitsgeschwindigkeit zu ermöglichen?"},
-        {"score": 3, "text": "Werden regelmäßige Retrospektiven durchgeführt, um Schwankungen in der Arbeitsgeschwindigkeit zu identifizieren und zu beheben?"},
-        {"score": 4, "text": "Führen Teams kontinuierliche Experimente und Anpassungen an ihren Prozessen und Arbeitsabläufen durch, um die Konstante Arbeitsgeschwindigkeit zu verbessern?"}
+        {"score": 0, "text": "Teams können ihre Arbeitsgeschwindigkeit durchgängig und stabil halten."},
+        {"score": 1, "text": "Ressourcen und Kapazitäten werden im Team gut geplant und eingesetzt, um die Arbeitsgeschwindigkeit zu stabilisieren."},
+        {"score": 2, "text": "Prozesse und Arbeitsabläufe sind im Team etabliert und dokumentiert, um die konstante Arbeitsgeschwindigkeit zu ermöglichen."},
+        {"score": 3, "text": "Regelmäßige werden Retrospektiven durchgeführt, um Schwankungen in der Arbeitsgeschwindigkeit zu identifizieren und zu beheben."},
+        {"score": 4, "text": "Teams führen kontinuierliche Experimente und Anpassungen an ihren Prozessen und Arbeitsabläufen durch, um die Konstante Arbeitsgeschwindigkeit zu verbessern."}
       ]
     },
     {
-      "title": "Team selbst organisiert arbeiten und verbessern lassen",
+      "title": "Wie wird Selbstorganisations der Teams geregelt?",
       "cite": "https://t73f.de/hochschule/thesis/2016_philipp.pdf, Kapitel 2.6",
       "answers": [
-        {"score": 0, "text": "Können Teams ihre Arbeitsaufgaben selbstständig planen und priorisieren?"},
-        {"score": 1, "text": "Werden klare Verantwortlichkeiten und Entscheidungsbefugnisse innerhalb der Teams festgelegt?"},
-        {"score": 2, "text": "Sind Prozesse und Arbeitsabläufe im Team etabliert und dokumentiert?"},
-        {"score": 3, "text": "Werden regelmäßige Retrospektiven durchgeführt, um die Selbstorganisation im Team zu verbessern?"},
-        {"score": 4, "text": "Führen Teams kontinuierliche Experimente und Anpassungen an ihren Prozessen und Arbeitsabläufen durch, um die Selbstorganisation zu verbessern?"}
+        {"score": 0, "text": "Teams können ihre Arbeitsaufgaben selbstständig planen und priorisieren."},
+        {"score": 1, "text": "Klare Verantwortlichkeiten und Entscheidungsbefugnisse werden innerhalb der Teams festgelegt."},
+        {"score": 2, "text": "Prozesse und Arbeitsabläufe sind im Team etabliert und dokumentiert."},
+        {"score": 3, "text": "Regelmäßige  werden Retrospektiven durchgeführt, um die Selbstorganisation im Team zu verbessern."},
+        {"score": 4, "text": "Teams führen kontinuierliche Experimente und Anpassungen an ihren Prozessen und Arbeitsabläufen durch, um die Selbstorganisation zu verbessern."}
       ]
     },
     {
-      "title": "Mitarbeiter kommunizieren offen und werden durch Führungskraft unterstützt und gefördert",
+      "title": "Kommunizieren Mitarbeiter offen und werden durch Führungskraft unterstützt und gefördert?",
       "cite": "https://cs.emis.de/LNI/Proceedings/Proceedings263/161.pdf",
       "answers": [
         {"score": 0, "text": "Keine Kommunikation zwischen Mitarbeitern und Führungskräften."},
@@ -325,7 +325,7 @@
       ]
     },
     {
-      "title": "Feedback-Kultur",
+      "title": "Existiert Feedback-Kultur im Unternehmen?",
       "cite": "https://cs.emis.de/LNI/Proceedings/Proceedings263/161.pdf",
       "answers": [
         {"score": 0, "text": "Keine Feedack Kultur vorhanden."},
@@ -336,7 +336,7 @@
       ]
     },
     {
-      "title": "Kontinuierliche, fachliche und technische Weiterentwicklungen",
+      "title": "Werden kontinuierliche, fachliche und technische Weiterentwicklungen angeboten?",
       "cite": "https://cs.emis.de/LNI/Proceedings/Proceedings263/161.pdf",
       "answers": [
         {"score": 0, "text": "Es passiert keine fachliche oder technische Weiterentwicklung."},
@@ -349,7 +349,7 @@
   ],
   "strategy": [
     {
-      "title": "Primäres Ziel: Produkt voll auf Kundenwünsche abstimmen.",
+      "title": "Wie werden die Ziele der Projekte im Unternehmen abgestimmt?",
       "cite": "https://link.springer.com/content/pdf/10.1007/s11612-020-00522-0.pdf",
       "answers": [
         {"score": 0, "text": "Es gehen keine klaren Ziele hervor. Immer andere Zielsetzung."},
@@ -360,7 +360,7 @@
       ]
     },
     {
-      "title": "Individuelle Kundenbedürfnisse werden konstant berücksichtigt. Schnelle, flexible Entscheidungen treffen",
+      "title": "Werden individuelle Kundenbedürfnisse konstant berücksichtigt?",
       "cite": "https://link.springer.com/content/pdf/10.1007/s11612-020-00522-0.pdf",
       "answers": [
         {"score": 0, "text": "Es können keine Veränderungen berücksichtigt werden"},
@@ -371,7 +371,7 @@
       ]
     },
     {
-      "title": "Mitarbeitende führen Aufwandsabschätzung selbst durch werden mit der Zeit besser",
+      "title": "Wie werden die mitarbeitende Aufwandsabschätzung durchgeführt?",
       "cite": "https://link.springer.com/content/pdf/10.1007/s11612-020-00522-0.pdf",
       "answers": [
         {"score": 0, "text": "Es wird keinerlei Aufwandsabschätzung durchgeführt."},
@@ -382,7 +382,7 @@
       ]
     },
     {
-      "title": "persönliche Ziele für jeden Mitarbeiter klar abgesteckt",
+      "title": "Werden die persönliche Ziele für jeden Mitarbeiter klar abgesteck?",
       "cite": "https://link.springer.com/content/pdf/10.1007/s11612-020-00522-0.pdf",
       "answers": [
         {"score": 0, "text": "Es wird nicht über persönliche Ziele gesprochen."},
@@ -393,62 +393,62 @@
       ]
     },
     {
-      "title": "Sehr eng mit Kunden zusammenarbeiten",
+      "title": "Wie ist die Zusammenarbeit mit Kunden gestalltet?",
       "cite": "https://t73f.de/hochschule/thesis/2016_philipp.pdf, Kapitel 2.6",
       "answers": [
-        {"score": 0, "text": "Haben Teams eine enge Beziehung zu ihren Kunden aufgebaut und treten regelmäßig in Kontakt mit ihnen?"},
-        {"score": 1, "text": "Werden spezifische Mechanismen genutzt, um die Anforderungen und Bedürfnisse der Kunden zu erfassen und in die Entwicklung einzubeziehen?"},
-        {"score": 2, "text": "Sind feste Kundenkontaktpunkte und Feedback-Schleifen etabliert, um die enge Zusammenarbeit zu gewährleisten?"},
-        {"score": 3, "text": "Werden regelmäßige Kunden-Demos und -Präsentationen durchgeführt, um das Feedback und die Zufriedenheit der Kunden zu messen?"},
-        {"score": 4, "text": "Nutzen Teams fortschrittliche Technologien und Methoden, um die enge Zusammenarbeit mit ihren Kunden zu verbessern und zu vertiefen?"}
+        {"score": 0, "text": "Teams haben eine enge Beziehung zu ihren Kunden aufgebaut und treten regelmäßig in Kontakt mit ihnen."},
+        {"score": 1, "text": "Spezifische Mechanismen werden genutzt, um die Anforderungen und Bedürfnisse der Kunden zu erfassen und in die Entwicklung einzubeziehen?"},
+        {"score": 2, "text": "Feste Kundenkontaktpunkte und Feedback-Schleifen sind etabliert, um die enge Zusammenarbeit zu gewährleisten?"},
+        {"score": 3, "text": "Regelmäßige Kunden-Demos und -Präsentationen werden durchgeführt, um das Feedback und die Zufriedenheit der Kunden zu messen."},
+        {"score": 4, "text": "Teams nutzen fortschrittliche Technologien und Methoden, um die enge Zusammenarbeit mit ihren Kunden zu verbessern und zu vertiefen."}
       ]
     },
     {
-      "title": "Kundenbedürfnisse und -befriedigung an oberster Stelle",
+      "title": "Wie wird mit Kundenbedürfnisse und -befriedigungen umgegangen?",
       "cite": "https://t73f.de/hochschule/thesis/2016_philipp.pdf, Kapitel 2.6",
       "answers": [
-        {"score": 0, "text": "Können Teams die Bedürfnisse und Anforderungen ihrer Kunden genau erfassen und in ihre Entwicklungsarbeit einbeziehen?"},
-        {"score": 1, "text": "Werden spezifische Mechanismen genutzt, um die Kundenbedürfnisse zu erfassen, zu priorisieren und zu verfolgen?"},
-        {"score": 2, "text": "Sind Prozesse und Arbeitsabläufe im Team etabliert und dokumentiert, um die Kundenbedürfnisse und -befriedigung zu gewährleisten?"},
-        {"score": 3, "text": "Werden regelmäßige Kunden-Demos und -Präsentationen durchgeführt, um die Kundenbedürfnisse und -befriedigung zu überprüfen und zu verbessern?"},
-        {"score": 4, "text": "Nutzen Teams fortschrittliche Technologien und Methoden, um die Kundenbedürfnisse und -befriedigung zu optimieren und zu maximieren?"}
+        {"score": 0, "text": "Teams können die Bedürfnisse und Anforderungen ihrer Kunden genau erfassen und in ihre Entwicklungsarbeit einbeziehen."},
+        {"score": 1, "text": "Spezifische Mechanismen werden genutzt, um die Kundenbedürfnisse zu erfassen, zu priorisieren und zu verfolgen."},
+        {"score": 2, "text": "Prozesse und Arbeitsabläufe sind im Team etabliert und dokumentiert, um die Kundenbedürfnisse und -befriedigung zu gewährleisten."},
+        {"score": 3, "text": "Regelmäßige werden Kunden-Demos und -Präsentationen durchgeführt, um die Kundenbedürfnisse und -befriedigung zu überprüfen und zu verbessern."},
+        {"score": 4, "text": "Teams nutzen fortschrittliche Technologien und Methoden, um die Kundenbedürfnisse und -befriedigung zu optimieren und zu maximieren."}
       ]
     },
     {
-      "title": "Früh und häufig Software an Kunden liefern",
+      "title": "Wie erfolgt die Softwareauslieferung?",
       "cite": "https://t73f.de/hochschule/thesis/2016_philipp.pdf, Kapitel 2.6",
       "answers": [
-        {"score": 0, "text": "Können Teams häufig Softwareauslieferungen durchführen, ohne dabei die Qualität der Software zu beeinträchtigen?"},
-        {"score": 1, "text": "Werden spezifische Mechanismen genutzt, um die Qualität und Integrität der Software während der häufigen Auslieferungen sicherzustellen?"},
-        {"score": 2, "text": "Sind Prozesse und Arbeitsabläufe im Team etabliert und dokumentiert, um die frühen und häufigen Softwareauslieferungen zu ermöglichen und zu unterstützen?"},
-        {"score": 3, "text": "Werden regelmäßige Überprüfungen und Anpassungen der Prozesse und Arbeitsabläufe durchgeführt, um die frühen und häufigen Softwareauslieferungen zu verbessern und zu optimieren?"},
-        {"score": 4, "text": "Nutzen Teams fortschrittliche Technologien und Methoden, um die frühen und häufigen Softwareauslieferungen noch weiter zu beschleunigen und zu verbessern?"}
+        {"score": 0, "text": "Teams können häufig Softwareauslieferungen durchführen, ohne dabei die Qualität der Software zu beeinträchtigen."},
+        {"score": 1, "text": "Spezifische Mechanismen werden genutzt, um die Qualität und Integrität der Software während der häufigen Auslieferungen sicherzustellen."},
+        {"score": 2, "text": "Prozesse und Arbeitsabläufe sind im Team etabliert und dokumentiert, um die frühen und häufigen Softwareauslieferungen zu ermöglichen und zu unterstützen."},
+        {"score": 3, "text": "Regelmäßige Überprüfungen und Anpassungen der Prozesse und Arbeitsabläufe werden durchgeführt, um die frühen und häufigen Softwareauslieferungen zu verbessern und zu optimieren."},
+        {"score": 4, "text": "Teams nutzen fortschrittliche Technologien und Methoden, um die frühen und häufigen Softwareauslieferungen noch weiter zu beschleunigen und zu verbessern."}
       ]
     },
     {
-      "title": "Veränderungen akzeptieren und darauf reagieren",
+      "title": "Wie reagiert Teams im Unternehmen, wenn Veränderungen im Projekt vorkommen?",
       "cite": "https://t73f.de/hochschule/thesis/2016_philipp.pdf, Kapitel 2.6",
       "answers": [
-        {"score": 0, "text": "Können Teams schnell und flexibel auf Veränderungen in ihren Anforderungen und Umgebungen reagieren?"},
-        {"score": 1, "text": "Werden spezifische Mechanismen genutzt, um Veränderungen in Anforderungen und Umgebungen zu erkennen und zu verarbeiten?"},
-        {"score": 2, "text": "Sind Prozesse und Arbeitsabläufe im Team etabliert und dokumentiert, um die Akzeptanz von Veränderungen zu fördern und zu unterstützen?"},
-        {"score": 3, "text": "Werden regelmäßige Retrospektiven durchgeführt, um die Fähigkeit des Teams, Veränderungen zu akzeptieren und darauf zu reagieren, zu verbessern?"},
-        {"score": 4, "text": "Nutzen Teams fortschrittliche Technologien und Methoden, um ihre Flexibilität und ihre Fähigkeit, auf Veränderungen zu reagieren, weiter zu verbessern?"}
+        {"score": 0, "text": "Teams können schnell und flexibel auf Veränderungen in ihren Anforderungen und Umgebungen reagieren."},
+        {"score": 1, "text": "Spezifische Mechanismen werden genutzt, um Veränderungen in Anforderungen und Umgebungen zu erkennen und zu verarbeiten."},
+        {"score": 2, "text": "Prozesse und Arbeitsabläufe sind im Team etabliert und dokumentiert, um die Akzeptanz von Veränderungen zu fördern und zu unterstützen."},
+        {"score": 3, "text": "Regelmäßige Retrospektiven werden durchgeführt, um die Fähigkeit des Teams, Veränderungen zu akzeptieren und darauf zu reagieren, zu verbessern."},
+        {"score": 4, "text": "Teams nutzen fortschrittliche Technologien und Methoden, um ihre Flexibilität und ihre Fähigkeit, auf Veränderungen zu reagieren, weiter zu verbessern."}
       ]
     },
     {
-      "title": "Nur Dinge implementieren, die implementiert werden müssen und Nutzen für Kunden haben",
+      "title": "Wie werden die Anforderungen und Funktionen implementiert, um den Nutzen für den Kunden zu maximieren?",
       "cite": "https://t73f.de/hochschule/thesis/2016_philipp.pdf, Kapitel 2.6",
       "answers": [
-        {"score": 0, "text": "Können Teams sicherstellen, dass sie nur die wichtigsten und wertvollsten Anforderungen und Funktionen implementieren?"},
-        {"score": 1, "text": "Werden spezifische Mechanismen genutzt, um die Priorisierung der Anforderungen und Funktionen zu unterstützen und sicherzustellen, dass nur die wichtigsten und wertvollsten implementiert werden?"},
-        {"score": 2, "text": "Sind Prozesse und Arbeitsabläufe im Team etabliert und dokumentiert, um sicherzustellen, dass nur die Anforderungen und Funktionen implementiert werden, die tatsächlich einen Nutzen für den Kunden haben?"},
-        {"score": 3, "text": "Werden regelmäßige Kunden-Feedbacks und -Tests durchgeführt, um sicherzustellen, dass nur die wirklich wichtigen und wertvollen Anforderungen und Funktionen implementiert werden?"},
-        {"score": 4, "text": "Nutzen Teams fortschrittliche Technologien und Methoden, um sicherzustellen, dass sie nur die wirklich wichtigen und wertvollen Anforderungen und Funktionen implementieren und damit den Nutzen für den Kunden maximieren?"}
+        {"score": 0, "text": "Teams können sicherstellen, dass sie nur die wichtigsten und wertvollsten Anforderungen und Funktionen implementieren."},
+        {"score": 1, "text": "Spezifische Mechanismen werden genutzt, um die Priorisierung der Anforderungen und Funktionen zu unterstützen und sicherzustellen, dass nur die wichtigsten und wertvollsten implementiert werden."},
+        {"score": 2, "text": "Prozesse und Arbeitsabläufe sind im Team etabliert und dokumentiert, um sicherzustellen, dass nur die Anforderungen und Funktionen implementiert werden, die tatsächlich einen Nutzen für den Kunden haben."},
+        {"score": 3, "text": "Regelmäßige Kunden-Feedbacks und -Tests werden durchgeführt, um sicherzustellen, dass nur die wirklich wichtigen und wertvollen Anforderungen und Funktionen implementiert werden."},
+        {"score": 4, "text": "Teams nutzen fortschrittliche Technologien und Methoden, um sicherzustellen, dass sie nur die wirklich wichtigen und wertvollen Anforderungen und Funktionen implementieren und damit den Nutzen für den Kunden maximieren."}
       ]
     },
     {
-      "title": "Erreichbarkeit der Informationen",
+      "title": "Wie sind die Erreichbarkeit der Informationen im Unternehmen?",
       "cite": "https://link.springer.com/chapter/10.1007/978-3-642-61101-8_11",
       "answers": [
         {"score": 0, "text": "Es gibt keine Informationen."},
@@ -459,7 +459,7 @@
       ]
     },
     {
-      "title": "Messung der Produktsqualität",
+      "title": "Wie wird Produktsqualität im Unternehmen gemessen?",
       "cite": "https://link.springer.com/chapter/10.1007/978-3-642-61101-8_11",
       "answers": [
         {"score": 0, "text": "Qualität der Produkte wird nicht gemessen."},
