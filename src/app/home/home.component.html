@@ -2,7 +2,7 @@
 <div class="hero">
     <div class="hero-text">
         <h1>Wie agil ist Ihre Entwicklung?</h1>
-        <p>Finden Sie es heraus!</p>
+        <p-button label="Finden Sie es heraus!" styleClass="p-button-lg" (click)="navigateSurvey()"></p-button>
     </div>
 </div>
 
@@ -61,51 +61,18 @@
 <!-- Experts -->
 <div class="experts">
     <h1 class="flex align-items-center justify-content-center pt-3">Experten</h1>
-    <div class="flex flex-row flex-wrap align-items-center justify-content-center gap-3">
-        <p-card header="Advanced Card" [style]="{ width: '360px' }">
-            <ng-template pTemplate="header">
-                <img alt="Card" src="https://primefaces.org/cdn/primeng/images/usercard.png" />
+    <div class="justify-content-center pt-3">
+        <p-carousel [value]="experts" [numVisible]="3" [numScroll]="1" [circular]="true" [autoplayInterval]="3000" [responsiveOptions]="responsiveOptions">
+            <ng-template let-expert pTemplate="item">
+                <div class="expert border-1 surface-border border-round m-2 text-center py-5 px-3">
+                    <div class="expert-content">
+                        <h1> {{ expert.title }} </h1>
+                        <h2> {{ expert.description }} </h2>
+                        <h2> {{ expert.link }} </h2>
+                    </div>
+                </div>
             </ng-template>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae
-                numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis
-                esse, cupiditate neque
-                quas!
-            </p>
-        </p-card>
-        <p-card header="Advanced Card" [style]="{ width: '360px' }">
-            <ng-template pTemplate="header">
-                <img alt="Card" src="https://primefaces.org/cdn/primeng/images/usercard.png" />
-            </ng-template>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae
-                numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis
-                esse, cupiditate neque
-                quas!
-            </p>
-        </p-card>
-        <p-card header="Advanced Card" [style]="{ width: '360px' }">
-            <ng-template pTemplate="header">
-                <img alt="Card" src="https://primefaces.org/cdn/primeng/images/usercard.png" />
-            </ng-template>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae
-                numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis
-                esse, cupiditate neque
-                quas!
-            </p>
-        </p-card>
-        <p-card header="Advanced Card" [style]="{ width: '360px' }">
-            <ng-template pTemplate="header">
-                <img alt="Card" src="https://primefaces.org/cdn/primeng/images/usercard.png" />
-            </ng-template>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae
-                numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis
-                esse, cupiditate neque
-                quas!
-            </p>
-        </p-card>
+        </p-carousel>
     </div>
 </div>
 
@@ -115,7 +82,7 @@
 <div class="cta mb-3">
     <div class="flex flex-column gap-3 align-items-center">
         <h1>Hier zu den Fragen</h1>
-        <p-button label="Los geht's!" icon="pi pi-pencil" iconPos="right" styleClass="p-button-lg"
+        <p-button label="Los geht's!" icon="pi pi-pencil" iconPos="right" styleClass="p-button-lg p-button-raised"
             (click)="navigateSurvey()"></p-button>
     </div>
 </div>

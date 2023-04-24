@@ -23,6 +23,17 @@
     user-select: none;
 }
 
+.hero-text button {
+    background: none;
+    border-color: white;
+    transition: transform .2s;
+}
+
+.hero-text button:hover {
+    transform: scale(1.2);
+    transition-duration: 0.2s;
+}
+
 /* Features */
 .features .p-card-header {
     color: white;
