@@ -1,0 +1,25 @@
+<div class="md:mb-8">
+    <p-card>
+        <h2 class="m-0">
+        {{this.question.title}}
+        </h2>
+    </p-card>
+</div>
+<div class="md:mb-8">
+    <p-card>
+        <div class="flex flex-column gap-3">
+            <div *ngFor="let answer of this.question.answers; last as isLast">
+                <div class="field-checkbox">
+                    <p-radioButton [inputId]="answer.score.toString()" name="category" [value]="answer"
+                    [(ngModel)]="selectedCategory"></p-radioButton>
+                    <label [for]="answer.score" class="ml-2">{{ answer.text }}</label>
+                </div>
+                <p-divider *ngIf="!isLast"></p-divider>
+            </div>
+        </div>
+    </p-card>
+</div>
+<div class="flex justify-content-between">
+    <p-button label="Zurück" styleClass="p-button-secondary" (click)="previousButtonClicked()"></p-button>
+    <p-button label="Weiter" (click)="nextButtonClicked()"></p-button>
+</div>

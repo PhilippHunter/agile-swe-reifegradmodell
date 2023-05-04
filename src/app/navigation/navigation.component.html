@@ -1,0 +1,10 @@
+<div class="md:mb-8">
+    <p-menubar [model]="items">
+        <ng-template pTemplate="start">
+            <div class="home-link">
+                <img (click)="navigateHome()" src="https://primefaces.org/cdn/primeng/images/primeng.svg" height="40" class="mr-2" />
+            </div>
+        </ng-template>
+    </p-menubar>
+</div>
+<router-outlet></router-outlet>
