@@ -18,6 +18,7 @@ import { QuestionComponent } from './question/question.component';
 import { SurveyComponent } from './survey/survey.component';
 import { ResultsComponent } from './results/results.component';
 import { NavigationComponent } from './navigation/navigation.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { NavigationComponent } from './navigation/navigation.component';
     QuestionComponent,
     SurveyComponent,
     ResultsComponent,
-    NavigationComponent
+    NavigationComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
