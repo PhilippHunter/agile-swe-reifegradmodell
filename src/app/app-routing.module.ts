@@ -11,6 +11,7 @@ import { AboutComponent } from './about/about.component';
 const routes: Routes = [
   { path: '', redirectTo: 'navigation', pathMatch: 'full' },
   { path: 'navigation', component: NavigationComponent, children: [
+    { path: '', redirectTo: 'home', pathMatch: 'full' },
     { path: 'home', component: HomeComponent },
     { path: 'survey', component: SurveyComponent },
     { path: 'results', component: ResultsComponent },
