@@ -1,10 +1,32 @@
-<div class="md:mb-8">
-    <p-menubar [model]="items">
-        <ng-template pTemplate="start">
-            <div class="home-link">
-                <img (click)="navigateHome()" src="https://primefaces.org/cdn/primeng/images/primeng.svg" height="40" class="mr-2" />
-            </div>
-        </ng-template>
-    </p-menubar>
+<div id="navbar" class="md:mb-8">
+    <div class="xl:col-8 xl:col-offset-2 flex justify-content-between align-items-center">
+        <!-- LOGO -->
+        <div id="home-link" class="flex align-items-center" (click)="navigateHome()">
+            <img src="/assets/images/ai-generated-logo-mock.png" height="60" class="mr-2" />
+            <h1>
+                <span>how</span>
+                <span>agile</span>
+            </h1>
+        </div>
+        <!-- Links -->
+        <section id="nav-links">
+            <a routerLink="survey" class="ml-8">Jetzt ausprobieren</a>
+            <a routerLink="about" class="ml-8">Über uns</a>
+        </section>
+    </div>
 </div>
-<router-outlet></router-outlet>
+<!-- grid columns for centering content -->
+<div class="grid grid-nogutter">
+    <div class="xl:col-8 xl:col-offset-2">
+        <router-outlet></router-outlet>
+    </div>
+</div>
+
+<footer class="bg-light text-center text-lg-start p-8">
+    <!-- Copyright -->
+    <div class="text-center" style="background-color: rgba(0, 0, 0, 0);">
+      © 2023 Copyright:
+      <a class="text-dark">Master IT-Projekte Team von TH-Nürnberg</a>
+    </div>
+    <!-- Copyright -->
+</footer>

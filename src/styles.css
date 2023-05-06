@@ -4,6 +4,21 @@
 @import "primeicons/primeicons.css";
 @import "primeflex/primeflex.css";
 
+:root {
+    --main-blue: rgba(0, 90, 201, 1);
+}
+
 body {
     font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+#nav-links > a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+}
+
+#nav-links > a:hover {
+    color: var(--main-blue);
 }
