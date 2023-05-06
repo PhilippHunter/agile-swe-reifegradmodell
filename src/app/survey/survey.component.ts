@@ -12,7 +12,7 @@ export class SurveyComponent {
   public allCategoryQuestion: SingleQuestion[] = [];
   private currentCategory: Category = Category.processes;
   public indexQuestion: number = 0;
-  private indexCategory: number = 0;
+  public indexCategory: number = 0;
   private categoryOrder = [Category.processes, Category.organisation, Category.technology, Category.skills_culture, Category.strategy]
 
 
@@ -51,9 +51,9 @@ export class SurveyComponent {
       this.previousCategory();
       console.log('indexquestion', this.indexQuestion);
       console.log('index category', this.indexCategory);
-      if (this.indexCategory != 0 && this.indexQuestion != 0) {
+      // if (this.indexCategory != 0 && this.indexQuestion != 0) {
         this.indexQuestion = this.allCategoryQuestion.length - 1;
-      }
+      // }
     } else {
       console.log('indes minus');
       console.log('indexquestion', this.indexQuestion);

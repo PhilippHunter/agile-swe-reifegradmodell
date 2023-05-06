@@ -20,6 +20,6 @@
     </p-card>
 </div>
 <div class="flex justify-content-between">
-    <p-button label="Zurück" styleClass="p-button-secondary" (click)="previousButtonClicked()"></p-button>
+    <p-button (onClick)="previousButtonClicked()" label="Zurück" [disabled]="disableBackButton" styleClass="p-button-secondary" ></p-button>
     <p-button label="Weiter" (click)="nextButtonClicked()"></p-button>
 </div>

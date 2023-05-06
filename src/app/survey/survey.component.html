@@ -1,1 +1,1 @@
-<app-question [question]="this.allCategoryQuestion[this.indexQuestion]" (nextButton)="nextButtonClicked()" (previousButton)="previousButtonClicked()"></app-question>
+<app-question [disableBackButton]="this.indexCategory == 0 && this.indexQuestion == 0" [question]="this.allCategoryQuestion[this.indexQuestion]" (nextButton)="nextButtonClicked()" (previousButton)="previousButtonClicked()"></app-question>

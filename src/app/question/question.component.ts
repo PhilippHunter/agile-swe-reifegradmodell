@@ -10,8 +10,10 @@ import { SingleQuestion } from '../survey/survey.component';
 export class QuestionComponent implements OnInit {
 
   @Input() question: SingleQuestion = {} as SingleQuestion;
+  @Input() disableBackButton: boolean = true;
   @Output() nextButton = new EventEmitter<boolean>();
   @Output() previousButton = new EventEmitter<boolean>();
+
 
   categories: any[] = [
 
