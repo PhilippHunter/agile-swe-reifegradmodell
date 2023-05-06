@@ -20,6 +20,8 @@ import { SurveyComponent } from './survey/survey.component';
 import { ResultsComponent } from './results/results.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { AboutComponent } from './about/about.component';
+import { ProgressComponent } from './progress/progress.component';
+import { TimelineModule } from 'primeng/timeline';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,8 @@ import { AboutComponent } from './about/about.component';
     SurveyComponent,
     ResultsComponent,
     NavigationComponent,
-    AboutComponent
+    AboutComponent,
+    ProgressComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +45,8 @@ import { AboutComponent } from './about/about.component';
     CarouselModule,
     DividerModule,
     InputTextModule,
-    AppRoutingModule
+    AppRoutingModule,
+    TimelineModule
   ],
   providers: [],
   bootstrap: [AppComponent]

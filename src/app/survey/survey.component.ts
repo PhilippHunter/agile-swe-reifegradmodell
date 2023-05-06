@@ -74,6 +74,14 @@ export class SurveyComponent {
     }
   }
 
+  public changedTopic(event: Category){
+    console.log('event in survey', event);
+    this.currentCategory = event;
+    this.indexCategory = this.categoryOrder.findIndex(a => a == event);
+    this.indexQuestion = 0;
+    this.allCategoryQuestion = this.allQuestions[this.currentCategory];
+  }
+
 }
 
 
@@ -96,7 +104,7 @@ type Anwsers = {
   text: string
 }
 
-enum Category {
+export enum Category {
   processes = 'processes',
   organisation = 'organisation',
   technology = 'technology',

@@ -1,0 +1,7 @@
+<div class="card flex flex-column gap-3">
+  <p-timeline [value]="events" layout="horizontal" align="bottom">
+      <ng-template pTemplate="content" let-event >
+          <p (click)="clicked(event.id)">{{ event.status }}</p>
+      </ng-template>
+  </p-timeline>
+</div>
