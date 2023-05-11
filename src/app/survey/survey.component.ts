@@ -10,7 +10,7 @@ export class SurveyComponent {
 
   private allQuestions: Questions;
   public allCategoryQuestion: SingleQuestion[] = [];
-  private currentCategory: Category = Category.processes;
+  public currentCategory: Category = Category.processes;
   public indexQuestion: number = 0;
   public indexCategory: number = 0;
   private categoryOrder = [Category.processes, Category.organisation, Category.technology, Category.skills_culture, Category.strategy]

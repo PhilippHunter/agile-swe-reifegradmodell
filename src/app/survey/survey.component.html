@@ -1,2 +1,2 @@
-<app-progress (changedTopic)="changedTopic($event)"></app-progress>
+<app-progress [currentCategory]="this.currentCategory" (changedTopic)="changedTopic($event)"></app-progress>
 <app-question [disableBackButton]="this.indexCategory == 0 && this.indexQuestion == 0" [question]="this.allCategoryQuestion[this.indexQuestion]" (nextButton)="nextButtonClicked()" (previousButton)="previousButtonClicked()"></app-question>

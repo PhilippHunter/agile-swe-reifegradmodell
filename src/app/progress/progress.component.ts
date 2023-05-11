@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Category } from '../survey/survey.component';
 
 @Component({
@@ -9,17 +9,17 @@ import { Category } from '../survey/survey.component';
 export class ProgressComponent {
   events: any[];
 
-
+  @Input() currentCategory: Category = Category.processes;
   @Output() changedTopic = new EventEmitter<Category>();
 
   constructor() {
     // maybe change color or icons in further advance
       this.events = [
-          { status: 'Prozesse',  color: '#678877', image: 'game-controller.jpg', id: Category.processes },
-          { status: 'Organisation',  color: '#678877', image: 'game-controller.jpg', id: Category.organisation },
-          { status: 'Technologie', color: '#678877', image: 'game-controller.jpg', id: Category.technology },
-          { status: 'Skills & Kultur', color: '#678877', image: 'game-controller.jpg', id: Category.skills_culture },
-          { status: 'Strategie', color: '#678877', image: 'game-controller.jpg', id: Category.strategy },
+          { status: 'Prozesse',  color: '#3B82F6', image: 'game-controller.jpg', id: Category.processes },
+          { status: 'Organisation',  color: '#3B82F6', image: 'game-controller.jpg', id: Category.organisation },
+          { status: 'Technologie', color: '#3B82F6', image: 'game-controller.jpg', id: Category.technology },
+          { status: 'Skills & Kultur', color: '#3B82F6', image: 'game-controller.jpg', id: Category.skills_culture },
+          { status: 'Strategie', color: '#3B82F6', image: 'game-controller.jpg', id: Category.strategy },
       ];
       }
 

@@ -1,7 +1,14 @@
 <div class="card flex flex-column gap-3">
   <p-timeline [value]="events" layout="horizontal" align="bottom">
-      <ng-template pTemplate="content" let-event >
-          <p (click)="clicked(event.id)">{{ event.status }}</p>
+      <ng-template  pTemplate="content" let-event >
+          <p style="cursor: pointer;"  (click)="clicked(event.id)">{{ event.status }}</p>
       </ng-template>
+
+      <ng-template  pTemplate="marker" let-event >
+        <div *ngIf="currentCategory == event.id" class="p-timeline-event-marker" [style.backgroundColor]="event.color"></div>
+        <div *ngIf="currentCategory != event.id" class="p-timeline-event-marker" style="background-color: white"></div>
+    </ng-template>
+
+      <!-- 3B82F6 -->
   </p-timeline>
 </div>
