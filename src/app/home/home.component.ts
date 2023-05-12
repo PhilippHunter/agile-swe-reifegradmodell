@@ -35,12 +35,12 @@ export class HomeComponent {
         numScroll: 1
       },
       {
-        breakpoint: '1220px',
+        breakpoint: '1000px',
         numVisible: 2,
         numScroll: 1
       },
       {
-        breakpoint: '1100px',
+        breakpoint: '750px',
         numVisible: 1,
         numScroll: 1
       }
