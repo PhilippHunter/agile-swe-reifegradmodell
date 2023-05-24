@@ -23,8 +23,9 @@ export class SurveyComponent {
     console.log('allcategory', this.allCategoryQuestion);
   }
 
-  public nextButtonClicked() {
-    // console.log('in survery nex');
+  public nextButtonClicked(choice: number) {
+    this.persistChoice(choice);
+
     if (this.indexQuestion < this.allCategoryQuestion.length - 1) {
       this.indexQuestion++;
     } else if (this.indexQuestion == this.allCategoryQuestion.length - 1) {
@@ -45,8 +46,9 @@ export class SurveyComponent {
     }
   }
 
-  public previousButtonClicked() {
-    // console.log('previous buttonclicked');
+  public previousButtonClicked(choice: number) {
+    this.persistChoice(choice)
+
     if (this.indexQuestion == 0) {
       this.previousCategory();
       console.log('indexquestion', this.indexQuestion);
@@ -82,6 +84,9 @@ export class SurveyComponent {
     this.allCategoryQuestion = this.allQuestions[this.currentCategory];
   }
 
+  private persistChoice(choice: number) {
+    this.allCategoryQuestion[this.indexQuestion].choice = choice;
+  }
 }
 
 
@@ -96,10 +101,11 @@ type Questions = {
 export type SingleQuestion = {
   title: string,
   cite: string,
-  answers: Anwsers[],
+  answers: Answer[],
+  choice: number
 }
 
-type Anwsers = {
+export type Answer = {
   score: number,
   text: string
 }
