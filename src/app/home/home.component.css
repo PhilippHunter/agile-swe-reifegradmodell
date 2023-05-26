@@ -30,8 +30,7 @@
 }
 
 .hero-text button:hover {
-    background-color: rgb(4, 138, 223) !important;
-    border-color: rgb(4, 138, 223) !important;
+    background-image: linear-gradient(to right, rgb(0, 55, 167), rgb(4, 138, 223)) !important;
     transform: scale(1.2);
     transition-duration: 0.2s;
 }
@@ -49,7 +48,7 @@
 }
 
 .features .p-card-content {
-    color: rgb(0, 55, 167);
+    color: rgb(0, 0, 0);
     font-size: 18px;
     padding: 0 0 0 0;
 }
