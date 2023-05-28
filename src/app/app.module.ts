@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { CommonModule } from '@angular/common';
@@ -12,6 +13,8 @@ import { RadioButtonModule } from 'primeng/radiobutton';
 import { CardModule } from 'primeng/card';
 import { CarouselModule} from 'primeng/carousel';
 import { DividerModule } from 'primeng/divider';
+import { DialogModule } from 'primeng/dialog';
+import { SliderModule } from 'primeng/slider';
 
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
@@ -36,6 +39,7 @@ import { TimelineModule } from 'primeng/timeline';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     CommonModule,
     FormsModule,
     ButtonModule,
@@ -44,6 +48,8 @@ import { TimelineModule } from 'primeng/timeline';
     CardModule,
     CarouselModule,
     DividerModule,
+    DialogModule,
+    SliderModule,
     InputTextModule,
     AppRoutingModule,
     TimelineModule

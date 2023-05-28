@@ -21,5 +21,14 @@
 </div>
 <div class="flex justify-content-between">
     <p-button (onClick)="previousButtonClicked()" label="Zurück" [disabled]="disableBackButton" styleClass="p-button-secondary" ></p-button>
+    <div>
+        <p-button (click)="showDialog()" icon="pi pi-cog" label="Gewichtungen"></p-button>
+        <p-dialog header="Header" [modal]="true" [(visible)]="visible" [breakpoints]="{ '960px': '75vw' }" [style]="{ width: '50vw' }" [draggable]="false" [resizable]="false">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            </p>
+            <p-slider [(ngModel)]="value" [step]="0.1" [min]="1" [max]="2"></p-slider>
+        </p-dialog>
+    </div>
     <p-button label="Weiter" (click)="nextButtonClicked()"></p-button>
 </div>
