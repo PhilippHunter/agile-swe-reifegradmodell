@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import * as questions from '../../assets/questions.json';
+import { ResultService } from '../result-service/result.service';
 
 @Component({
   selector: 'app-survey',
@@ -16,7 +18,10 @@ export class SurveyComponent {
   private categoryOrder = [Category.processes, Category.organisation, Category.technology, Category.skills_culture, Category.strategy]
 
 
-  constructor() {
+  constructor(
+    private router: Router,
+    private resultService: ResultService
+  ) {
     this.allQuestions = questions as Questions;
     console.log('allquestions', this.allQuestions);
     this.allCategoryQuestion = this.allQuestions[this.currentCategory];
@@ -42,6 +47,8 @@ export class SurveyComponent {
     } else if (this.indexCategory == this.categoryOrder.length -1) {
       // could navigate to result
       console.log('navigate to result');
+      this.resultService.generateFeedback(this.allQuestions);
+      this.router.navigate(['navigation/results']);
     }
   }
 
@@ -85,7 +92,7 @@ export class SurveyComponent {
 }
 
 
-type Questions = {
+export type Questions = {
   processes: SingleQuestion[],
   organisation: SingleQuestion[],
   technology: SingleQuestion[],

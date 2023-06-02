@@ -22,6 +22,7 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { AboutComponent } from './about/about.component';
 import { ProgressComponent } from './progress/progress.component';
 import { TimelineModule } from 'primeng/timeline';
+import { NgApexchartsModule } from 'ng-apexcharts';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { TimelineModule } from 'primeng/timeline';
     DividerModule,
     InputTextModule,
     AppRoutingModule,
-    TimelineModule
+    TimelineModule,
+    NgApexchartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

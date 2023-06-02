@@ -1,1 +1,70 @@
-<p>results works!</p>
+<div class="cta mb-3">
+  <div class="flex flex-column">
+      <h1>Ergebnis</h1>
+      <p>Du hast den Fragebogen erfolgreich beendet! Schau dir jetzt dein Ergebnis an!</p>
+  </div>
+</div>
+
+<div class="cta mb-3">
+  Platzhalter für den Radarchart
+
+  <div id="chart">
+    <apx-chart
+      [series]="chartOptions.series"
+      [chart]="chartOptions.chart"
+      [xaxis]="chartOptions.xaxis"
+      [title]="chartOptions.title"
+
+    ></apx-chart>
+  </div>
+</div>
+
+<div class="features">
+  <div class="flex flex-column gap-3 pb-3">
+      <p-card>
+          <ng-template pTemplate="header">
+              <div class="flex header flex-row align-items-center shadow-3 gap-3 p-3">
+                  <!-- <i class="pi pi-check-circle"></i> -->
+                  <h2>Prozesse</h2>
+              </div>
+          </ng-template>
+          <p>{{this.getProcessesResult()}}</p>
+      </p-card>
+      <p-card>
+        <ng-template pTemplate="header">
+            <div class="flex header flex-row align-items-center shadow-3 gap-3 p-3">
+                <!-- <i class="pi pi-check-circle"></i> -->
+                <h2>Organisation</h2>
+            </div>
+        </ng-template>
+        <p>{{this.getOrganisationResult()}}</p>
+      </p-card>
+      <p-card>
+        <ng-template pTemplate="header">
+            <div class="flex header flex-row align-items-center shadow-3 gap-3 p-3">
+                <!-- <i class="pi pi-check-circle"></i> -->
+                <h2>Technologie</h2>
+            </div>
+        </ng-template>
+        <p>{{this.getTechnologyResult()}}</p>
+      </p-card>
+      <p-card>
+        <ng-template pTemplate="header">
+            <div class="flex header flex-row align-items-center shadow-3 gap-3 p-3">
+                <!-- <i class="pi pi-check-circle"></i> -->
+                <h2>Skills & Kultur</h2>
+            </div>
+        </ng-template>
+        <p>{{this.getSkillCultureResult()}}</p>
+      </p-card>
+      <p-card>
+        <ng-template pTemplate="header">
+            <div class="flex header flex-row align-items-center shadow-3 gap-3 p-3">
+                <!-- <i class="pi pi-check-circle"></i> -->
+                <h2>Strategie</h2>
+            </div>
+        </ng-template>
+        <p>{{this.getStrategyResult()}}</p>
+      </p-card>
+  </div>
+</div>
