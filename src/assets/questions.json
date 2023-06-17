@@ -10,7 +10,8 @@
         {"score": 3, "text": "Anforderungen werden während des Projekts nach einem festgelegten und bewährten Verfahren aufgenommen, das im Team gut verstanden und angewendet wird."},
         {"score": 4, "text": "Anforderungen werden während des Projekts nach einem festgelegten und ständig verbesserten Verfahren aufgenommen, das das Projektziel unterstützt und die Zufriedenheit des Kunden sicherstellt."}
       ],
-      "choice": -1
+      "choice": -1,
+      "boosted": false
     },
     {
       "title": "Finden in den Teams tagliche, kurze Besprechung zur Entwicklung (Dailys) statt?",
@@ -22,7 +23,8 @@
         {"score": 3, "text": "Es finden jeden Tag zu festgelegter Uhrzeit im kompletten Team Dailys statt."},
         {"score": 4, "text": "Es finden jeden Tag zu festgelegter Uhrzeit im  Team Dailys statt. Es wird auf eine kurze Dauer und Effektivität geachtet."}
       ],
-      "choice": -1
+      "choice": -1,
+      "boosted": false
     },
     {
       "title": "Wie stark ist das Testen der Software im Entwicklungsprozess integriert?",
@@ -34,7 +36,8 @@
         {"score": 3, "text": "Die Verantwortung der Softwaretests liegt im gesamten Entwicklerteam. Jeder befolgt klare Vorgaben."},
         {"score": 4, "text": "Das gesamte Entwicklerteam sorgt für regelmäßiges und zeitnahes Testen vor der Auslieferung einer Funktion."}
       ],
-      "choice": -1
+      "choice": -1,
+      "boosted": false
     },
     {
       "title": "Wie lässt sich die Übersicht der aktuellen Tasks im Team beschreiben?",
@@ -46,7 +49,8 @@
         {"score": 3, "text": "Die Entwickler haben eine konkrete Übersicht der Tasks und aktualisieren wer was bearbeitet."},
         {"score": 4, "text": "Die Entwickler haben eine detaillierte Übersicht der Tasks und verschiedene Status der Bearbeitung. Stetig aktualisiert."}
       ],
-      "choice": -1
+      "choice": -1,
+      "boosted": false
     },
     {
       "title": "Wie sehr sind die Stakeholder durch Demonstrationen des Softwarestandes im Entwicklungsprozess involviert?",
@@ -58,7 +62,8 @@
         {"score": 3, "text": "Die Software wird regelmäßig (festgelegt) dem Kunden demonstriert."},
         {"score": 4, "text": "Die Software wird regelmäßig allen Stakeholdern (inkl. allen Entwicklern) demonstriert und feedback wird eingeholt."}
       ],
-      "choice": -1
+      "choice": -1,
+      "boosted": false
     },
     {
       "title": "Wie häufig wird bestehender Code im laufe des Projekts überarbeitet und verbessert?",
@@ -70,7 +75,8 @@
         {"score": 3, "text": "Der Quellcode und dessen Dokumentation werden öfter überarbeitet."},
         {"score": 4, "text": "Der Quellcode und dessen Dokumentation werden regelmassig überarbeitet."}
       ],
-      "choice": -1
+      "choice": -1,
+      "boosted": false
     },
     {
       "title": "Wird neuer Code durch andere Entwicklungspersonen überprüft und validiert?",
@@ -82,7 +88,8 @@
         {"score": 3, "text": "Neue Codeabschnitte und alle Codeänderung werden mindestens durch eine Person überprüft."},
         {"score": 4, "text": "Neue Codeabschnitte und alle Codeänderung werden mindestens durch eine qualifizierte Person überprüft."}
       ],
-      "choice": -1
+      "choice": -1,
+      "boosted": false
     }
   ],
   "organisation": [
@@ -96,7 +103,8 @@
         {"score": 3, "text": "Das Agile Transition Team ist im Unternehmen gut ausgebildet und erfahren und kann daher die Einführung agiler Methoden und Prozesse erfolgreich vorantreiben und Schwierigkeiten schnell und effektiv lösen."},
         {"score": 4, "text": "Das Agile Transition Team führt im Unternehmen regelmäßige Retrospektiven durch, um die Einführung agiler Methoden und Prozesse kontinuierlich zu verbessern und zu optimieren."}
       ],
-      "choice": -1
+      "choice": -1,
+      "boosted": false
     },
     {
       "title": "Wird ein Agile Coach in der Abteilung gewinnbringend eingesetzt?",
@@ -108,7 +116,8 @@
         {"score": 3, "text": "Der Agile Coach ist im Unternehmen gut ausgebildet und erfahren und kann daher das Unternehmen erfolgreich bei der Einführung agiler Methoden und Prozesse unterstützen und Schwierigkeiten schnell und effektiv lösen."},
         {"score": 4, "text": "Der Agile Coach führt im Unternehmen regelmäßige Retrospektiven durch, um die Einführung agiler Methoden und Prozesse kontinuierlich zu verbessern und zu optimieren."}
       ],
-      "choice": -1
+      "choice": -1,
+      "boosted": false
     },
     {
       "title": "Existiert eine priorisierte Übersicht aller Produktanforderungen?",
@@ -120,7 +129,8 @@
         {"score": 3, "text": "Es gibt einen Product Owner, der die Aufgaben pflegt und die Übersicht aktuell hält."},
         {"score": 4, "text": "Es gibt einen Product Owner, der die Aufgaben täglich pflegt, kategorisiert, priorisiert und mit Entwicklern abstimmt."}
       ],
-      "choice": -1
+      "choice": -1,
+      "boosted": false
     },
     {
       "title": "Werden Kick-Off-Workshops zum Sammeln der Anforderung (alle Stakeholder) durchgeführt?",
@@ -132,7 +142,8 @@
         {"score": 3, "text": "Zu Beginn findet ein Workshop aller Beteiligten statt, um die Anforderungen vollständig festzulegen."},
         {"score": 4, "text": "Zu Beginn findet mit allen Stakeholdern ein Workshop statt. Ergebnisse werden festgehalten. Jedoch für grundlegende Veränderungen offen."}
       ],
-      "choice": -1
+      "choice": -1,
+      "boosted": false
     },
     {
       "title": "Werden Rollen in Projekten klar definiert?",
@@ -144,7 +155,8 @@
         {"score": 3, "text": "Das Projektteam enthält klare Rollen, werden nicht vollständig besetzt/durchgezogen."},
         {"score": 4, "text": "Das Team besteht aus klaren Rollen, jede Rolle ist ausreichend besetzt und vertretbar, niemand muss springen."}
       ],
-      "choice": -1
+      "choice": -1,
+      "boosted": false
     },
     {
       "title": "Werden User Stories ausformuliert?",
@@ -156,7 +168,8 @@
         {"score": 3, "text": "User Stories werden regelmäßig erstellt und überprüft, um die Qualität sicherzustellen."},
         {"score": 4, "text": "User Stories sind umfassend und ausreichend geprüft und dienen zur Kommunikation und Planung gemeinsam mit dem Kunden."}
       ],
-      "choice": -1
+      "choice": -1,
+      "boosted": false
     },
     {
       "title": "Existieren bereichsübergreifende Teams (z.B. aus Devs, Designern, Business, etc.)?",
@@ -168,7 +181,8 @@
         {"score": 3, "text": "Das Team besteht aus interdisziplinären Teilen (Devs, Designer,…) vereinzelt werden Spezialisten herangezogen"},
         {"score": 4, "text": "Das Team besteht vollständig aus interdisziplinären Teilen (alles abgedeckt)."}
       ],
-      "choice": -1
+      "choice": -1,
+      "boosted": false
     },
     {
       "title": "Wird das Prinzip des Pair-Programmings angewendet?",
@@ -180,7 +194,8 @@
         {"score": 3, "text": "Das Pair-Programming findet regelmäßig mit festen Terminen zwischen zwei Team-Mitgliedern statt."},
         {"score": 4, "text": "Mindestens zwei Team-Mitglieder arbeiten eng zusammen und tauschen sich öfter beim Pair-Programming ihr Wissen aus."}
       ],
-      "choice": -1
+      "choice": -1,
+      "boosted": false
     }
   ],
   "technology": [
@@ -194,7 +209,8 @@
         {"score": 3, "text": "Aufgabenmanagment Tools werden auschließlich für die Aufgabenverteilung genutzt."},
         {"score": 4, "text": "Aufgabenmanagment Tools werden auschließlich für die Aufgabenverteilung genutzt und alle Auswertungsstatistiken werden benutzt."}
       ],
-      "choice": -1
+      "choice": -1,
+      "boosted": false
     },
     {
       "title": "Werden Kommunikationstools wie Teams, Zoom, Slack, etc. verwendet?)",
@@ -206,7 +222,8 @@
         {"score": 3, "text": "Sind die Kommunikationstools im Unternehmen für die agilen Methoden und Prozesse gut bekannt und werden sie von allen Mitarbeitern im Unternehmen sicher und effektiv genutzt, um im Rahmen der agilen Softwareentwicklung zu kommunizieren?"},
         {"score": 4, "text": "Führt das Unternehmen regelmäßig Reviews der Kommunikationstools durch, um sicherzustellen, dass sie immer noch für die agilen Methoden und Prozesse geeignet sind und von allen Mitarbeitern effektiv genutzt werden?"}
       ],
-      "choice": -1
+      "choice": -1,
+      "boosted": false
     },
     {
       "title": "Werden Zeiterfassungstools, um den Entwicklungsprozess zu kontrollieren?",
@@ -218,7 +235,8 @@
         {"score": 3, "text": "Es werden Zeiterfassungstools effektiv und effizient genutzt, um die Entwicklung zu optimieren und zu verbessern."},
         {"score": 4, "text": "Es werden Zeiterfassungstools kontinuierlich weiterentwickelt und angepasst, um die besten Ergebnisse zu erzielen."}
       ],
-      "choice": -1
+      "choice": -1,
+      "boosted": false
     },
     {
       "title": "Werden Feedback Tools verwendet?",
@@ -230,7 +248,8 @@
         {"score": 3, "text": "Feedback Tools sind vorhanden, werden genutzt und umgesetzt"},
         {"score": 4, "text": "Feedback Tools werden verwendet, besprochen und zügig umgesetzt."}
       ],
-      "choice": -1
+      "choice": -1,
+      "boosted": false
     },
     {
       "title": "Werden Online Workshops zur Weiterbildung angeboten?",
@@ -242,7 +261,8 @@
         {"score": 3, "text": "Es werden Online-Workshops effektiv und effizient genutzt, um die Entwicklung zu optimieren und zu verbessern."},
         {"score": 4, "text": "Es werden Online-Workshops kontinuierlich weiterentwickelt und angepasst, um die besten Ergebnisse zu erzielen."}
       ],
-      "choice": -1
+      "choice": -1,
+      "boosted": false
     }
   ],
   "skills_culture": [
@@ -256,7 +276,8 @@
         {"score": 3, "text": "Die Mitglieder des Entwicklungsteams nutzen ihr agiles Mindset, um kontinuierlich ihre Arbeitsweisen zu verbessern und Anpassungen vorzunehmen."},
         {"score": 4, "text": "Das agile Mindset wird proaktiv genutzt, um neue Geschäftsmöglichkeiten zu identifizieren und zu nutzen sowie den Wertbeitrag des Entwicklungsteams zu maximieren."}
       ],
-      "choice": -1
+      "choice": -1,
+      "boosted": false
     },
     {
       "title": "Werden Schulungen zur agilen Softwareentwicklung benutzt?",
@@ -268,7 +289,8 @@
         {"score": 3, "text": "Schulungen werden zur agilen Softwareentwicklung regelmäßig von erfahrenen Mitarbeitern des Unternehmens geleitet und auf individuelle Bedürfnisse der Teilnehmer abgestimmt."},
         {"score": 4, "text": "Schulungen werden zur agilen Softwareentwicklung regelmäßig evaluiert und angepasst, um sicherzustellen, dass sie den aktuellen Bedürfnissen und Anforderungen des Unternehmens entsprechen."}
       ],
-      "choice": -1
+      "choice": -1,
+      "boosted": false
     },
     {
       "title": "Wie werden Unternehmensziele in Projektteams formuliert und zusammengeführt?",
@@ -280,7 +302,8 @@
         {"score": 3, "text": "Unternehmensziele werden zsm mit Projektteams formuliert."},
         {"score": 4, "text": "Unternehmensziele werden ausschließlich in Projektteams formuliert und zusammengeführt."}
       ],
-      "choice": -1
+      "choice": -1,
+      "boosted": false
     },
     {
       "title": "Werden Probleme und Änderungswünsche im Unternehmen berücksichtigt und diskutiert?",
@@ -292,7 +315,8 @@
         {"score": 3, "text": "Es gibt für jeden Mitarbeitenden die gleichen Möglichkeiten Probleme und Änderungswünsche offen zu kommunizieren."},
         {"score": 4, "text": "Probleme und Änderungswünsche werden umgehend berücksichtigt und diskutiert."}
       ],
-      "choice": -1
+      "choice": -1,
+      "boosted": false
     },
     {
       "title": "Werden die Probleme und Konfilikte im Unternehmen diskutiert?",
@@ -304,7 +328,8 @@
         {"score": 3, "text": "Es gibt im Projektteam eine ausgewiesene Person zur Besprechung von Konflikten im Team."},
         {"score": 4, "text": "Es finden regelmäßige Retrospektiven zur Besprechung von Abläufen, Konflikten und dem Entwicklungsprozess statt. Von unabhängigem moderiert."}
       ],
-      "choice": -1
+      "choice": -1,
+      "boosted": false
     },{
       "title": "Steht Weiterbildungsmöglichkeiten für die Mitarbeiter zur Verfügung?",
       "cite": "https://link.springer.com/content/pdf/10.1007/s11612-020-00522-0.pdf",
@@ -315,7 +340,8 @@
         {"score": 3, "text": "Mitarbeiter haben in ihren Bereichen Weiterbildungsoptionen."},
         {"score": 4, "text": "Jeder Mitarbeiter hat ständige Möglichkeiten sich in allen Bereichen weiterzubilden."}
       ],
-      "choice": -1
+      "choice": -1,
+      "boosted": false
     },
     {
       "title": "Wie wird Arbeitsgeschwindigkeit im Unternehmen geregelt?",
@@ -327,7 +353,8 @@
         {"score": 3, "text": "Regelmäßige werden Retrospektiven durchgeführt, um Schwankungen in der Arbeitsgeschwindigkeit zu identifizieren und zu beheben."},
         {"score": 4, "text": "Teams führen kontinuierliche Experimente und Anpassungen an ihren Prozessen und Arbeitsabläufen durch, um die Konstante Arbeitsgeschwindigkeit zu verbessern."}
       ],
-      "choice": -1
+      "choice": -1,
+      "boosted": false
     },
     {
       "title": "Wie wird Selbstorganisations der Teams geregelt?",
@@ -339,7 +366,8 @@
         {"score": 3, "text": "Regelmäßige  werden Retrospektiven durchgeführt, um die Selbstorganisation im Team zu verbessern."},
         {"score": 4, "text": "Teams führen kontinuierliche Experimente und Anpassungen an ihren Prozessen und Arbeitsabläufen durch, um die Selbstorganisation zu verbessern."}
       ],
-      "choice": -1
+      "choice": -1,
+      "boosted": false
     },
     {
       "title": "Kommunizieren Mitarbeiter offen und werden durch Führungskraft unterstützt und gefördert?",
@@ -351,7 +379,8 @@
         {"score": 3, "text": "Kommunikation zwischen Mitarbeitern und Führungskräften ist in normalen Maß; Mitarbeiter werden unterstützt."},
         {"score": 4, "text": "Kommunikation und Transparenz stehen im Vordergrund; Mitarbeiter werden gefördert und unterstützt."}
       ],
-      "choice": -1
+      "choice": -1,
+      "boosted": false
     },
     {
       "title": "Existiert Feedback-Kultur im Unternehmen?",
@@ -363,7 +392,8 @@
         {"score": 3, "text": "Feedback Kultur wird begrüßt und in die Tat umgesetzt."},
         {"score": 4, "text": "Feedback Kultur ist fester Bestandteil und nicht mehr wegzudenken. Umsetzungen werden häufig und zügig gemacht."}
       ],
-      "choice": -1
+      "choice": -1,
+      "boosted": false
     },
     {
       "title": "Werden kontinuierliche, fachliche und technische Weiterentwicklungen angeboten?",
@@ -375,7 +405,8 @@
         {"score": 3, "text": "Fachliche und Technische Weiterentwicklung wird oft überprüft und umgesetzt."},
         {"score": 4, "text": "Die fachliche und technische Umsetzung findet oft und auf dem aktuellsten Niveau statt."}
       ],
-      "choice": -1
+      "choice": -1,
+      "boosted": false
     }
   ],
   "strategy": [
@@ -389,7 +420,8 @@
         {"score": 3, "text": "Das Ziel ist gute SW Qualität und regelmäßige Zwischenstände."},
         {"score": 4, "text": "Das Ziel ist die SW in kleinen Inkrementen nach Kundenwunsch zu entwickeln. Nach jedem Inkrement werden neue Kundenwünsche berücksichtigt und in die SWE eingeflossen."}
       ],
-      "choice": -1
+      "choice": -1,
+      "boosted": false
     },
     {
       "title": "Werden individuelle Kundenbedürfnisse konstant berücksichtigt?",
@@ -401,7 +433,8 @@
         {"score": 3, "text": "Kundenfeedback werden stetig abgefragt, um Veränderungen mit aufzunehmen und einzupflegen."},
         {"score": 4, "text": "Der SWE Prozess ist auf kurze, optimierte Sprintdauer ausgelegt. Nach jedem Sprint -> Review und neue Inputs vom Kunden"}
       ],
-      "choice": -1
+      "choice": -1,
+      "boosted": false
     },
     {
       "title": "Wie werden die mitarbeitende Aufwandsabschätzung durchgeführt?",
@@ -413,7 +446,8 @@
         {"score": 3, "text": "Aufwandsabschätzung wird im gesamten Team durchgeführt und diskutiert."},
         {"score": 4, "text": "Aufwandsabschätzung ist regelmäßiger Teil vor Entwicklungszyklus (planning). Alle geplanten Aufgaben werden geschätzt."}
       ],
-      "choice": -1
+      "choice": -1,
+      "boosted": false
     },
     {
       "title": "Werden die persönliche Ziele für jeden Mitarbeiter klar abgesteck?",
@@ -424,7 +458,9 @@
         {"score": 2, "text": "Es gibt vereinzelten Austausch zu persönlichen Zielen von Mitarbeitenden."},
         {"score": 3, "text": "Mitarbeiter führen in ihren Bereichen regelmäßige Gespräche zu Zielen."},
         {"score": 4, "text": "Mitarbeiter führen regelmäßige Gespräche zu persönlichen Zielen in allen möglichen Bereichen im Unternehmen (möglichkeit zum Wechsel)."}
-      ]
+      ],
+      "choice": -1,
+      "boosted": false
     },
     {
       "title": "Wie ist die Zusammenarbeit mit Kunden gestalltet?",
@@ -436,7 +472,8 @@
         {"score": 3, "text": "Regelmäßige Kunden-Demos und -Präsentationen werden durchgeführt, um das Feedback und die Zufriedenheit der Kunden zu messen."},
         {"score": 4, "text": "Teams nutzen fortschrittliche Technologien und Methoden, um die enge Zusammenarbeit mit ihren Kunden zu verbessern und zu vertiefen."}
       ],
-      "choice": -1
+      "choice": -1,
+      "boosted": false
     },
     {
       "title": "Wie wird mit Kundenbedürfnisse und -befriedigungen umgegangen?",
@@ -448,7 +485,8 @@
         {"score": 3, "text": "Regelmäßige werden Kunden-Demos und -Präsentationen durchgeführt, um die Kundenbedürfnisse und -befriedigung zu überprüfen und zu verbessern."},
         {"score": 4, "text": "Teams nutzen fortschrittliche Technologien und Methoden, um die Kundenbedürfnisse und -befriedigung zu optimieren und zu maximieren."}
       ],
-      "choice": -1
+      "choice": -1,
+      "boosted": false
     },
     {
       "title": "Wie erfolgt die Softwareauslieferung?",
@@ -460,7 +498,8 @@
         {"score": 3, "text": "Regelmäßige Überprüfungen und Anpassungen der Prozesse und Arbeitsabläufe werden durchgeführt, um die frühen und häufigen Softwareauslieferungen zu verbessern und zu optimieren."},
         {"score": 4, "text": "Teams nutzen fortschrittliche Technologien und Methoden, um die frühen und häufigen Softwareauslieferungen noch weiter zu beschleunigen und zu verbessern."}
       ],
-      "choice": -1
+      "choice": -1,
+      "boosted": false
     },
     {
       "title": "Wie reagiert Teams im Unternehmen, wenn Veränderungen im Projekt vorkommen?",
@@ -472,7 +511,8 @@
         {"score": 3, "text": "Regelmäßige Retrospektiven werden durchgeführt, um die Fähigkeit des Teams, Veränderungen zu akzeptieren und darauf zu reagieren, zu verbessern."},
         {"score": 4, "text": "Teams nutzen fortschrittliche Technologien und Methoden, um ihre Flexibilität und ihre Fähigkeit, auf Veränderungen zu reagieren, weiter zu verbessern."}
       ],
-      "choice": -1
+      "choice": -1,
+      "boosted": false
     },
     {
       "title": "Wie werden die Anforderungen und Funktionen implementiert, um den Nutzen für den Kunden zu maximieren?",
@@ -484,7 +524,8 @@
         {"score": 3, "text": "Regelmäßige Kunden-Feedbacks und -Tests werden durchgeführt, um sicherzustellen, dass nur die wirklich wichtigen und wertvollen Anforderungen und Funktionen implementiert werden."},
         {"score": 4, "text": "Teams nutzen fortschrittliche Technologien und Methoden, um sicherzustellen, dass sie nur die wirklich wichtigen und wertvollen Anforderungen und Funktionen implementieren und damit den Nutzen für den Kunden maximieren."}
       ],
-      "choice": -1
+      "choice": -1,
+      "boosted": false
     },
     {
       "title": "Wie sind die Erreichbarkeit der Informationen im Unternehmen?",
@@ -496,7 +537,8 @@
         {"score": 3, "text": "Informationen sind schnell, unkompliziert aber nicht für jeden erreichbar."},
         {"score": 4, "text": "Informationen sind schnell, unkompliziert und für jeden erreichbar."}
       ],
-      "choice": -1
+      "choice": -1,
+      "boosted": false
     },
     {
       "title": "Wie wird Produktsqualität im Unternehmen gemessen?",
@@ -508,7 +550,8 @@
         {"score": 3, "text": "Qualität wird sowohl in Fehlerraten als auch in Kundenzufriedenheit oder nur kurz fristige Kundenzufriedenheit gemessen."},
         {"score": 4, "text": "Qualität wird in langfristiger Kundenzufriedenheit gemessen."}
       ],
-      "choice": -1
+      "choice": -1,
+      "boosted": false
     }
   ]
 }

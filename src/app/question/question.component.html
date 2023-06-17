@@ -1,8 +1,19 @@
 <div class="md:mb-8">
     <p-card>
-        <h2 class="m-0">
-        {{this.question.title}}
-        </h2>
+        <div class="flex justify-content-between">
+            <h2 class="m-0">
+                {{this.question.title}}
+            </h2>
+            <p-toggleButton 
+                *ngIf="weightsEnabled" 
+                [(ngModel)]="boosted" 
+                onIcon="pi pi-bolt" 
+                offIcon="pi pi-bolt" 
+                styleClass="p-button-rounded" 
+                pTooltip="Fragemultiplikator erhöhen"
+                (click)="boostClicked()"
+            ></p-toggleButton>
+        </div>
     </p-card>
 </div>
 <div class="md:mb-8">
@@ -21,14 +32,6 @@
 </div>
 <div class="flex justify-content-between">
     <p-button (onClick)="previousButtonClicked()" label="Zurück" [disabled]="disableBackButton" styleClass="p-button-secondary" ></p-button>
-    <div>
-        <p-button (click)="showDialog()" icon="pi pi-cog" label="Gewichtungen"></p-button>
-        <p-dialog header="Header" [modal]="true" [(visible)]="visible" [breakpoints]="{ '960px': '75vw' }" [style]="{ width: '50vw' }" [draggable]="false" [resizable]="false">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            </p>
-            <p-slider [(ngModel)]="value" [step]="0.1" [min]="1" [max]="2"></p-slider>
-        </p-dialog>
-    </div>
+    <p-button (click)="showDialog()" icon="pi pi-sliders-h" label="" styleClass="p-button-secondary"></p-button>
     <p-button label="Weiter" (click)="nextButtonClicked()"></p-button>
 </div>
