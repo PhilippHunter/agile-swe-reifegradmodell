@@ -18,7 +18,7 @@ export class SurveyComponent implements OnInit {
   public weightsEnabled: boolean = false;
   public enableWeightsVisible: boolean = false;
   public weightsVisible: boolean = false;
-  public multiplicatorValues = {
+  public dimensionWeights = {
     [Category.processes]: 1,
     [Category.organisation]: 1,
     [Category.technology]: 1,
@@ -35,16 +35,26 @@ export class SurveyComponent implements OnInit {
   }
   ngOnInit(): void {
     console.log('survey init');
+    // load if weights were enabled earlier
     let ls_weightsEnabled = localStorage.getItem('weightsEnabled');
     if (ls_weightsEnabled !== null)
       this.weightsEnabled = !!JSON.parse(ls_weightsEnabled);
     else
       this.enableWeightsVisible = true;
 
+    // load former question status
     let ls_allQuestions = localStorage.getItem('allQuestions');
     if (ls_allQuestions !== null) {
       console.log('questions loaded from ls');
       this.allQuestions = JSON.parse(ls_allQuestions);
+      this.allCategoryQuestion = this.allQuestions[this.currentCategory];
+    }
+
+    // load formerly saved weights
+    let ls_dimensionWeights = localStorage.getItem('dimensionWeights');
+    if (ls_dimensionWeights !== null) {
+      console.log('weights loaded from ls');
+      this.dimensionWeights = JSON.parse(ls_dimensionWeights);
     }
   }
 
@@ -133,6 +143,12 @@ export class SurveyComponent implements OnInit {
     if (value == true)
       this.weightsVisible = value;
     this.enableWeightsVisible = false;
+  }
+
+  protected saveWeights() {
+    console.log('saving weights');
+    localStorage.setItem('dimensionWeights', JSON.stringify(this.dimensionWeights));
+    this.weightsVisible = false;
   }
 }
 

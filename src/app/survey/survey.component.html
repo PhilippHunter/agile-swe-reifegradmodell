@@ -55,40 +55,43 @@
         <strong class="text-xl">Prozesse</strong>
         <div class="flex justify-content-between">
             <p class="text-sm mt-0 mr-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu porttitor tellus, ut cursus est. </p>
-            <strong class="text-xl" style="color: rgba(0, 90, 201, 1)"> x{{ multiplicatorValues['processes'] }}</strong>
+            <strong class="text-xl" style="color: rgba(0, 90, 201, 1)"> x{{ dimensionWeights['processes'] }}</strong>
         </div>
-        <p-slider [(ngModel)]="multiplicatorValues['processes']" [step]="0.1" [min]="1" [max]="2" [disabled]="!this.weightsEnabled"></p-slider>
+        <p-slider [(ngModel)]="dimensionWeights['processes']" [step]="0.1" [min]="1" [max]="2" [disabled]="!this.weightsEnabled"></p-slider>
     </div>
     <div class="slider-wrapper">
         <strong class="text-xl">Organisation</strong>
         <div class="flex justify-content-between">
             <p class="text-sm mt-0 mr-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu porttitor tellus, ut cursus est. </p>
-            <strong class="text-xl" style="color: rgba(0, 90, 201, 1)"> x{{ multiplicatorValues['organisation'] }}</strong>
+            <strong class="text-xl" style="color: rgba(0, 90, 201, 1)"> x{{ dimensionWeights['organisation'] }}</strong>
         </div>
-        <p-slider [(ngModel)]="multiplicatorValues['organisation']" [step]="0.1" [min]="1" [max]="2" [disabled]="!this.weightsEnabled"></p-slider>
+        <p-slider [(ngModel)]="dimensionWeights['organisation']" [step]="0.1" [min]="1" [max]="2" [disabled]="!this.weightsEnabled"></p-slider>
     </div>
     <div class="slider-wrapper">
         <strong class="text-xl">Technologie</strong>
         <div class="flex justify-content-between">
             <p class="text-sm mt-0 mr-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu porttitor tellus, ut cursus est. </p>
-            <strong class="text-xl" style="color: rgba(0, 90, 201, 1)"> x{{ multiplicatorValues['technology'] }}</strong>
+            <strong class="text-xl" style="color: rgba(0, 90, 201, 1)"> x{{ dimensionWeights['technology'] }}</strong>
         </div>
-        <p-slider [(ngModel)]="multiplicatorValues['technology']" [step]="0.1" [min]="1" [max]="2" [disabled]="!this.weightsEnabled"></p-slider>
+        <p-slider [(ngModel)]="dimensionWeights['technology']" [step]="0.1" [min]="1" [max]="2" [disabled]="!this.weightsEnabled"></p-slider>
     </div>
     <div class="slider-wrapper">
         <strong class="text-xl">Skills & Kultur</strong>
         <div class="flex justify-content-between">
             <p class="text-sm mt-0 mr-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu porttitor tellus, ut cursus est. </p>
-            <strong class="text-xl" style="color: rgba(0, 90, 201, 1)"> x{{ multiplicatorValues['skills_culture'] }}</strong>
+            <strong class="text-xl" style="color: rgba(0, 90, 201, 1)"> x{{ dimensionWeights['skills_culture'] }}</strong>
         </div>
-        <p-slider [(ngModel)]="multiplicatorValues['skills_culture']" [step]="0.1" [min]="1" [max]="2" [disabled]="!this.weightsEnabled"></p-slider>
+        <p-slider [(ngModel)]="dimensionWeights['skills_culture']" [step]="0.1" [min]="1" [max]="2" [disabled]="!this.weightsEnabled"></p-slider>
     </div>
     <div class="slider-wrapper">
         <strong class="text-xl">Strategie</strong>
         <div class="flex justify-content-between">
             <p class="text-sm mt-0 mr-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu porttitor tellus, ut cursus est. </p>
-            <strong class="text-xl" style="color: rgba(0, 90, 201, 1)"> x{{ multiplicatorValues['strategy'] }}</strong>
+            <strong class="text-xl" style="color: rgba(0, 90, 201, 1)"> x{{ dimensionWeights['strategy'] }}</strong>
         </div>
-        <p-slider [(ngModel)]="multiplicatorValues['strategy']" [step]="0.1" [min]="1" [max]="2" [disabled]="!this.weightsEnabled"></p-slider>
+        <p-slider [(ngModel)]="dimensionWeights['strategy']" [step]="0.1" [min]="1" [max]="2" [disabled]="!this.weightsEnabled"></p-slider>
     </div>
+    <ng-template pTemplate="footer">
+        <p-button icon="pi pi-save" (click)="saveWeights()" label="Gewichtung speichern" styleClass="p-button-text"></p-button>
+    </ng-template>
 </p-dialog>
