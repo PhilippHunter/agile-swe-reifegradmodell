@@ -1,37 +1,36 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import * as questions from '../../assets/questions.json';
+import { Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges } from '@angular/core';
 import { SingleQuestion } from '../survey/survey.component';
+import { DialogModule } from 'primeng/dialog';
 
 @Component({
   selector: 'app-question',
   templateUrl: './question.component.html',
   styleUrls: ['./question.component.css']
 })
-export class QuestionComponent implements OnInit {
+export class QuestionComponent implements OnInit, OnChanges {
 
   @Input() question: SingleQuestion = {} as SingleQuestion;
   @Input() disableBackButton: boolean = true;
-  @Output() nextButton = new EventEmitter<boolean>();
-  @Output() previousButton = new EventEmitter<boolean>();
+  @Input() weightsEnabled: boolean = false;
+  @Output() nextButton = new EventEmitter<number>();
+  @Output() previousButton = new EventEmitter<number>();
+  @Output() boostButton = new EventEmitter<boolean>();
+  @Output() showWeightsModal = new EventEmitter<boolean>();
 
-
-  categories: any[] = [
-
-    { name: 'Es findet kaum Austausch im Entwicklerteam statt (jeder Arbeitet für sich an seinen Aufgaben)', key: '0' },
-
-    { name: 'Das gesamte Entwicklerteam hat die Möglichkeit sich untereinander abzustimmen', key: '1' },
-
-    { name: 'Es gibt einen festgelegten Rahmen zur regelmäßigen Besprechung (bsp. wöchentlich)', key: '2' },
-
-    { name: 'Es finden jeden Tag zu festgelegter Uhrzeit im kompletten Team Dailys statt. ', key: '3' },
-
-    { name: 'Es finden jeden Tag zu festgelegter Uhrzeit im  Team Dailys statt. Es wird auf eine kurze Dauer und Effektivität geachtet.', key: '4' }
-
-  ];
-
-  selectedCategory: any = null;
+  public selectedChoice: number;
+  public boosted: boolean;
 
   constructor() {
+    this.selectedChoice = -1;
+    this.boosted = false;
+  }
+
+  ngOnChanges(changes: SimpleChanges): void {
+    // listen for changes on question Input (when new question is loaded) and display selection
+    if (changes['question']) {
+      this.selectedChoice = changes['question'].currentValue.choice;
+      this.boosted = changes['question'].currentValue.boosted;
+    }
   }
 
   ngOnInit(): void {
@@ -40,11 +39,20 @@ export class QuestionComponent implements OnInit {
 
   public nextButtonClicked() {
     console.log('next button clicekd');
-    this.nextButton.emit(true);
+    this.nextButton.emit(this.selectedChoice);
   }
 
   public previousButtonClicked() {
-    this.previousButton.emit(true);
+    this.previousButton.emit(this.selectedChoice);
+  }
+
+  public boostClicked() {
+    this.boostButton.emit(this.boosted);
+  }
+
+  public showDialog() {
+    // Output to Survey Component for showing weights modal
+    this.showWeightsModal.emit(true);
   }
 }
 
