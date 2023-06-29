@@ -27,12 +27,11 @@
   </div>
 </div>
 
-<div class="features">
+<!-- <div class="features">
   <div class="flex flex-column gap-3 pb-3">
       <p-card>
           <ng-template pTemplate="header">
               <div class="flex header flex-row align-items-center shadow-3 gap-3 p-3">
-                  <!-- <i class="pi pi-check-circle"></i> -->
                   <h2>Prozesse</h2>
               </div>
           </ng-template>
@@ -41,7 +40,6 @@
       <p-card>
         <ng-template pTemplate="header">
             <div class="flex header flex-row align-items-center shadow-3 gap-3 p-3">
-                <!-- <i class="pi pi-check-circle"></i> -->
                 <h2>Organisation</h2>
             </div>
         </ng-template>
@@ -50,7 +48,6 @@
       <p-card>
         <ng-template pTemplate="header">
             <div class="flex header flex-row align-items-center shadow-3 gap-3 p-3">
-                <!-- <i class="pi pi-check-circle"></i> -->
                 <h2>Technologie</h2>
             </div>
         </ng-template>
@@ -59,7 +56,6 @@
       <p-card>
         <ng-template pTemplate="header">
             <div class="flex header flex-row align-items-center shadow-3 gap-3 p-3">
-                <!-- <i class="pi pi-check-circle"></i> -->
                 <h2>Skills & Kultur</h2>
             </div>
         </ng-template>
@@ -68,11 +64,77 @@
       <p-card>
         <ng-template pTemplate="header">
             <div class="flex header flex-row align-items-center shadow-3 gap-3 p-3">
-                <!-- <i class="pi pi-check-circle"></i> -->
                 <h2>Strategie</h2>
             </div>
         </ng-template>
         <p>{{this.getStrategyResult()}}</p>
       </p-card>
+  </div>
+</div> -->
+
+
+<div class="features">
+  <div class="flex flex-column gap-3 pb-3">
+    <p-tabView>
+
+      <div>
+        <p-button label="Alle" (onClick)="filterCategories('all')"></p-button>
+        <p-button label="Gut" styleClass="wbtn" (onClick)="filterCategories('high')"></p-button>
+        <p-button label="Mittel" (onClick)="filterCategories('medium')"></p-button>
+        <p-button label="Schlecht" (onClick)="filterCategories('low')"></p-button>
+        <p-button label="Unbeantwortet" (onClick)="filterCategories('unanwsered')"></p-button>
+      </div>
+
+      <ng-container *ngFor="let cat of this.sortedQuestions">
+        <p-tabPanel [header]="cat.title">
+          <p-accordion >
+              <ng-container *ngIf="this.showHigh || this.showAll" >
+                <p-accordionTab *ngFor="let question of cat.high" styleClass="mycontent" [header]="question.shortTitle">
+                  <app-resultquestion [question]="question" [selectedChoice]="question.choice"></app-resultquestion>
+                </p-accordionTab>
+              </ng-container>
+
+              <ng-container *ngIf="this.showMedium || this.showAll" >
+                <p-accordionTab  *ngFor="let question of cat.medium" styleClass="mycontent" [header]="question.shortTitle">
+                  <app-resultquestion [question]="question" [selectedChoice]="question.choice"></app-resultquestion>
+                </p-accordionTab>
+              </ng-container>
+
+              <ng-container *ngIf="this.showLow || this.showAll" >
+                <p-accordionTab *ngFor="let question of cat.low" styleClass="mycontent" [header]="question.shortTitle">
+                  <app-resultquestion [question]="question" [selectedChoice]="question.choice"></app-resultquestion>
+                </p-accordionTab>
+              </ng-container>
+
+              <ng-container *ngIf="this.showUnanwsered || this.showAll" >
+                <p-accordionTab  *ngFor="let question of cat.unanswered" styleClass="mycontent" [header]="question.shortTitle">
+                  <app-resultquestion [question]="question" [selectedChoice]="question.choice"></app-resultquestion>
+                </p-accordionTab>
+              </ng-container>
+
+
+            </p-accordion>
+        </p-tabPanel>
+
+
+      </ng-container>
+
+
+
+
+
+      <p-tabPanel header="Header II">
+          <p>
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
+              ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Consectetur, adipisci velit, sed quia non numquam eius modi.
+          </p>
+      </p-tabPanel>
+      <p-tabPanel header="Header III">
+          <p>
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa
+              qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.
+          </p>
+      </p-tabPanel>
+    </p-tabView>
   </div>
 </div>

@@ -1,0 +1,12 @@
+<div class="">
+      <div class="flex flex-column">
+        <p>{{question.title}}</p>
+          <div *ngFor="let answer of this.question.answers; last as isLast; index as idx;">
+              <div class="field-checkbox">
+                  <p-radioButton [inputId]="answer.score.toString()" name="category" [value]="idx"
+                  [(ngModel)]="selectedChoice" [disabled]="true"></p-radioButton>
+                  <label [for]="answer.score" class="ml-2">{{ answer.text }}</label>
+              </div>
+          </div>
+      </div>
+</div>

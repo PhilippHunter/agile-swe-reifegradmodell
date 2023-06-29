@@ -173,7 +173,8 @@ export type SingleQuestion = {
   cite: string,
   answers: Answer[],
   choice: number,
-  boosted: boolean
+  boosted: boolean,
+  shortTitle: string
 }
 
 export type Answer = {
