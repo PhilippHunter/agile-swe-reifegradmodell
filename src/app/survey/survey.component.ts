@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { Component, Input, OnInit } from '@angular/core';
 import * as questions from '../../assets/questions.json';
 import { ResultService } from '../result-service/result.service';
 
@@ -8,7 +8,7 @@ import { ResultService } from '../result-service/result.service';
   templateUrl: './survey.component.html',
   styleUrls: ['./survey.component.css']
 })
-export class SurveyComponent {
+export class SurveyComponent implements OnInit {
 
   private allQuestions: Questions;
   public allCategoryQuestion: SingleQuestion[] = [];
@@ -16,6 +16,17 @@ export class SurveyComponent {
   public indexQuestion: number = 0;
   public indexCategory: number = 0;
   private categoryOrder = [Category.processes, Category.organisation, Category.technology, Category.skills_culture, Category.strategy]
+
+  public weightsEnabled: boolean = false;
+  public enableWeightsVisible: boolean = false;
+  public weightsVisible: boolean = false;
+  public dimensionWeights = {
+    [Category.processes]: 1,
+    [Category.organisation]: 1,
+    [Category.technology]: 1,
+    [Category.skills_culture]: 1,
+    [Category.strategy]: 1,
+  };
 
 
   constructor(
@@ -27,9 +38,35 @@ export class SurveyComponent {
     this.allCategoryQuestion = this.allQuestions[this.currentCategory];
     console.log('allcategory', this.allCategoryQuestion);
   }
+  ngOnInit(): void {
+    console.log('survey init');
+    // load if weights were enabled earlier
+    let ls_weightsEnabled = localStorage.getItem('weightsEnabled');
+    if (ls_weightsEnabled !== null)
+      this.weightsEnabled = !!JSON.parse(ls_weightsEnabled);
+    else
+      this.enableWeightsVisible = true;
 
-  public nextButtonClicked() {
-    // console.log('in survery nex');
+    // load former question status
+    let ls_allQuestions = localStorage.getItem('allQuestions');
+    if (ls_allQuestions !== null) {
+      console.log('questions loaded from ls');
+      this.allQuestions = JSON.parse(ls_allQuestions);
+      this.allCategoryQuestion = this.allQuestions[this.currentCategory];
+    }
+
+    // load formerly saved weights
+    let ls_dimensionWeights = localStorage.getItem('dimensionWeights');
+    if (ls_dimensionWeights !== null) {
+      console.log('weights loaded from ls');
+      this.dimensionWeights = JSON.parse(ls_dimensionWeights);
+    }
+  }
+
+  public nextButtonClicked(choice: number) {
+    this.persistChoice(choice);
+    this.persistToSession();
+
     if (this.indexQuestion < this.allCategoryQuestion.length - 1) {
       this.indexQuestion++;
     } else if (this.indexQuestion == this.allCategoryQuestion.length - 1) {
@@ -52,8 +89,10 @@ export class SurveyComponent {
     }
   }
 
-  public previousButtonClicked() {
-    // console.log('previous buttonclicked');
+  public previousButtonClicked(choice: number) {
+    this.persistChoice(choice)
+    this.persistToSession();
+
     if (this.indexQuestion == 0) {
       this.previousCategory();
       console.log('indexquestion', this.indexQuestion);
@@ -67,6 +106,10 @@ export class SurveyComponent {
       console.log('index category', this.indexCategory);
       this.indexQuestion--;
     }
+  }
+
+  public boostButtonClicked(value: boolean) {
+    this.allCategoryQuestion[this.indexQuestion].boosted = value;
   }
 
   private previousCategory() {
@@ -89,6 +132,31 @@ export class SurveyComponent {
     this.allCategoryQuestion = this.allQuestions[this.currentCategory];
   }
 
+  private persistChoice(choice: number) {
+    this.allCategoryQuestion[this.indexQuestion].choice = choice;
+  }
+
+  private persistToSession() {
+    localStorage.setItem('allQuestions', JSON.stringify(this.allQuestions));
+  }
+
+  protected toggleWeights(value: boolean) {
+    // toggle state + local storage
+    console.log('toggling weights... ' + value);
+    this.weightsEnabled = value;
+    localStorage.setItem('weightsEnabled', JSON.stringify(value));
+
+    // set visibility for modals
+    if (value == true)
+      this.weightsVisible = value;
+    this.enableWeightsVisible = false;
+  }
+
+  protected saveWeights() {
+    console.log('saving weights');
+    localStorage.setItem('dimensionWeights', JSON.stringify(this.dimensionWeights));
+    this.weightsVisible = false;
+  }
 }
 
 
@@ -103,10 +171,12 @@ export type Questions = {
 export type SingleQuestion = {
   title: string,
   cite: string,
-  answers: Anwsers[],
+  answers: Answer[],
+  choice: number,
+  boosted: boolean
 }
 
-type Anwsers = {
+export type Answer = {
   score: number,
   text: string
 }

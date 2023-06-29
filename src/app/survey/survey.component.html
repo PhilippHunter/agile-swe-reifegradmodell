@@ -1,2 +1,97 @@
-<app-progress [currentCategory]="this.currentCategory" (changedTopic)="changedTopic($event)"></app-progress>
-<app-question [disableBackButton]="this.indexCategory == 0 && this.indexQuestion == 0" [question]="this.allCategoryQuestion[this.indexQuestion]" (nextButton)="nextButtonClicked()" (previousButton)="previousButtonClicked()"></app-question>
+<app-progress 
+    [currentCategory]="this.currentCategory"
+    (changedTopic)="changedTopic($event)">
+</app-progress>
+<app-question 
+    [disableBackButton]="this.indexCategory == 0 && this.indexQuestion == 0" 
+    [question]="this.allCategoryQuestion[this.indexQuestion]"
+    [weightsEnabled]="this.weightsEnabled"
+    (nextButton)="nextButtonClicked($event)" 
+    (previousButton)="previousButtonClicked($event)"
+    (boostButton)="boostButtonClicked($event)"
+    (showWeightsModal)="this.weightsVisible = true;">
+</app-question>
+
+<p-confirmDialog 
+    id="enableWeightsModal"
+    [style]="{width: '50vw'}" 
+    [visible]="enableWeightsVisible"
+    header="Individuelle Fragengewichtung aktivieren?"
+    message="Durch das Aktivieren können Fragegruppen (Dimensionen), sowie einzelne Fragen mit einem Multiplikator versehen werden.
+            Standardmäßig ist bereits eine Gewichtung vorgenommen, welche somit individuell angepasst werden kann."
+    icon="pi pi-cog"
+>
+    <ng-template pTemplate="footer">
+        <button type="button" pButton icon="pi pi-times" label="Nein" (click)="toggleWeights(false)"></button>
+        <button type="button" pButton icon="pi pi-check" label="Ja" (click)="toggleWeights(true)"></button>
+    </ng-template>
+</p-confirmDialog>
+
+<p-dialog 
+    id="weightsModal"
+    [modal]="true"
+    [(visible)]="weightsVisible" 
+    [breakpoints]="{ '960px': '75vw', '668px': '90vw' }"
+    [style]="{ width: '50vw' }"
+    [draggable]="false"
+    [resizable]="false"
+>
+    <ng-template pTemplate="header">
+        <div class="flex align-items-center">
+            <h3>Gewichtung von Dimensionen</h3>
+            <p-inputSwitch [(ngModel)]="this.weightsEnabled" class="ml-3" (onChange)="toggleWeights(this.weightsEnabled)"></p-inputSwitch>
+        </div>
+    </ng-template>
+    <div class="mb-5">
+        <p>
+            Es können einzelne Gewichtungen für die 5 Dimensionen des Reifegradmodells eingestellt werden (Multiplikator von x1 - x2). 
+            Die Dimensionen fassen mehrere Fragen zusammen und betrachten immer einen Hauptaspekt des Reifegrades im Unternehmen.
+        </p>
+        <p>
+            Zusätzlich können individuelle Fragen über den <i class="pi pi-bolt"></i>-Button mit einem x2-Multiplikator versehen werden.
+        </p>
+    </div>
+    <div class="slider-wrapper">
+        <strong class="text-xl">Prozesse</strong>
+        <div class="flex justify-content-between">
+            <p class="text-sm mt-0 mr-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu porttitor tellus, ut cursus est. </p>
+            <strong class="text-xl" style="color: rgba(0, 90, 201, 1)"> x{{ dimensionWeights['processes'] }}</strong>
+        </div>
+        <p-slider [(ngModel)]="dimensionWeights['processes']" [step]="0.1" [min]="1" [max]="2" [disabled]="!this.weightsEnabled"></p-slider>
+    </div>
+    <div class="slider-wrapper">
+        <strong class="text-xl">Organisation</strong>
+        <div class="flex justify-content-between">
+            <p class="text-sm mt-0 mr-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu porttitor tellus, ut cursus est. </p>
+            <strong class="text-xl" style="color: rgba(0, 90, 201, 1)"> x{{ dimensionWeights['organisation'] }}</strong>
+        </div>
+        <p-slider [(ngModel)]="dimensionWeights['organisation']" [step]="0.1" [min]="1" [max]="2" [disabled]="!this.weightsEnabled"></p-slider>
+    </div>
+    <div class="slider-wrapper">
+        <strong class="text-xl">Technologie</strong>
+        <div class="flex justify-content-between">
+            <p class="text-sm mt-0 mr-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu porttitor tellus, ut cursus est. </p>
+            <strong class="text-xl" style="color: rgba(0, 90, 201, 1)"> x{{ dimensionWeights['technology'] }}</strong>
+        </div>
+        <p-slider [(ngModel)]="dimensionWeights['technology']" [step]="0.1" [min]="1" [max]="2" [disabled]="!this.weightsEnabled"></p-slider>
+    </div>
+    <div class="slider-wrapper">
+        <strong class="text-xl">Skills & Kultur</strong>
+        <div class="flex justify-content-between">
+            <p class="text-sm mt-0 mr-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu porttitor tellus, ut cursus est. </p>
+            <strong class="text-xl" style="color: rgba(0, 90, 201, 1)"> x{{ dimensionWeights['skills_culture'] }}</strong>
+        </div>
+        <p-slider [(ngModel)]="dimensionWeights['skills_culture']" [step]="0.1" [min]="1" [max]="2" [disabled]="!this.weightsEnabled"></p-slider>
+    </div>
+    <div class="slider-wrapper">
+        <strong class="text-xl">Strategie</strong>
+        <div class="flex justify-content-between">
+            <p class="text-sm mt-0 mr-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu porttitor tellus, ut cursus est. </p>
+            <strong class="text-xl" style="color: rgba(0, 90, 201, 1)"> x{{ dimensionWeights['strategy'] }}</strong>
+        </div>
+        <p-slider [(ngModel)]="dimensionWeights['strategy']" [step]="0.1" [min]="1" [max]="2" [disabled]="!this.weightsEnabled"></p-slider>
+    </div>
+    <ng-template pTemplate="footer">
+        <p-button icon="pi pi-save" (click)="saveWeights()" label="Gewichtung speichern" styleClass="p-button-text"></p-button>
+    </ng-template>
+</p-dialog>
