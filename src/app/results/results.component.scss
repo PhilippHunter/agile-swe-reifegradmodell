@@ -4,3 +4,11 @@
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
 }
+
+.chartdiv{
+  display: flex;
+
+  #chart{
+    width: 80%;
+  }
+}

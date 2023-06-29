@@ -5,8 +5,8 @@
   </div>
 </div>
 
-<div class="cta mb-3">
-  Platzhalter für den Radarchart
+<div class="cta mb-3 chartdiv">
+  <!-- Platzhalter für den Radarchart -->
 
   <div id="chart">
     <apx-chart
@@ -16,6 +16,14 @@
       [title]="chartOptions.title"
 
     ></apx-chart>
+  </div>
+  <div>
+    <h3>Gewählte Gewichtungen:</h3>
+    <p>Prozesse: {{ this.dimensionWeights.processes}}x</p>
+    <p>Strategie: {{ this.dimensionWeights.strategy}}x</p>
+    <p>Skills & Kultur: {{ this.dimensionWeights.skills_culture}}x</p>
+    <p>Technologie: {{ this.dimensionWeights.technology}}x</p>
+    <p>Organisation: {{ this.dimensionWeights.organisation}}x</p>
   </div>
 </div>
 

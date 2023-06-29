@@ -20,7 +20,7 @@ export class SurveyComponent implements OnInit {
   public weightsEnabled: boolean = false;
   public enableWeightsVisible: boolean = false;
   public weightsVisible: boolean = false;
-  public dimensionWeights = {
+  public dimensionWeights: DimensionWeight = {
     [Category.processes]: 1,
     [Category.organisation]: 1,
     [Category.technology]: 1,
@@ -188,3 +188,11 @@ export enum Category {
   skills_culture = 'skills_culture',
   strategy = 'strategy'
 }
+
+export type DimensionWeight = {
+  [Category.processes]: number,
+  [Category.organisation]: number,
+  [Category.technology]: number,
+  [Category.skills_culture]: number,
+  [Category.strategy]: number,
+};
