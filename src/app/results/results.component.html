@@ -76,14 +76,40 @@
 <div class="features">
   <div class="flex flex-column gap-3 pb-3">
     <p-tabView>
-
-      <div>
+      <!-- <div>
         <p-button label="Alle" (onClick)="filterCategories('all')"></p-button>
-        <p-button label="Gut" styleClass="wbtn" (onClick)="filterCategories('high')"></p-button>
+        <p-button #goodbutton label="Gut" styleClass="wbtn" (onClick)="filterCategories('high')"></p-button>
         <p-button label="Mittel" (onClick)="filterCategories('medium')"></p-button>
         <p-button label="Schlecht" (onClick)="filterCategories('low')"></p-button>
         <p-button label="Unbeantwortet" (onClick)="filterCategories('unanwsered')"></p-button>
+      </div> -->
+
+      <div class="flex flex-wrap gap-3  mb-3">
+        <div class="flex align-items-center">
+            <p-radioButton name="pizza" value="all" [(ngModel)]="selectedOption" (onClick)="viewchanged()" inputId="ingredient1"></p-radioButton>
+            <label for="ingredient1" class="ml-2">Alle</label>
+        </div>
+
+        <div class="flex align-items-center">
+            <p-radioButton name="pizza" value="high" [(ngModel)]="selectedOption" (onClick)="viewchanged()" inputId="ingredient2"></p-radioButton>
+            <label for="ingredient2" class="ml-2">Gut</label>
+        </div>
+
+        <div class="flex align-items-center">
+            <p-radioButton name="pizza" value="medium" [(ngModel)]="selectedOption" (onClick)="viewchanged()" inputId="ingredient3"></p-radioButton>
+            <label for="ingredient3" class="ml-2">Mittel</label>
+        </div>
+
+        <div class="flex align-items-center">
+            <p-radioButton name="pizza" value="low" [(ngModel)]="selectedOption" (onClick)="viewchanged()" inputId="ingredient4"></p-radioButton>
+            <label for="ingredient4" class="ml-2">Schlecht</label>
+        </div>
+
+        <div class="flex align-items-center">
+          <p-radioButton name="pizza" value="unanswered" [(ngModel)]="selectedOption" (onClick)="viewchanged()" inputId="ingredient4"></p-radioButton>
+          <label for="ingredient4" class="ml-2">Unbeantwortet</label>
       </div>
+    </div>
 
       <ng-container *ngFor="let cat of this.sortedQuestions">
         <p-tabPanel [header]="cat.title">
@@ -115,26 +141,7 @@
 
             </p-accordion>
         </p-tabPanel>
-
-
       </ng-container>
-
-
-
-
-
-      <p-tabPanel header="Header II">
-          <p>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
-              ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Consectetur, adipisci velit, sed quia non numquam eius modi.
-          </p>
-      </p-tabPanel>
-      <p-tabPanel header="Header III">
-          <p>
-              At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa
-              qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.
-          </p>
-      </p-tabPanel>
     </p-tabView>
   </div>
 </div>

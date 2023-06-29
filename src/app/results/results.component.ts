@@ -1,4 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { ResultService } from '../result-service/result.service';
 
 import {
@@ -9,6 +9,7 @@ import {
   ChartComponent
 } from "ng-apexcharts";
 import { Category, DimensionWeight, Questions, SingleQuestion } from '../survey/survey.component';
+import { Button } from 'primeng/button';
 
 export type ChartOptions = {
   series: ApexAxisChartSeries;
@@ -23,7 +24,7 @@ export type ChartOptions = {
   styleUrls: ['./results.component.scss']
 })
 export class ResultsComponent {
-  @ViewChild("chart") chart = {} as ChartComponent ;
+  @ViewChild("chart") chart = {} as ChartComponent;
   public chartOptions: Partial<ChartOptions> | any;
   public dimensionWeights: DimensionWeight = {} as DimensionWeight;
   public allQuestions: Questions = {} as Questions;
@@ -41,6 +42,7 @@ export class ResultsComponent {
   public showLow: boolean = false;
   public showUnanwsered: boolean = false;
 
+  public selectedOption: string = "all"
 
 
   constructor(
@@ -149,23 +151,47 @@ export class ResultsComponent {
   }
 
   public filterCategories(btn: 'all' | 'high' | 'medium' | 'low' | 'unanwsered' ) {
+    this.showAll = false;
+    this.showHigh = false;
+    this.showMedium = false;
+    this.showLow = false;
+    this.showUnanwsered = false;
     if (btn == 'all') {
       this.showAll = true;
-      this.showHigh = false;
-      this.showMedium = false;
-      this.showLow = false;
-      this.showUnanwsered = false;
+      // this.showHigh = false;
+      // this.showMedium = false;
+      // this.showLow = false;
+      // this.showUnanwsered = false;
     } else if (btn == 'high') {
-      this.showAll = false;
+      // this.showAll = false;
       this.showHigh = true;
     } else if (btn == 'medium') {
-      this.showAll = false;
+      // this.showAll = false;
       this.showMedium = true;
     } else if (btn == 'low') {
-      this.showAll = false;
+      // this.showAll = false;
       this.showLow = true;
     } else if (btn == 'unanwsered') {
-      this.showAll = false;
+      // this.showAll = false;
+      this.showUnanwsered = true;
+    }
+  }
+  public viewchanged() {
+    console.log('anzeige', this.selectedOption);
+    this.showAll = false;
+    this.showHigh = false;
+    this.showMedium = false;
+    this.showLow = false;
+    this.showUnanwsered = false;
+    if (this.selectedOption == 'all') {
+      this.showAll = true;
+    } else if (this.selectedOption == 'high') {
+      this.showHigh = true;
+    } else if (this.selectedOption == 'medium') {
+      this.showMedium = true;
+    } else if (this.selectedOption == 'low') {
+      this.showLow = true;
+    } else if (this.selectedOption == 'unanswered') {
       this.showUnanwsered = true;
     }
   }
