@@ -49,8 +49,9 @@ export class ResultsComponent {
     private resultService: ResultService
   ) {
     this.getWeights();
-    this.createChart();
     this.getQuestions();
+    this.createChart();
+    this.sortQuestions();
   }
 
   public getOrganisationResult() {
@@ -74,11 +75,40 @@ export class ResultsComponent {
   }
 
   private createChart() {
+    const seriesdata = [];
+    const categories = [];
+    for (const category of Object.keys(this.allQuestions)) {
+      const catQuestions: SingleQuestion[] = Object(this.allQuestions)[category];
+      if (category != "default") {
+
+        const anwseredQuestions = catQuestions.filter(a => a.choice != -1);
+        console.log('length', anwseredQuestions.length);
+        let sum = 0;
+        if (anwseredQuestions.length > 0) {
+          for (const anwser of anwseredQuestions) {
+            sum += anwser.choice;
+          }
+        }
+        console.log('sum', sum);
+        const max = anwseredQuestions.length*4
+        console.log('max', max);
+        const percent = sum/max*100;
+        console.log('percent', percent);
+        const title = this.getTitleFromCategory(category);
+        if (percent) {
+          seriesdata.push(percent);
+          categories.push(title);
+        }
+      }
+    }
+
+
     this.chartOptions = {
       series: [
         {
           name: "Series 1",
-          data: [80, 50, 30, 40, 100]
+          // data: [80, 50, 30, 40, 100]
+          data: seriesdata
         }
       ],
       chart: {
@@ -89,7 +119,8 @@ export class ResultsComponent {
       //   text: "Basic Radar Chart"
       // },
       xaxis: {
-        categories: ["Prozesse", "Organisation", "Technologie", "Skills & Kultur", "Strategie"]
+        // categories: ["Prozesse", "Organisation", "Technologie", "Skills & Kultur", "Strategie"]
+        categories: categories
       }
     };
   }
@@ -115,8 +146,8 @@ export class ResultsComponent {
     if (value) {
       this.allQuestions = JSON.parse(value);
       console.log('allQuestions', this.allQuestions);
-      this.sortQuestions();
     }
+    return this.allQuestions;
   }
 
   private sortQuestions() {
@@ -150,32 +181,6 @@ export class ResultsComponent {
     return this.catTitleArray[idx].title;
   }
 
-  public filterCategories(btn: 'all' | 'high' | 'medium' | 'low' | 'unanwsered' ) {
-    this.showAll = false;
-    this.showHigh = false;
-    this.showMedium = false;
-    this.showLow = false;
-    this.showUnanwsered = false;
-    if (btn == 'all') {
-      this.showAll = true;
-      // this.showHigh = false;
-      // this.showMedium = false;
-      // this.showLow = false;
-      // this.showUnanwsered = false;
-    } else if (btn == 'high') {
-      // this.showAll = false;
-      this.showHigh = true;
-    } else if (btn == 'medium') {
-      // this.showAll = false;
-      this.showMedium = true;
-    } else if (btn == 'low') {
-      // this.showAll = false;
-      this.showLow = true;
-    } else if (btn == 'unanwsered') {
-      // this.showAll = false;
-      this.showUnanwsered = true;
-    }
-  }
   public viewchanged() {
     console.log('anzeige', this.selectedOption);
     this.showAll = false;

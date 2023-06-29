@@ -115,25 +115,53 @@
         <p-tabPanel [header]="cat.title">
           <p-accordion >
               <ng-container *ngIf="this.showHigh || this.showAll" >
-                <p-accordionTab *ngFor="let question of cat.high" styleClass="mycontent" [header]="question.shortTitle">
+                <!-- <p-accordionTab *ngFor="let question of cat.high" styleClass="mycontent" [header]="question.shortTitle"> -->
+                  <p-accordionTab *ngFor="let question of cat.high" styleClass="mycontent" >
+                    <ng-template pTemplate="header">
+                      <div class="flex align-items-center">
+                        <span class="vertical-align-middle">{{question.shortTitle}}</span>
+                        <p class="score">{{question.choice +1}}/5</p>
+                      </div>
+                    </ng-template>
                   <app-resultquestion [question]="question" [selectedChoice]="question.choice"></app-resultquestion>
                 </p-accordionTab>
               </ng-container>
 
               <ng-container *ngIf="this.showMedium || this.showAll" >
-                <p-accordionTab  *ngFor="let question of cat.medium" styleClass="mycontent" [header]="question.shortTitle">
+                <!-- <p-accordionTab  *ngFor="let question of cat.medium" styleClass="mycontent" [header]="question.shortTitle"> -->
+                  <p-accordionTab *ngFor="let question of cat.medium" styleClass="mycontent" >
+                    <ng-template pTemplate="header">
+                      <div class="flex align-items-center">
+                        <span class="vertical-align-middle">{{question.shortTitle}}</span>
+                        <p class="score">{{question.choice +1}}/5</p>
+                      </div>
+                    </ng-template>
                   <app-resultquestion [question]="question" [selectedChoice]="question.choice"></app-resultquestion>
                 </p-accordionTab>
               </ng-container>
 
               <ng-container *ngIf="this.showLow || this.showAll" >
-                <p-accordionTab *ngFor="let question of cat.low" styleClass="mycontent" [header]="question.shortTitle">
+                <!-- <p-accordionTab *ngFor="let question of cat.low" styleClass="mycontent" [header]="question.shortTitle"> -->
+                  <p-accordionTab *ngFor="let question of cat.low" styleClass="mycontent" >
+                    <ng-template pTemplate="header">
+                      <div class="flex align-items-center">
+                        <span class="vertical-align-middle">{{question.shortTitle}}</span>
+                        <p class="score">{{question.choice +1}}/5</p>
+                      </div>
+                    </ng-template>
                   <app-resultquestion [question]="question" [selectedChoice]="question.choice"></app-resultquestion>
                 </p-accordionTab>
               </ng-container>
 
               <ng-container *ngIf="this.showUnanwsered || this.showAll" >
-                <p-accordionTab  *ngFor="let question of cat.unanswered" styleClass="mycontent" [header]="question.shortTitle">
+                <!-- <p-accordionTab  *ngFor="let question of cat.unanswered" styleClass="mycontent" [header]="question.shortTitle"> -->
+                  <p-accordionTab *ngFor="let question of cat.unanswered" styleClass="mycontent" >
+                    <ng-template pTemplate="header">
+                      <div class="flex align-items-center">
+                        <span class="vertical-align-middle">{{question.shortTitle}}</span>
+                        <p class="score">{{question.choice +1}}/5</p>
+                      </div>
+                    </ng-template>
                   <app-resultquestion [question]="question" [selectedChoice]="question.choice"></app-resultquestion>
                 </p-accordionTab>
               </ng-container>
@@ -145,3 +173,8 @@
     </p-tabView>
   </div>
 </div>
+
+
+<!--
+  Klären welchen Sinn Dimensionen boosten noch hat
+ -->
