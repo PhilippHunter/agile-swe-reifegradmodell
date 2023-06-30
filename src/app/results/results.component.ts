@@ -106,7 +106,7 @@ export class ResultsComponent {
     this.chartOptions = {
       series: [
         {
-          name: "Series 1",
+          name: "Ergebnis",
           // data: [80, 50, 30, 40, 100]
           data: seriesdata
         }
