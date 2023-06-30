@@ -29,6 +29,10 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { AboutComponent } from './about/about.component';
 import { ProgressComponent } from './progress/progress.component';
 import { TimelineModule } from 'primeng/timeline';
+import { NgApexchartsModule } from 'ng-apexcharts';
+import { TabViewModule } from 'primeng/tabview';
+import { AccordionModule } from 'primeng/accordion';
+import { ResultquestionComponent } from './resultquestion/resultquestion.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +43,8 @@ import { TimelineModule } from 'primeng/timeline';
     ResultsComponent,
     NavigationComponent,
     AboutComponent,
-    ProgressComponent
+    ProgressComponent,
+    ResultquestionComponent
   ],
   imports: [
     BrowserModule,
@@ -59,7 +64,10 @@ import { TimelineModule } from 'primeng/timeline';
     SliderModule,
     InputTextModule,
     AppRoutingModule,
-    TimelineModule
+    TimelineModule,
+    NgApexchartsModule,
+    TabViewModule,
+    AccordionModule
   ],
   providers: [ConfirmationService],
   bootstrap: [AppComponent]

@@ -1,1 +1,180 @@
-<p>results works!</p>
+<div class="cta mb-3">
+  <div class="flex flex-column">
+      <h1>Ergebnis</h1>
+      <p>Du hast den Fragebogen erfolgreich beendet! Schau dir jetzt dein Ergebnis an!</p>
+  </div>
+</div>
+
+<div class="cta mb-3 chartdiv">
+  <!-- Platzhalter für den Radarchart -->
+
+  <div id="chart">
+    <apx-chart
+      [series]="chartOptions.series"
+      [chart]="chartOptions.chart"
+      [xaxis]="chartOptions.xaxis"
+      [title]="chartOptions.title"
+
+    ></apx-chart>
+  </div>
+  <div>
+    <h3>Gewählte Gewichtungen:</h3>
+    <p>Prozesse: {{ this.dimensionWeights.processes}}x</p>
+    <p>Strategie: {{ this.dimensionWeights.strategy}}x</p>
+    <p>Skills & Kultur: {{ this.dimensionWeights.skills_culture}}x</p>
+    <p>Technologie: {{ this.dimensionWeights.technology}}x</p>
+    <p>Organisation: {{ this.dimensionWeights.organisation}}x</p>
+  </div>
+</div>
+
+<!-- <div class="features">
+  <div class="flex flex-column gap-3 pb-3">
+      <p-card>
+          <ng-template pTemplate="header">
+              <div class="flex header flex-row align-items-center shadow-3 gap-3 p-3">
+                  <h2>Prozesse</h2>
+              </div>
+          </ng-template>
+          <p>{{this.getProcessesResult()}}</p>
+      </p-card>
+      <p-card>
+        <ng-template pTemplate="header">
+            <div class="flex header flex-row align-items-center shadow-3 gap-3 p-3">
+                <h2>Organisation</h2>
+            </div>
+        </ng-template>
+        <p>{{this.getOrganisationResult()}}</p>
+      </p-card>
+      <p-card>
+        <ng-template pTemplate="header">
+            <div class="flex header flex-row align-items-center shadow-3 gap-3 p-3">
+                <h2>Technologie</h2>
+            </div>
+        </ng-template>
+        <p>{{this.getTechnologyResult()}}</p>
+      </p-card>
+      <p-card>
+        <ng-template pTemplate="header">
+            <div class="flex header flex-row align-items-center shadow-3 gap-3 p-3">
+                <h2>Skills & Kultur</h2>
+            </div>
+        </ng-template>
+        <p>{{this.getSkillCultureResult()}}</p>
+      </p-card>
+      <p-card>
+        <ng-template pTemplate="header">
+            <div class="flex header flex-row align-items-center shadow-3 gap-3 p-3">
+                <h2>Strategie</h2>
+            </div>
+        </ng-template>
+        <p>{{this.getStrategyResult()}}</p>
+      </p-card>
+  </div>
+</div> -->
+
+
+<div class="features">
+  <div class="flex flex-column gap-3 pb-3">
+    <p-tabView>
+      <!-- <div>
+        <p-button label="Alle" (onClick)="filterCategories('all')"></p-button>
+        <p-button #goodbutton label="Gut" styleClass="wbtn" (onClick)="filterCategories('high')"></p-button>
+        <p-button label="Mittel" (onClick)="filterCategories('medium')"></p-button>
+        <p-button label="Schlecht" (onClick)="filterCategories('low')"></p-button>
+        <p-button label="Unbeantwortet" (onClick)="filterCategories('unanwsered')"></p-button>
+      </div> -->
+
+      <div class="flex flex-wrap gap-3  mb-3">
+        <div class="flex align-items-center">
+            <p-radioButton name="pizza" value="all" [(ngModel)]="selectedOption" (onClick)="viewchanged()" inputId="ingredient1"></p-radioButton>
+            <label for="ingredient1" class="ml-2">Alle</label>
+        </div>
+
+        <div class="flex align-items-center">
+            <p-radioButton name="pizza" value="high" [(ngModel)]="selectedOption" (onClick)="viewchanged()" inputId="ingredient2"></p-radioButton>
+            <label for="ingredient2" class="ml-2">Gut</label>
+        </div>
+
+        <div class="flex align-items-center">
+            <p-radioButton name="pizza" value="medium" [(ngModel)]="selectedOption" (onClick)="viewchanged()" inputId="ingredient3"></p-radioButton>
+            <label for="ingredient3" class="ml-2">Mittel</label>
+        </div>
+
+        <div class="flex align-items-center">
+            <p-radioButton name="pizza" value="low" [(ngModel)]="selectedOption" (onClick)="viewchanged()" inputId="ingredient4"></p-radioButton>
+            <label for="ingredient4" class="ml-2">Schlecht</label>
+        </div>
+
+        <div class="flex align-items-center">
+          <p-radioButton name="pizza" value="unanswered" [(ngModel)]="selectedOption" (onClick)="viewchanged()" inputId="ingredient4"></p-radioButton>
+          <label for="ingredient4" class="ml-2">Unbeantwortet</label>
+      </div>
+    </div>
+
+      <ng-container *ngFor="let cat of this.sortedQuestions">
+        <p-tabPanel [header]="cat.title">
+          <p-accordion >
+              <ng-container *ngIf="this.showHigh || this.showAll" >
+                <!-- <p-accordionTab *ngFor="let question of cat.high" styleClass="mycontent" [header]="question.shortTitle"> -->
+                  <p-accordionTab *ngFor="let question of cat.high" styleClass="mycontent" >
+                    <ng-template pTemplate="header">
+                      <div class="flex align-items-center">
+                        <span class="vertical-align-middle">{{question.shortTitle}}</span>
+                        <p class="score">{{question.choice +1}}/5</p>
+                      </div>
+                    </ng-template>
+                  <app-resultquestion [question]="question" [selectedChoice]="question.choice"></app-resultquestion>
+                </p-accordionTab>
+              </ng-container>
+
+              <ng-container *ngIf="this.showMedium || this.showAll" >
+                <!-- <p-accordionTab  *ngFor="let question of cat.medium" styleClass="mycontent" [header]="question.shortTitle"> -->
+                  <p-accordionTab *ngFor="let question of cat.medium" styleClass="mycontent" >
+                    <ng-template pTemplate="header">
+                      <div class="flex align-items-center">
+                        <span class="vertical-align-middle">{{question.shortTitle}}</span>
+                        <p class="score">{{question.choice +1}}/5</p>
+                      </div>
+                    </ng-template>
+                  <app-resultquestion [question]="question" [selectedChoice]="question.choice"></app-resultquestion>
+                </p-accordionTab>
+              </ng-container>
+
+              <ng-container *ngIf="this.showLow || this.showAll" >
+                <!-- <p-accordionTab *ngFor="let question of cat.low" styleClass="mycontent" [header]="question.shortTitle"> -->
+                  <p-accordionTab *ngFor="let question of cat.low" styleClass="mycontent" >
+                    <ng-template pTemplate="header">
+                      <div class="flex align-items-center">
+                        <span class="vertical-align-middle">{{question.shortTitle}}</span>
+                        <p class="score">{{question.choice +1}}/5</p>
+                      </div>
+                    </ng-template>
+                  <app-resultquestion [question]="question" [selectedChoice]="question.choice"></app-resultquestion>
+                </p-accordionTab>
+              </ng-container>
+
+              <ng-container *ngIf="this.showUnanwsered || this.showAll" >
+                <!-- <p-accordionTab  *ngFor="let question of cat.unanswered" styleClass="mycontent" [header]="question.shortTitle"> -->
+                  <p-accordionTab *ngFor="let question of cat.unanswered" styleClass="mycontent" >
+                    <ng-template pTemplate="header">
+                      <div class="flex align-items-center">
+                        <span class="vertical-align-middle">{{question.shortTitle}}</span>
+                        <p class="score">{{question.choice +1}}/5</p>
+                      </div>
+                    </ng-template>
+                  <app-resultquestion [question]="question" [selectedChoice]="question.choice"></app-resultquestion>
+                </p-accordionTab>
+              </ng-container>
+
+
+            </p-accordion>
+        </p-tabPanel>
+      </ng-container>
+    </p-tabView>
+  </div>
+</div>
+
+
+<!--
+  Klären welchen Sinn Dimensionen boosten noch hat
+ -->
