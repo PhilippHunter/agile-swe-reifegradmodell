@@ -1,7 +1,8 @@
 <div class="cta mb-3">
   <div class="flex flex-column">
       <h1>Ergebnis</h1>
-      <p>Du hast den Fragebogen erfolgreich beendet! Schau dir jetzt dein Ergebnis an!</p>
+      <p>Du hast den Fragebogen erfolgreich beendet! Schau dir jetzt dein Ergebnis an! Der Gesamtscore wird anhand aller deiner beantworteten Fragen
+        zusammengerechnet. Lässt du Fragen oder Kategorien aus zählen diese nicht in dein Ergebnis mit rein.</p>
   </div>
 </div>
 
@@ -10,12 +11,53 @@
 
   <div>
     <h2 style="font-size: 28px;"><span>Dein Gesamtscore: </span>{{finalScore | number : '1.2-2'}}%</h2>
-    <h3 style="font-weight: 500;">Gewählte Gewichtungen:</h3>
+
+    <table class="scorestable">
+      <tr>
+        <th>Kategorie</th>
+        <th>Gewichtung</th>
+        <th>Erzielter Wert</th>
+      </tr>
+      <tr>
+        <td>Prozesse</td>
+        <td>{{ this.dimensionWeights.processes}}x</td>
+        <td>{{ this.dimensionScores.processes}}%</td>
+      </tr>
+      <tr>
+        <td>Strategie</td>
+        <td>{{ this.dimensionWeights.strategy}}x</td>
+        <td>{{ this.dimensionScores.strategy}}%</td>
+      </tr>
+      <tr>
+        <td>Skills & Kultur</td>
+        <td>{{ this.dimensionWeights.skills_culture}}x</td>
+        <td>{{ this.dimensionScores.skills_culture}}%</td>
+      </tr>
+      <tr>
+        <td>Technologie</td>
+        <td>{{ this.dimensionWeights.technology}}x</td>
+        <td>{{ this.dimensionScores.technology}}%</td>
+      </tr>
+      <tr>
+        <td>Organisation</td>
+        <td>{{ this.dimensionWeights.organisation}}x</td>
+        <td>{{ this.dimensionScores.organisation}}%</td>
+      </tr>
+    </table>
+
+
+
+
+
+    <!-- <h3 style="font-weight: 500;">Gewählte Gewichtungen:</h3>
     <p>Prozesse: {{ this.dimensionWeights.processes}}x</p>
     <p>Strategie: {{ this.dimensionWeights.strategy}}x</p>
     <p>Skills & Kultur: {{ this.dimensionWeights.skills_culture}}x</p>
     <p>Technologie: {{ this.dimensionWeights.technology}}x</p>
-    <p>Organisation: {{ this.dimensionWeights.organisation}}x</p>
+    <p>Organisation: {{ this.dimensionWeights.organisation}}x</p> -->
+
+
+
   </div>
   <div id="chart">
     <apx-chart

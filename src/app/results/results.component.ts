@@ -27,6 +27,7 @@ export class ResultsComponent {
   @ViewChild("chart") chart = {} as ChartComponent;
   public chartOptions: Partial<ChartOptions> | any;
   public dimensionWeights: DimensionWeight = {} as DimensionWeight;
+  public dimensionScores: DimensionWeight = {} as DimensionWeight;
   public allQuestions: Questions = {} as Questions;
   public sortedQuestions: SortedQuestion[] = [];
   private catTitleArray = [
@@ -93,19 +94,24 @@ export class ResultsComponent {
         console.log('sum', sum);
         const max = anwseredQuestions.length*4
         console.log('max', max);
-        const percent = sum/max*100;
+        let percent = sum/max*100;
         console.log('percent', percent);
         const title = this.getTitleFromCategory(category);
+
         if (percent) {
-          seriesdata.push(percent);
-          categories.push(title);
           // finalscore berechnen
           sumWeights += Object(this.dimensionWeights)[category];
           sumAllWithWeights += percent * Object(this.dimensionWeights)[category];
+        } else {
+          percent = 0;
         }
+        seriesdata.push(percent);
+        categories.push(title);
+        Object(this.dimensionScores)[category] = percent;
+
       }
     }
-
+    console.log('dimensionScores', this.dimensionScores);
     this.finalScore = sumAllWithWeights/sumWeights;
     console.log('finalScore', this.finalScore);
 
