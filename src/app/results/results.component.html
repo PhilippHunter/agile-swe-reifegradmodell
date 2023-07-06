@@ -21,27 +21,27 @@
       <tr>
         <td>Prozesse</td>
         <td>{{ this.dimensionWeights.processes}}x</td>
-        <td>{{ this.dimensionScores.processes}}%</td>
+        <td>{{ this.dimensionScores.processes | number : '1.2-2'}}%</td>
       </tr>
       <tr>
         <td>Strategie</td>
         <td>{{ this.dimensionWeights.strategy}}x</td>
-        <td>{{ this.dimensionScores.strategy}}%</td>
+        <td>{{ this.dimensionScores.strategy | number : '1.2-2'}}%</td>
       </tr>
       <tr>
         <td>Skills & Kultur</td>
         <td>{{ this.dimensionWeights.skills_culture}}x</td>
-        <td>{{ this.dimensionScores.skills_culture}}%</td>
+        <td>{{ this.dimensionScores.skills_culture | number : '1.2-2'}}%</td>
       </tr>
       <tr>
         <td>Technologie</td>
         <td>{{ this.dimensionWeights.technology}}x</td>
-        <td>{{ this.dimensionScores.technology}}%</td>
+        <td>{{ this.dimensionScores.technology | number : '1.2-2'}}%</td>
       </tr>
       <tr>
         <td>Organisation</td>
         <td>{{ this.dimensionWeights.organisation}}x</td>
-        <td>{{ this.dimensionScores.organisation}}%</td>
+        <td>{{ this.dimensionScores.organisation | number : '1.2-2'}}%</td>
       </tr>
     </table>
 

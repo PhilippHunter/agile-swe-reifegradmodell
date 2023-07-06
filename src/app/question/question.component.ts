@@ -1,6 +1,7 @@
 import { Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges } from '@angular/core';
 import { SingleQuestion } from '../survey/survey.component';
 import { DialogModule } from 'primeng/dialog';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-question',
@@ -21,7 +22,9 @@ export class QuestionComponent implements OnInit, OnChanges {
   public selectedChoice: number;
   public boosted: boolean;
 
-  constructor() {
+  constructor(
+    private router: Router
+  ) {
     this.selectedChoice = -1;
     this.boosted = false;
   }
@@ -59,6 +62,10 @@ export class QuestionComponent implements OnInit, OnChanges {
   public selectionRadioChanged() {
     // console.log('selection changed!!');
     this.selectionChanged.emit(this.selectedChoice);
+  }
+
+  public navigateToResult(){
+    this.router.navigate(['navigation/results']);
   }
 }
 
