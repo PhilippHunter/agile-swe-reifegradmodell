@@ -41,7 +41,7 @@ export class ResultsComponent {
   public showMedium: boolean = false;
   public showLow: boolean = false;
   public showUnanwsered: boolean = false;
-
+  public finalScore: number = 0;
   public selectedOption: string = "all"
 
 
@@ -77,10 +77,11 @@ export class ResultsComponent {
   private createChart() {
     const seriesdata = [];
     const categories = [];
+    let sumWeights = 0;
+    let sumAllWithWeights = 0
     for (const category of Object.keys(this.allQuestions)) {
       const catQuestions: SingleQuestion[] = Object(this.allQuestions)[category];
       if (category != "default") {
-
         const anwseredQuestions = catQuestions.filter(a => a.choice != -1);
         console.log('length', anwseredQuestions.length);
         let sum = 0;
@@ -98,9 +99,15 @@ export class ResultsComponent {
         if (percent) {
           seriesdata.push(percent);
           categories.push(title);
+          // finalscore berechnen
+          sumWeights += Object(this.dimensionWeights)[category];
+          sumAllWithWeights += percent * Object(this.dimensionWeights)[category];
         }
       }
     }
+
+    this.finalScore = sumAllWithWeights/sumWeights;
+    console.log('finalScore', this.finalScore);
 
 
     this.chartOptions = {
