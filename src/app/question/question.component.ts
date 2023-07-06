@@ -16,6 +16,7 @@ export class QuestionComponent implements OnInit, OnChanges {
   @Output() previousButton = new EventEmitter<number>();
   @Output() boostButton = new EventEmitter<boolean>();
   @Output() showWeightsModal = new EventEmitter<boolean>();
+  @Output() selectionChanged = new EventEmitter<number>();
 
   public selectedChoice: number;
   public boosted: boolean;
@@ -53,6 +54,11 @@ export class QuestionComponent implements OnInit, OnChanges {
   public showDialog() {
     // Output to Survey Component for showing weights modal
     this.showWeightsModal.emit(true);
+  }
+
+  public selectionRadioChanged() {
+    // console.log('selection changed!!');
+    this.selectionChanged.emit(this.selectedChoice);
   }
 }
 

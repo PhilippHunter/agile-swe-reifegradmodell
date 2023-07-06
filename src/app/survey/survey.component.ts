@@ -65,7 +65,6 @@ export class SurveyComponent implements OnInit {
 
   public nextButtonClicked(choice: number) {
     this.persistChoice(choice);
-    this.persistToSession();
 
     if (this.indexQuestion < this.allCategoryQuestion.length - 1) {
       this.indexQuestion++;
@@ -90,8 +89,7 @@ export class SurveyComponent implements OnInit {
   }
 
   public previousButtonClicked(choice: number) {
-    this.persistChoice(choice)
-    this.persistToSession();
+    this.persistChoice(choice);
 
     if (this.indexQuestion == 0) {
       this.previousCategory();
@@ -132,8 +130,9 @@ export class SurveyComponent implements OnInit {
     this.allCategoryQuestion = this.allQuestions[this.currentCategory];
   }
 
-  private persistChoice(choice: number) {
+  public persistChoice(choice: number) {
     this.allCategoryQuestion[this.indexQuestion].choice = choice;
+    this.persistToSession();
   }
 
   private persistToSession() {

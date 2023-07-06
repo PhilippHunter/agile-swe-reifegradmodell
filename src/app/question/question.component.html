@@ -4,12 +4,12 @@
             <h2 class="m-0">
                 {{this.question.title}}
             </h2>
-            <p-toggleButton 
-                *ngIf="weightsEnabled" 
-                [(ngModel)]="boosted" 
-                onIcon="pi pi-bolt" 
-                offIcon="pi pi-bolt" 
-                styleClass="p-button-rounded" 
+            <p-toggleButton
+                *ngIf="weightsEnabled"
+                [(ngModel)]="boosted"
+                onIcon="pi pi-bolt"
+                offIcon="pi pi-bolt"
+                styleClass="p-button-rounded"
                 pTooltip="Fragemultiplikator erhöhen"
                 (click)="boostClicked()"
             ></p-toggleButton>
@@ -22,7 +22,7 @@
             <div *ngFor="let answer of this.question.answers; last as isLast; index as idx;">
                 <div class="field-checkbox">
                     <p-radioButton [inputId]="answer.score.toString()" name="category" [value]="idx"
-                    [(ngModel)]="selectedChoice"></p-radioButton>
+                    [(ngModel)]="selectedChoice" (onClick)="selectionRadioChanged()"></p-radioButton>
                     <label [for]="answer.score" class="ml-2">{{ answer.text }}</label>
                 </div>
                 <p-divider *ngIf="!isLast"></p-divider>
