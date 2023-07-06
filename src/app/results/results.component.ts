@@ -120,7 +120,8 @@ export class ResultsComponent {
       ],
       chart: {
         height: 500,
-        type: "radar"
+        type: "radar",
+        toolbar: {show: false}
       },
       // title: {
       //   text: "Basic Radar Chart"
