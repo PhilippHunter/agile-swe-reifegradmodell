@@ -121,7 +121,14 @@
                     <ng-template pTemplate="header">
                       <div class="flex align-items-center">
                         <span class="vertical-align-middle">{{question.shortTitle}}</span>
-                        <p class="score">{{question.choice +1}}/5</p>
+                        <p
+                        [ngClass]="{
+                          'high' : question.choice > 3 ,
+                          'medium' :(question.choice > 1 && question.choice < 4),
+                          'low' :question.choice  < 2 && question.choice != -1,
+                          'unanswered' :question.choice  == -1
+                         }"
+                        class="score">{{question.choice +1}}/5</p>
                       </div>
                     </ng-template>
                   <app-resultquestion [question]="question" [selectedChoice]="question.choice"></app-resultquestion>
@@ -134,7 +141,14 @@
                     <ng-template pTemplate="header">
                       <div class="flex align-items-center">
                         <span class="vertical-align-middle">{{question.shortTitle}}</span>
-                        <p class="score">{{question.choice +1}}/5</p>
+                        <p
+                        [ngClass]="{
+                          'high' : question.choice > 3 ,
+                          'medium' :(question.choice > 1 && question.choice < 4),
+                          'low' :question.choice  < 2 && question.choice != -1,
+                          'unanswered' :question.choice  == -1
+                         }"
+                        class="score">{{question.choice +1}}/5</p>
                       </div>
                     </ng-template>
                   <app-resultquestion [question]="question" [selectedChoice]="question.choice"></app-resultquestion>
@@ -147,7 +161,14 @@
                     <ng-template pTemplate="header">
                       <div class="flex align-items-center">
                         <span class="vertical-align-middle">{{question.shortTitle}}</span>
-                        <p class="score">{{question.choice +1}}/5</p>
+                        <p
+                        [ngClass]="{
+                          'high' : question.choice > 3 ,
+                          'medium' :(question.choice > 1 && question.choice < 4),
+                          'low' :question.choice  < 2 && question.choice != -1,
+                          'unanswered' :question.choice  == -1
+                         }"
+                        class="score">{{question.choice +1}}/5</p>
                       </div>
                     </ng-template>
                   <app-resultquestion [question]="question" [selectedChoice]="question.choice"></app-resultquestion>
@@ -160,7 +181,14 @@
                     <ng-template pTemplate="header">
                       <div class="flex align-items-center">
                         <span class="vertical-align-middle">{{question.shortTitle}}</span>
-                        <p class="score">{{question.choice +1}}/5</p>
+                        <p
+                        [ngClass]="{
+                          'high' : question.choice > 3 ,
+                          'medium' :(question.choice > 1 && question.choice < 4),
+                          'low' :question.choice  < 2 && question.choice != -1,
+                          'unanswered' :question.choice  == -1
+                         }"
+                        class="score">{{question.choice +1}}/5</p>
                       </div>
                     </ng-template>
                   <app-resultquestion [question]="question" [selectedChoice]="question.choice"></app-resultquestion>
