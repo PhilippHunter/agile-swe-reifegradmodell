@@ -341,7 +341,7 @@ export class ResultsComponent {
           }
           if (key === 'medium') {
             keyTrans = 'Mittel';
-            documentDefinition.content.push({ text: keyTrans, color: 'yellow', bold: true, italics: true, fontSize: 16 });
+            documentDefinition.content.push({ text: keyTrans, color: 'orange', bold: true, italics: true, fontSize: 16 });
 
           }
           if (key === 'low') {
