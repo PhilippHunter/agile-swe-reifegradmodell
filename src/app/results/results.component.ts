@@ -281,11 +281,10 @@ export class ResultsComponent {
     const chartElement = document.querySelector('.apexcharts-svg');
 
     if (chartElement instanceof Element) {
-      // Convert the SVG element to base64 image
-      const chartImage = await domtoimage.toPng(chartElement);
-
-      // Add the chart image to the document
-      documentDefinition.content.push({ image: chartImage, width: 500 });
+      // /onvert the SVG element to string
+      const s = new XMLSerializer();
+      const chartString = s.serializeToString(chartElement);
+      documentDefinition.content.push({ svg: chartString, style: { alignment: 'center' }});
     }
 
     // Create table
@@ -298,11 +297,11 @@ export class ResultsComponent {
 
           body: [
             [{ text: 'Kategorie', bold: true }, { text: 'Gewichtung', bold: true }, { text: 'Erzielter Wert', bold: true }],
-            ['Prozesse', this.dimensionWeights.processes + "x", this.dimensionScores.processes + "%"],
-            ['Strategie', this.dimensionWeights.strategy + "x", this.dimensionScores.strategy + "%"],
-            ['Skills & Kultur', this.dimensionWeights.skills_culture + "x", this.dimensionScores.skills_culture + "%"],
-            ['Technologie', this.dimensionWeights.technology + "x", this.dimensionScores.technology + "%"],
-            ['Organisation', this.dimensionWeights.organisation + "x", this.dimensionScores.organisation + "%"],
+            ['Prozesse', this.dimensionWeights.processes.toFixed(2) + "x", this.dimensionScores.processes.toFixed(2) + "%"],
+            ['Strategie', this.dimensionWeights.strategy.toFixed(2) + "x", this.dimensionScores.strategy.toFixed(2) + "%"],
+            ['Skills & Kultur', this.dimensionWeights.skills_culture.toFixed(2) + "x", this.dimensionScores.skills_culture.toFixed(2) + "%"],
+            ['Technologie', this.dimensionWeights.technology.toFixed(2) + "x", this.dimensionScores.technology.toFixed(2) + "%"],
+            ['Organisation', this.dimensionWeights.organisation.toFixed(2) + "x", this.dimensionScores.organisation.toFixed(2) + "%"],
           ]
         }
       }
@@ -315,12 +314,12 @@ export class ResultsComponent {
     const overallScoreElement = [
       {
         alignment: 'right',
-        text: "Gesamtscore: " + this.finalScore + "%",
+        text: "Gesamtscore: " + this.finalScore.toFixed(2) + "%",
         bold: true
       }
     ]
     documentDefinition.content.push(overallScoreElement);
-    documentDefinition.content.push({ text: '\n', pageBreak: 'after' });
+    documentDefinition.content.push({ text: '', pageBreak: 'after' });
 
     // Iterate over each category in sortedQuestions
     for (let categoryIndex = 0; categoryIndex < this.sortedQuestions.length; categoryIndex++) {
