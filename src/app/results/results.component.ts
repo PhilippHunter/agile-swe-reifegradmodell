@@ -3,7 +3,7 @@ import { ResultService } from '../result-service/result.service';
 import pdfMake from "pdfmake/build/pdfmake";
 import pdfFonts from "pdfmake/build/vfs_fonts";
 pdfMake.vfs = pdfFonts.pdfMake.vfs;
-import domtoimage from 'dom-to-image';
+import html2canvas from 'html2canvas';
 
 import {
   ApexAxisChartSeries,
@@ -248,7 +248,7 @@ export class ResultsComponent {
           fontSize: 10
         }
       },
-      footer: function (currentPage: any, pageCount: any) { 
+      footer: function (currentPage: any, pageCount: any) {
         return {
           text: currentPage.toString() + ' von ' + pageCount,
           fontSize: 8,
@@ -259,13 +259,16 @@ export class ResultsComponent {
     };
 
     // Get logo
-    const logoElement = document.querySelector('#home-link');
+    const logoElement = document.getElementById('home-link');
     if (logoElement instanceof Element) {
-      // Convert the SVG element to base64 image
-      const chartImage = await domtoimage.toPng(logoElement);
+      // Create canvas for logo element
+      const canvas = await html2canvas(logoElement, { scale: 2 });
 
-      // Add the chart image to the document
-      documentDefinition.content.push({ image: chartImage, width: 100 });
+      // Convert the canvas to a base64-encoded PNG image
+      const logoImage = canvas.toDataURL('image/png');
+
+      // Add the logo image to the document
+      documentDefinition.content.push({ image: logoImage, width: 100 });
       documentDefinition.content.push('\n');
     }
 
@@ -277,14 +280,18 @@ export class ResultsComponent {
     ];
     documentDefinition.content.push(titleElement);
 
-    // Select the ApexCharts SVG element
-    const chartElement = document.querySelector('.apexcharts-svg');
+    // Select the chart div
+    const chartElement = document.getElementById('chart');
 
     if (chartElement instanceof Element) {
-      // /onvert the SVG element to string
-      const s = new XMLSerializer();
-      const chartString = s.serializeToString(chartElement);
-      documentDefinition.content.push({ svg: chartString, style: { alignment: 'center' }});
+      // Convert the chart element to a canvas using html2canvas
+      const canvas = await html2canvas(chartElement, { scale: 2 });
+
+      // Convert the canvas to a base64-encoded PNG image
+      const chartImage = canvas.toDataURL('image/png');
+
+      // Add the chart image to the document
+      documentDefinition.content.push({ image: chartImage, style: { alignment: 'center' }, fit: [500, 500] });
     }
 
     // Create table
