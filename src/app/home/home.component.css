@@ -54,6 +54,26 @@
 }
 
 /* Experts */
+.experts .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.experts .expert-card {
+    margin: 1em;
+    flex: 1 0 100%;
+    height: 15rem;
+}
+
+.experts .expert-card img {
+    height: 50px;
+    width: 400px;
+}
+
+.experts .p-card-content {
+    color:rgb(0, 0, 0);
+}
 
 /* Call to Action */
 .cta button {
