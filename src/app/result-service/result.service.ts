@@ -15,7 +15,7 @@ export class ResultService {
   constructor() { }
 
   public generateFeedback(questions: Questions) {
-    // generate feedback giving the anwser of the user
+    // generate feedback giving the answer of the user
     // do some stuff with the generate Feedback
 
     this.feedback_Processes = "kommt noch..."

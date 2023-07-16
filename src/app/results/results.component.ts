@@ -45,7 +45,7 @@ export class ResultsComponent {
   public showHigh: boolean = false;
   public showMedium: boolean = false;
   public showLow: boolean = false;
-  public showUnanwsered: boolean = false;
+  public showUnanswered: boolean = false;
   public finalScore: number = 0;
   public selectedOption: string = "all"
 
@@ -87,16 +87,17 @@ export class ResultsComponent {
     for (const category of Object.keys(this.allQuestions)) {
       const catQuestions: SingleQuestion[] = Object(this.allQuestions)[category];
       if (category != "default") {
-        const anwseredQuestions = catQuestions.filter(a => a.choice != -1);
-        console.log('length', anwseredQuestions.length);
+        const answeredQuestions = catQuestions.filter(a => a.choice != -1);
+        console.log('length', answeredQuestions.length);
         let sum = 0;
-        if (anwseredQuestions.length > 0) {
-          for (const anwser of anwseredQuestions) {
-            sum += anwser.choice;
+        let max = 0;
+        if (answeredQuestions.length > 0) {
+          for (const answer of answeredQuestions) {
+            sum += answer.boosted ? 2 * answer.choice : answer.choice;
+            max += answer.boosted ? 2 * 4 : 4;
           }
         }
         console.log('sum', sum);
-        const max = anwseredQuestions.length * 4
         console.log('max', max);
         let percent = sum / max * 100;
         console.log('percent', percent);
@@ -144,8 +145,12 @@ export class ResultsComponent {
   }
 
   private getWeights() {
+    let weightsEnabled; 
+    let ls_weightsEnabled = localStorage.getItem('weightsEnabled');
+    if (ls_weightsEnabled !== null)
+      weightsEnabled = !!JSON.parse(ls_weightsEnabled);
     const value = localStorage.getItem('dimensionWeights');
-    if (value) {
+    if (weightsEnabled && value) {
       this.dimensionWeights = JSON.parse(value);
     } else {
       this.dimensionWeights =
@@ -205,7 +210,7 @@ export class ResultsComponent {
     this.showHigh = false;
     this.showMedium = false;
     this.showLow = false;
-    this.showUnanwsered = false;
+    this.showUnanswered = false;
     if (this.selectedOption == 'all') {
       this.showAll = true;
     } else if (this.selectedOption == 'high') {
@@ -215,7 +220,7 @@ export class ResultsComponent {
     } else if (this.selectedOption == 'low') {
       this.showLow = true;
     } else if (this.selectedOption == 'unanswered') {
-      this.showUnanwsered = true;
+      this.showUnanswered = true;
     }
   }
 

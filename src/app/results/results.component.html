@@ -126,7 +126,7 @@
         <p-button #goodbutton label="Gut" styleClass="wbtn" (onClick)="filterCategories('high')"></p-button>
         <p-button label="Mittel" (onClick)="filterCategories('medium')"></p-button>
         <p-button label="Schlecht" (onClick)="filterCategories('low')"></p-button>
-        <p-button label="Unbeantwortet" (onClick)="filterCategories('unanwsered')"></p-button>
+        <p-button label="Unbeantwortet" (onClick)="filterCategories('unanswered')"></p-button>
       </div> -->
 
       <div class="flex flex-wrap gap-3  mb-3">
@@ -219,7 +219,7 @@
                 </p-accordionTab>
               </ng-container>
 
-              <ng-container *ngIf="this.showUnanwsered || this.showAll" >
+              <ng-container *ngIf="this.showUnanswered || this.showAll" >
                 <!-- <p-accordionTab  *ngFor="let question of cat.unanswered" styleClass="mycontent" [header]="question.shortTitle"> -->
                   <p-accordionTab *ngFor="let question of cat.unanswered" styleClass="mycontent" >
                     <ng-template pTemplate="header">
