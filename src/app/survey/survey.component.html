@@ -1,6 +1,9 @@
+<p-button label="Onboard Tour" styleClass="p-button-sm" (click)="tourService.start()" tourAnchor="start.tour"></p-button>
+
 <app-progress
     [currentCategory]="this.currentCategory"
-    (changedTopic)="changedTopic($event)">
+    (changedTopic)="changedTopic($event)"
+    tourAnchor="question.progressbar">
 </app-progress>
 <app-question
     [disableBackButton]="this.indexCategory == 0 && this.indexQuestion == 0"
@@ -96,3 +99,5 @@
         <p-button icon="pi pi-save" (click)="saveWeights()" label="Gewichtung speichern" styleClass="p-button-text"></p-button>
     </ng-template>
 </p-dialog>
+
+<tour-step-template></tour-step-template>

@@ -1,4 +1,4 @@
-<div class="cta mb-3">
+<div class="cta mb-3" tourAnchor="results.overview">
   <div class="flex flex-column">
       <h1>Ergebnis</h1>
       <p>Du hast den Fragebogen erfolgreich beendet! Schau dir jetzt dein Ergebnis an! Der Gesamtscore wird anhand aller deiner beantworteten Fragen
@@ -6,12 +6,14 @@
   </div>
 </div>
 
-<p-button label="Export to PDF" styleClass="p-button-sm" (click)="exportPDF()"></p-button>
+<div tourAnchor="results.pdf">
+  <p-button label="Export to PDF" styleClass="p-button-sm" (click)="exportPDF()"></p-button>
+</div>
 
 <div class="cta mb-3 chartdiv">
   <!-- Platzhalter für den Radarchart -->
 
-  <div>
+  <div tourAnchor="results.scores">
     <h2 style="font-size: 28px;"><span>Dein Gesamtscore: </span>{{finalScore | number : '1.2-2'}}%</h2>
 
     <table class="scorestable">
@@ -61,7 +63,7 @@
 
 
   </div>
-  <div id="chart">
+  <div id="chart" tourAnchor="results.chart">
     <apx-chart
       [series]="chartOptions.series"
       [chart]="chartOptions.chart"
@@ -129,7 +131,7 @@
         <p-button label="Unbeantwortet" (onClick)="filterCategories('unanswered')"></p-button>
       </div> -->
 
-      <div class="flex flex-wrap gap-3  mb-3">
+      <div class="flex flex-wrap gap-3 mb-3" tourAnchor="results.answers">
         <div class="flex align-items-center">
             <p-radioButton name="pizza" value="all" [(ngModel)]="selectedOption" (onClick)="viewchanged()" inputId="ingredient1"></p-radioButton>
             <label for="ingredient1" class="ml-2">Alle</label>
@@ -246,3 +248,5 @@
     </p-tabView>
   </div>
 </div>
+
+<tour-step-template></tour-step-template>

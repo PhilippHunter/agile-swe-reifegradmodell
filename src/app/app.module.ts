@@ -20,6 +20,10 @@ import { SliderModule } from 'primeng/slider';
 import { InputSwitchModule } from 'primeng/inputswitch';
 import { ToggleButtonModule } from 'primeng/togglebutton';
 
+import { TourMatMenuModule } from 'ngx-ui-tour-md-menu';
+import { MatCardModule } from '@angular/material/card';
+import { MatIconModule } from '@angular/material/icon';
+
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
 import { QuestionComponent } from './question/question.component';
@@ -67,7 +71,10 @@ import { ResultquestionComponent } from './resultquestion/resultquestion.compone
     TimelineModule,
     NgApexchartsModule,
     TabViewModule,
-    AccordionModule
+    AccordionModule,
+    TourMatMenuModule,
+    MatCardModule,
+    MatIconModule,
   ],
   providers: [ConfirmationService],
   bootstrap: [AppComponent]
