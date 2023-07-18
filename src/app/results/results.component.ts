@@ -100,6 +100,7 @@ export class ResultsComponent {
         console.log('sum', sum);
         console.log('max', max);
         let percent = sum / max * 100;
+        percent = parseFloat(percent.toFixed(2));
         console.log('percent', percent);
         const title = this.getTitleFromCategory(category);
 
@@ -139,13 +140,25 @@ export class ResultsComponent {
       // },
       xaxis: {
         // categories: ["Prozesse", "Organisation", "Technologie", "Skills & Kultur", "Strategie"]
-        categories: categories
+        categories: categories,
+        max: 100
+      },
+      yaxis: {
+        min: 0,
+        max: 100,
+        tickAmount: 5
+      },
+      markers: {
+        size: 5,
+        hover: {
+          size: 10
+        }
       }
     };
   }
 
   private getWeights() {
-    let weightsEnabled; 
+    let weightsEnabled;
     let ls_weightsEnabled = localStorage.getItem('weightsEnabled');
     if (ls_weightsEnabled !== null)
       weightsEnabled = !!JSON.parse(ls_weightsEnabled);
