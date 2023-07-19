@@ -1,7 +1,8 @@
 import { Router } from '@angular/router';
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, inject, Input, OnInit } from '@angular/core';
 import * as questions from '../../assets/questions.json';
 import { ResultService } from '../result-service/result.service';
+import { IStepOption, TourAnchorMatMenuDirective, TourMatMenuModule, TourService } from 'ngx-ui-tour-md-menu';
 
 @Component({
   selector: 'app-survey',
@@ -38,6 +39,94 @@ export class SurveyComponent implements OnInit {
     this.allCategoryQuestion = this.allQuestions[this.currentCategory];
     console.log('allcategory', this.allCategoryQuestion);
   }
+
+  readonly tourSteps: IStepOption[] = [{
+    anchorId: 'start.tour',
+    route: 'navigation/survey',
+    content: 'Willkommen zur Fragebogen-Tour!',
+    title: 'Willkommen',
+    enableBackdrop: false
+  }, {
+    anchorId: 'question.progressbar',
+    route: 'navigation/survey',
+    content: `Hier siehst du deinen aktuellen Fortschritt im Fragebogen.<br>
+    Über einen Klick auf eine Fragegruppe kannst du schnell zu dieser navigieren.<br>
+    Der ausgefüllte Punkt zeigt die aktuelle Fragegruppe an.`,
+    title: 'Fortschrittsanzeige'
+  }, {
+    anchorId: 'question.title',
+    route: 'navigation/survey',
+    content: 'Hier ist die aktuelle Frage, die zu beantworten ist.',
+    title: 'Frage - Titel'
+  }, {
+    anchorId: 'question.answers',
+    route: 'navigation/survey',
+    content: `Dies sind die möglichen Antworten zu der gegebenen Frage.<br>
+    Hier wählst du für jede Frage die eine passende Antwort.<br>
+    Je weiter unten deine Antwort ist, desto höher ist dein Score. Bleib aber dabei ehrlich ;)`,
+    title: 'Frage - Antworten'
+  }, {
+    anchorId: 'question.button.prev',
+    route: 'navigation/survey',
+    content: 'Damit gelangst du zur vorherigen Frage.',
+    title: 'Frage - Zurück'
+  }, {
+    anchorId: 'question.button.weights',
+    route: 'navigation/survey',
+    content: 'Hier öffnest du ein Fenster, in dem du deine Schwerpunkte individuell festlegen kannst.',
+    title: 'Frage - Gewichte'
+  }, {
+    anchorId: 'question.button.next',
+    route: 'navigation/survey',
+    content: 'Damit gelangst du zur nächsten Frage.',
+    title: 'Frage - Weiter'
+  }, {
+    anchorId: 'question.button.toresult',
+    route: 'navigation/survey',
+    content: 'Damit gelangst du direkt zu deinem Ergebnis.',
+    title: 'Frage - Ergebnis'
+  }, {
+    anchorId: 'results.overview',
+    route: 'navigation/results',
+    content: 'Nachdem du alle Fragen beantwortet hast, findest du hier dein Ergebnis.',
+    title: 'Ergebnis - Überblick',
+    enableBackdrop: false,
+  }, {
+    anchorId: 'results.pdf',
+    route: 'navigation/results',
+    content: 'Dein Ergebnis kannst du ganz bequem als PDF exportieren.',
+    title: 'Ergebnis - PDF Export'
+  }, {
+    anchorId: 'results.scores',
+    route: 'navigation/results',
+    content: 'Hier kannst du deinen Gesamtscore, deine erreichten Teil-Prozente und Gewichtungen in den jeweiligen Kategorien sehen.',
+    title: 'Ergebnis - Scores'
+  }, {
+    anchorId: 'results.chart',
+    route: 'navigation/results',
+    content: 'Hier kannst du deine Ergebnisse in einem schönen Netzgraphen begutachten.',
+    title: 'Ergebnis - Chart',
+    backdropConfig: {
+      offset: 0
+    }
+  }, {
+    anchorId: 'results.answers',
+    route: 'navigation/results',
+    content: `Hier hast du eine weitere Übersicht zu deinen beantworteten Fragen.<br>
+    Du kannst hierbei zwischen den Kategorien wechseln und einen Score-Filter einstellen.`,
+    title: 'Ergebnis - Antworten',
+    backdropConfig: {
+      offset: 100
+    }
+  }, {
+    anchorId: 'start.tour',
+    route: 'navigation/survey',
+    content: 'Das war die kleine UI Tour. Wir hoffen, dass du dich nun zurecht findest.',
+    title: 'Tour-Ende',
+    enableBackdrop: false
+  }];
+  public readonly tourService = inject(TourService);
+
   ngOnInit(): void {
     console.log('survey init');
     // load if weights were enabled earlier
@@ -61,6 +150,22 @@ export class SurveyComponent implements OnInit {
       console.log('weights loaded from ls');
       this.dimensionWeights = JSON.parse(ls_dimensionWeights);
     }
+
+    // init UI tour
+    this.tourService.initialize(this.tourSteps, {
+      delayBeforeStepShow: 20,
+      prevBtnTitle: 'Zurück',
+      nextBtnTitle: 'Weiter',
+      endBtnTitle: 'Ende',
+      stepDimensions: {
+        minWidth: '300px',
+        maxWidth: '400px'
+      },
+      enableBackdrop: true,
+      backdropConfig: {
+        offset: 10
+      }
+    });
   }
 
   public nextButtonClicked(choice: number) {
@@ -80,7 +185,7 @@ export class SurveyComponent implements OnInit {
       this.currentCategory = this.categoryOrder[this.indexCategory];
       this.allCategoryQuestion = this.allQuestions[this.currentCategory];
       console.log('current categroy', this.currentCategory);
-    } else if (this.indexCategory == this.categoryOrder.length -1) {
+    } else if (this.indexCategory == this.categoryOrder.length - 1) {
       // could navigate to result
       console.log('navigate to result');
       this.resultService.generateFeedback(this.allQuestions);
@@ -96,7 +201,7 @@ export class SurveyComponent implements OnInit {
       console.log('indexquestion', this.indexQuestion);
       console.log('index category', this.indexCategory);
       // if (this.indexCategory != 0 && this.indexQuestion != 0) {
-        this.indexQuestion = this.allCategoryQuestion.length - 1;
+      this.indexQuestion = this.allCategoryQuestion.length - 1;
       // }
     } else {
       console.log('indes minus');
@@ -122,7 +227,7 @@ export class SurveyComponent implements OnInit {
     }
   }
 
-  public changedTopic(event: Category){
+  public changedTopic(event: Category) {
     console.log('event in survey', event);
     this.currentCategory = event;
     this.indexCategory = this.categoryOrder.findIndex(a => a == event);

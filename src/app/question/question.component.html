@@ -1,4 +1,4 @@
-<div class="md:mb-8">
+<div class="md:mb-8" tourAnchor="question.title">
     <p-card>
         <div class="flex justify-content-between">
             <h2 class="m-0">
@@ -16,7 +16,7 @@
         </div>
     </p-card>
 </div>
-<div class="md:mb-8">
+<div class="md:mb-8" tourAnchor="question.answers">
     <p-card>
         <div class="flex flex-column gap-3">
             <div *ngFor="let answer of this.question.answers; last as isLast; index as idx;">
@@ -31,10 +31,10 @@
     </p-card>
 </div>
 <div class="flex justify-content-between">
-    <p-button (onClick)="previousButtonClicked()" label="Zurück" [disabled]="disableBackButton" styleClass="p-button-secondary" ></p-button>
-    <p-button (click)="showDialog()" icon="pi pi-sliders-h" label="" styleClass="p-button-secondary"></p-button>
-    <p-button label="Weiter" (click)="nextButtonClicked()"></p-button>
+    <p-button (onClick)="previousButtonClicked()" label="Zurück" [disabled]="disableBackButton" styleClass="p-button-secondary" tourAnchor="question.button.prev"></p-button>
+    <p-button (click)="showDialog()" icon="pi pi-sliders-h" label="" styleClass="p-button-secondary" tourAnchor="question.button.weights"></p-button>
+    <p-button label="Weiter" (click)="nextButtonClicked()" tourAnchor="question.button.next"></p-button>
 </div>
 <div style="margin-top: 15px;">
-  <p-button class="absolute right-0" label="Direkt zur Auswertung" (click)="navigateToResult()"></p-button>
+  <p-button class="absolute right-0" label="Direkt zur Auswertung" (click)="navigateToResult()" tourAnchor="question.button.toresult"></p-button>
 </div>
