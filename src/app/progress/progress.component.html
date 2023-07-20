@@ -1,7 +1,7 @@
 <div class="card flex flex-column gap-3">
   <p-timeline [value]="events" layout="horizontal" align="bottom">
-      <ng-template  pTemplate="content" let-event >
-          <p style="cursor: pointer;"  (click)="clicked(event.id)">{{ event.status }}</p>
+      <ng-template pTemplate="content" let-event >
+          <p class="hide-on-small-screen" style="cursor: pointer;"  (click)="clicked(event.id)">{{ event.status }}</p>
       </ng-template>
 
       <ng-template  pTemplate="marker" let-event >
