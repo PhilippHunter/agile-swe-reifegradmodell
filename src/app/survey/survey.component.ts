@@ -1,4 +1,4 @@
-import { Router } from '@angular/router';
+import { ActivatedRoute, Route, Router } from '@angular/router';
 import { Component, inject, Input, OnInit } from '@angular/core';
 import * as questions from '../../assets/questions.json';
 import { ResultService } from '../result-service/result.service';
@@ -11,6 +11,7 @@ import { IStepOption, TourAnchorMatMenuDirective, TourMatMenuModule, TourService
 })
 export class SurveyComponent implements OnInit {
 
+  private unawnseredQuestionsSurvey: boolean = false;
   private allQuestions: Questions;
   public allCategoryQuestion: SingleQuestion[] = [];
   public currentCategory: Category = Category.processes;
@@ -32,8 +33,16 @@ export class SurveyComponent implements OnInit {
 
   constructor(
     private router: Router,
-    private resultService: ResultService
+    private resultService: ResultService,
+    private route: ActivatedRoute
   ) {
+    this.route.paramMap.subscribe((params) => {
+      const unansweredsurvey = params.get('unansweredsurvey');
+      console.log('unansweredsurvey', unansweredsurvey);
+      if (unansweredsurvey) {
+        this.unawnseredQuestionsSurvey = Boolean(unansweredsurvey)
+      }
+    })
     this.allQuestions = questions as Questions;
     console.log('allquestions', this.allQuestions);
     this.allCategoryQuestion = this.allQuestions[this.currentCategory];
@@ -136,8 +145,13 @@ export class SurveyComponent implements OnInit {
     else
       this.enableWeightsVisible = true;
 
-    // load former question status
-    let ls_allQuestions = localStorage.getItem('allQuestions');
+    let ls_allQuestions;
+    if (this.unawnseredQuestionsSurvey) {
+      ls_allQuestions = localStorage.getItem('unawnseredQuestions');
+    } else {
+      // load former question status
+      ls_allQuestions = localStorage.getItem('allQuestions');
+    }
     if (ls_allQuestions !== null) {
       console.log('questions loaded from ls');
       this.allQuestions = JSON.parse(ls_allQuestions);
@@ -168,6 +182,7 @@ export class SurveyComponent implements OnInit {
     });
   }
 
+
   public nextButtonClicked(choice: number) {
     this.persistChoice(choice);
 
@@ -185,6 +200,12 @@ export class SurveyComponent implements OnInit {
       this.currentCategory = this.categoryOrder[this.indexCategory];
       this.allCategoryQuestion = this.allQuestions[this.currentCategory];
       console.log('current categroy', this.currentCategory);
+      if(this.unawnseredQuestionsSurvey) {
+        if (this.allCategoryQuestion.length == 0) {
+          console.log('Länge ist 0');
+          this.nextCategory();
+        }
+      }
     } else if (this.indexCategory == this.categoryOrder.length - 1) {
       // could navigate to result
       console.log('navigate to result');
@@ -241,7 +262,12 @@ export class SurveyComponent implements OnInit {
   }
 
   private persistToSession() {
-    localStorage.setItem('allQuestions', JSON.stringify(this.allQuestions));
+    if(this.unawnseredQuestionsSurvey) {
+      // unawnseredQuestions
+      localStorage.setItem('unawnseredQuestions', JSON.stringify(this.allQuestions));
+    } else {
+      localStorage.setItem('allQuestions', JSON.stringify(this.allQuestions));
+    }
   }
 
   protected toggleWeights(value: boolean) {

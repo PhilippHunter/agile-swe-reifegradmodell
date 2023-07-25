@@ -14,6 +14,7 @@ import {
 } from "ng-apexcharts";
 import { Category, DimensionWeight, Questions, SingleQuestion } from '../survey/survey.component';
 import { Button } from 'primeng/button';
+import { Router } from '@angular/router';
 
 export type ChartOptions = {
   series: ApexAxisChartSeries;
@@ -47,11 +48,13 @@ export class ResultsComponent {
   public showLow: boolean = false;
   public showUnanswered: boolean = false;
   public finalScore: number = 0;
-  public selectedOption: string = "all"
+  public selectedOption: string = "all";
+  public unawnseredQuestions: Questions = {} as Questions;
 
 
   constructor(
-    private resultService: ResultService
+    private resultService: ResultService,
+    private router: Router
   ) {
     this.getWeights();
     this.getQuestions();
@@ -182,18 +185,44 @@ export class ResultsComponent {
     if (value) {
       this.allQuestions = JSON.parse(value);
       console.log('allQuestions', this.allQuestions);
+      this.getUnanwseredQuestionChanges()
     }
     return this.allQuestions;
   }
 
+  private getUnanwseredQuestionChanges() {
+    // unawnseredQuestions
+    const value = localStorage.getItem('unawnseredQuestions');
+    if (value) {
+      const tempQuestions: Questions = JSON.parse(value);
+      console.log('unawnseredQuestions', tempQuestions);
+      // this.allQuestions = JSON.parse(value);
+      for (const category of Object.keys(tempQuestions)) {
+        console.log('category', category);
+        const catQuestions: SingleQuestion[] = Object(tempQuestions)[category];
+        console.log('catQuestions', catQuestions);
+        for (const question of catQuestions) {
+          const q = Object(this.allQuestions)[category].find((a: { title: string; }) => a.title == question.title);
+          console.log('q', q);
+          q.choice = question.choice;
+        }
+
+      }
+      console.log('allQuestions after merge', this.allQuestions);
+      localStorage.setItem('allQuestions', JSON.stringify(this.allQuestions))
+    }
+  }
+
   private sortQuestions() {
+    console.log('sortquestions');
     for (const category of Object.keys(this.allQuestions)) {
       console.log('cat', category);
       // this.allQuestions[Category.organisation]
-      const catQuestions: SingleQuestion[] = Object(this.allQuestions)[category]
+      const catQuestions: SingleQuestion[] = Object(this.allQuestions)[category];
 
       console.log('catQuestions', catQuestions);
       if (category != "default") {
+        catQuestions.sort((a,b) => b.choice - a.choice);
         const title = this.getTitleFromCategory(category)
         const sorted: SortedQuestion = {
           category: category,
@@ -206,6 +235,7 @@ export class ResultsComponent {
         console.log('sorted', sorted);
         this.sortedQuestions.push(sorted)
       }
+      // this.sortedQuestions.sort
       console.log('sortedQuestions', this.sortedQuestions);
 
     }
@@ -234,6 +264,19 @@ export class ResultsComponent {
       this.showLow = true;
     } else if (this.selectedOption == 'unanswered') {
       this.showUnanswered = true;
+    }
+  }
+
+  public anwserUnanwseredQuestions() {
+    this.unawnseredQuestions = {} as Questions;
+    for (const category of Object.keys(this.allQuestions)) {
+      const catQuestions: SingleQuestion[] = Object(this.allQuestions)[category];
+      if (category != "default") {
+        Object(this.unawnseredQuestions)[category] = catQuestions.filter(a => a.choice == -1)
+      }
+      console.log('unawnseredQuestions', this.unawnseredQuestions);
+      localStorage.setItem('unawnseredQuestions', JSON.stringify(this.unawnseredQuestions));
+      this.router.navigate(['navigation/survey/true'])
     }
   }
 

@@ -156,7 +156,15 @@
         <div class="flex align-items-center">
           <p-radioButton name="pizza" value="unanswered" [(ngModel)]="selectedOption" (onClick)="viewchanged()" inputId="ingredient4"></p-radioButton>
           <label for="ingredient4" class="ml-2">Unbeantwortet</label>
-      </div>
+        </div>
+
+        <div class="flex align-items-center">
+          <p-button (onClick)="anwserUnanwseredQuestions()">Unbeantworteten Fragen beantworten </p-button>
+        </div>
+
+
+
+
     </div>
 
       <ng-container *ngFor="let cat of this.sortedQuestions">
