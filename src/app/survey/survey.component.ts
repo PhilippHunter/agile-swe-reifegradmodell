@@ -41,6 +41,7 @@ export class SurveyComponent implements OnInit {
       console.log('unansweredsurvey', unansweredsurvey);
       if (unansweredsurvey) {
         this.unawnseredQuestionsSurvey = Boolean(unansweredsurvey)
+        console.log('wird gesetzt');
       }
     })
     this.allQuestions = questions as Questions;
@@ -51,47 +52,47 @@ export class SurveyComponent implements OnInit {
 
   readonly tourSteps: IStepOption[] = [{
     anchorId: 'start.tour',
-    route: 'navigation/survey',
+    route: 'navigation/survey/' + this.unawnseredQuestionsSurvey,
     content: 'Willkommen zur Fragebogen-Tour!',
     title: 'Willkommen',
     enableBackdrop: false
   }, {
     anchorId: 'question.progressbar',
-    route: 'navigation/survey',
+    route: 'navigation/survey/' + this.unawnseredQuestionsSurvey,
     content: `Hier siehst du deinen aktuellen Fortschritt im Fragebogen.<br>
     Über einen Klick auf eine Fragegruppe kannst du schnell zu dieser navigieren.<br>
     Der ausgefüllte Punkt zeigt die aktuelle Fragegruppe an.`,
     title: 'Fortschrittsanzeige'
   }, {
     anchorId: 'question.title',
-    route: 'navigation/survey',
+    route: 'navigation/survey/' + this.unawnseredQuestionsSurvey,
     content: 'Hier ist die aktuelle Frage, die zu beantworten ist.',
     title: 'Frage - Titel'
   }, {
     anchorId: 'question.answers',
-    route: 'navigation/survey',
+    route: 'navigation/survey/' + this.unawnseredQuestionsSurvey,
     content: `Dies sind die möglichen Antworten zu der gegebenen Frage.<br>
     Hier wählst du für jede Frage die eine passende Antwort.<br>
     Je weiter unten deine Antwort ist, desto höher ist dein Score. Bleib aber dabei ehrlich ;)`,
     title: 'Frage - Antworten'
   }, {
     anchorId: 'question.button.prev',
-    route: 'navigation/survey',
+    route: 'navigation/survey/' + this.unawnseredQuestionsSurvey,
     content: 'Damit gelangst du zur vorherigen Frage.',
     title: 'Frage - Zurück'
   }, {
     anchorId: 'question.button.weights',
-    route: 'navigation/survey',
+    route: 'navigation/survey/' + this.unawnseredQuestionsSurvey,
     content: 'Hier öffnest du ein Fenster, in dem du deine Schwerpunkte individuell festlegen kannst.',
     title: 'Frage - Gewichte'
   }, {
     anchorId: 'question.button.next',
-    route: 'navigation/survey',
+    route: 'navigation/survey/' + this.unawnseredQuestionsSurvey,
     content: 'Damit gelangst du zur nächsten Frage.',
     title: 'Frage - Weiter'
   }, {
     anchorId: 'question.button.toresult',
-    route: 'navigation/survey',
+    route: 'navigation/survey/' + this.unawnseredQuestionsSurvey,
     content: 'Damit gelangst du direkt zu deinem Ergebnis.',
     title: 'Frage - Ergebnis'
   }, {
@@ -129,7 +130,7 @@ export class SurveyComponent implements OnInit {
     }
   }, {
     anchorId: 'start.tour',
-    route: 'navigation/survey',
+    route: 'navigation/survey/' + this.unawnseredQuestionsSurvey,
     content: 'Das war die kleine UI Tour. Wir hoffen, dass du dich nun zurecht findest.',
     title: 'Tour-Ende',
     enableBackdrop: false
