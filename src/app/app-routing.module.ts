@@ -6,6 +6,7 @@ import { SurveyComponent } from './survey/survey.component';
 import { ResultsComponent } from './results/results.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { AboutComponent } from './about/about.component';
+import { ImpressumComponent } from './impressum/impressum.component';
 
 
 const routes: Routes = [
@@ -16,6 +17,7 @@ const routes: Routes = [
     { path: 'survey/:unansweredsurvey', component: SurveyComponent },
     { path: 'results', component: ResultsComponent },
     { path: 'about', component: AboutComponent },
+    { path: 'impressum', component: ImpressumComponent },
   ] },
 ];
 
