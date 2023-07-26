@@ -12,10 +12,10 @@ const routes: Routes = [
   { path: '', redirectTo: 'navigation', pathMatch: 'full' },
   { path: 'navigation', component: NavigationComponent, children: [
     { path: '', redirectTo: 'home', pathMatch: 'full' },
-    { path: 'home', component: HomeComponent },
-    { path: 'survey/:unansweredsurvey', component: SurveyComponent },
-    { path: 'results', component: ResultsComponent },
-    { path: 'about', component: AboutComponent },
+    { path: 'home', component: HomeComponent, data: { title: 'Home'} },
+    { path: 'survey/:unansweredsurvey', component: SurveyComponent, data: { title: 'Fragebogen' } },
+    { path: 'results', component: ResultsComponent, data: { title: 'Ergebnis' } },
+    { path: 'about', component: AboutComponent, data: { title: 'About Us' } },
   ] },
 ];
 
