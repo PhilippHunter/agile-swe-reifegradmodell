@@ -51,6 +51,7 @@ export class ResultsComponent {
   public selectedOption: string = "all";
   public unawnseredQuestions: Questions = {} as Questions;
 
+  public isLoading: boolean = false;
 
   constructor(
     private resultService: ResultService,
@@ -294,6 +295,7 @@ export class ResultsComponent {
   }
 
   public async exportPDF() {
+    this.isLoading = true;
     const documentDefinition: any = {
       info: {
         title: 'HowAgile_AgilerGrad_fertigerFragebogen',
@@ -474,6 +476,8 @@ export class ResultsComponent {
 
     // Generate and open the PDF
     pdfMake.createPdf(documentDefinition).open();
+
+    this.isLoading = false;
   }
 
 }

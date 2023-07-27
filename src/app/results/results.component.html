@@ -7,7 +7,7 @@
 </div>
 
 <div tourAnchor="results.pdf">
-  <p-button label="Export to PDF" styleClass="p-button-sm" (click)="exportPDF()"></p-button>
+  <p-button label="Export to PDF" styleClass="p-button-sm" [loading]="isLoading" (click)="exportPDF()"></p-button>
 </div>
 
 <div class="cta mb-3 chartdiv">
