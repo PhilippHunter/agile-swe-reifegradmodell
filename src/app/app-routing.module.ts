@@ -9,7 +9,7 @@ import { AboutComponent } from './about/about.component';
 
 
 const routes: Routes = [
-  { path: '', redirectTo: 'navigation', pathMatch: 'full' },
+  { path: '', redirectTo: '', pathMatch: 'full' },
   { path: '', component: NavigationComponent, children: [
     { path: '', redirectTo: 'home', pathMatch: 'full' },
     { path: 'home', component: HomeComponent, data: { title: 'Home'} },
