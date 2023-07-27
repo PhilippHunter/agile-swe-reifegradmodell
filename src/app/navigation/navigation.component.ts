@@ -9,7 +9,7 @@ import { MenuItem } from 'primeng/api';
 })
 export class NavigationComponent implements OnInit {
   items: MenuItem[] = [];
-  
+
   constructor(private router: Router) {
 
   }
@@ -26,7 +26,7 @@ export class NavigationComponent implements OnInit {
 
   navigateHome() {
     console.log('here');
-    this.router.navigate(['/navigation/home']);
+    this.router.navigate(['/home']);
   }
 
 }

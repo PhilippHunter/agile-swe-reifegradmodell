@@ -276,7 +276,7 @@ export class ResultsComponent {
       }
       console.log('unawnseredQuestions', this.unawnseredQuestions);
       localStorage.setItem('unawnseredQuestions', JSON.stringify(this.unawnseredQuestions));
-      this.router.navigate(['navigation/survey/true'])
+      this.router.navigate(['/survey/true'])
     }
   }
 

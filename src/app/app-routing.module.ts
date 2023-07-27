@@ -10,7 +10,7 @@ import { AboutComponent } from './about/about.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'navigation', pathMatch: 'full' },
-  { path: 'navigation', component: NavigationComponent, children: [
+  { path: '', component: NavigationComponent, children: [
     { path: '', redirectTo: 'home', pathMatch: 'full' },
     { path: 'home', component: HomeComponent, data: { title: 'Home'} },
     { path: 'survey/:unansweredsurvey', component: SurveyComponent, data: { title: 'Fragebogen' } },

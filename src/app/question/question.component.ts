@@ -65,7 +65,7 @@ export class QuestionComponent implements OnInit, OnChanges {
   }
 
   public navigateToResult(){
-    this.router.navigate(['navigation/results']);
+    this.router.navigate(['/results']);
   }
 }
 

@@ -16,7 +16,7 @@ export class HomeComponent {
   }
 
   navigateSurvey() {
-    this.router.navigate(['/navigation/survey/false']);
+    this.router.navigate(['/survey/false']);
   }
 
   ngOnInit() {
