@@ -280,6 +280,19 @@ export class ResultsComponent {
     }
   }
 
+  public checkUnanwseredQuestionsExist() {
+    for (const category of Object.keys(this.allQuestions)) {
+      const catQuestions: SingleQuestion[] = Object(this.allQuestions)[category];
+      if (category != "default") {
+        const temp =  catQuestions.filter(a => a.choice == -1)
+        if (temp.length > 0) {
+          return true;
+        }
+      }
+    }
+    return false;
+  }
+
   public async exportPDF() {
     const documentDefinition: any = {
       info: {
