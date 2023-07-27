@@ -40,8 +40,8 @@ export class SurveyComponent implements OnInit {
       const unansweredsurvey = params.get('unansweredsurvey');
       console.log('unansweredsurvey', unansweredsurvey);
       if (unansweredsurvey) {
-        this.unawnseredQuestionsSurvey = Boolean(unansweredsurvey)
-        console.log('wird gesetzt');
+        this.unawnseredQuestionsSurvey = JSON.parse(unansweredsurvey);
+        console.log('wird gesetzt', this.unawnseredQuestionsSurvey);
       }
     })
     this.allQuestions = questions as Questions;
@@ -159,6 +159,8 @@ export class SurveyComponent implements OnInit {
       this.allCategoryQuestion = this.allQuestions[this.currentCategory];
     }
 
+    this.checkQuestionsExists();
+
     // load formerly saved weights
     let ls_dimensionWeights = localStorage.getItem('dimensionWeights');
     if (ls_dimensionWeights !== null) {
@@ -195,18 +197,22 @@ export class SurveyComponent implements OnInit {
     }
   }
 
+  private checkQuestionsExists() {
+    if(this.unawnseredQuestionsSurvey) {
+      if (this.allCategoryQuestion.length == 0) {
+        console.log('Länge ist 0');
+        this.nextCategory();
+      }
+    }
+  }
+
   private nextCategory() {
     if (this.indexCategory < this.categoryOrder.length - 1) {
       this.indexCategory++;
       this.currentCategory = this.categoryOrder[this.indexCategory];
       this.allCategoryQuestion = this.allQuestions[this.currentCategory];
       console.log('current categroy', this.currentCategory);
-      if(this.unawnseredQuestionsSurvey) {
-        if (this.allCategoryQuestion.length == 0) {
-          console.log('Länge ist 0');
-          this.nextCategory();
-        }
-      }
+      this.checkQuestionsExists();
     } else if (this.indexCategory == this.categoryOrder.length - 1) {
       // could navigate to result
       console.log('navigate to result');
@@ -263,6 +269,7 @@ export class SurveyComponent implements OnInit {
   }
 
   private persistToSession() {
+    console.log('persisttosession', this.unawnseredQuestionsSurvey);
     if(this.unawnseredQuestionsSurvey) {
       // unawnseredQuestions
       localStorage.setItem('unawnseredQuestions', JSON.stringify(this.allQuestions));
