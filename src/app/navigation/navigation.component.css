@@ -39,17 +39,16 @@
     }
 }
 
-footer {
+/*footer*/
+.footer {
   text-align: center;
-  padding: 30px;
-  background-color: var(--main-blue);
-  color: white;
-  box-shadow: 0px 8px 20px #d7d7d757;
-  position: sticky;
+  background-color: white;
+  box-shadow: 0px -8px 20px #d7d7d757;
+  padding: 1rem;
+  margin-top:10rem;
 }
 
-.footer-content-right {
-  padding-right:40px;
-  margin-top:20px;
-  float:right;
+.footer-icon-style {
+  height:40px;
+  margin:1rem;
 }
