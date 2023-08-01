@@ -31,6 +31,7 @@ import { SurveyComponent } from './survey/survey.component';
 import { ResultsComponent } from './results/results.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { AboutComponent } from './about/about.component';
+import { ImpressumComponent } from './impressum/impressum.component';
 import { ProgressComponent } from './progress/progress.component';
 import { TimelineModule } from 'primeng/timeline';
 import { NgApexchartsModule } from 'ng-apexcharts';
@@ -47,6 +48,7 @@ import { ResultquestionComponent } from './resultquestion/resultquestion.compone
     ResultsComponent,
     NavigationComponent,
     AboutComponent,
+    ImpressumComponent,
     ProgressComponent,
     ResultquestionComponent
   ],

@@ -38,3 +38,17 @@
         margin-left: 1.5rem;
     }
 }
+
+/*footer*/
+.footer {
+  text-align: center;
+  background-color: white;
+  box-shadow: 0px -8px 20px #d7d7d757;
+  padding: 1rem;
+  margin-top:10rem;
+}
+
+.footer-icon-style {
+  height:40px;
+  margin:1rem;
+}
