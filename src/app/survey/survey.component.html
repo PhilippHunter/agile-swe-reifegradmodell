@@ -1,4 +1,5 @@
-<p-button label="Onboard Tour" styleClass="p-button-sm" (click)="tourService.start()" tourAnchor="start.tour"></p-button>
+<!-- <p-button label="Onboard Tour" styleClass="p-button-sm" (click)="tourService.start()" tourAnchor="start.tour"></p-button> -->
+<div tourAnchor="start.tour"></div>
 
 <app-progress
     [currentCategory]="this.currentCategory"
@@ -13,7 +14,9 @@
     (previousButton)="previousButtonClicked($event)"
     (boostButton)="boostButtonClicked($event)"
     (selectionChanged)="persistChoice($event)"
-    (showWeightsModal)="this.weightsVisible = true;">
+    (showWeightsModal)="this.weightsVisible = true;"
+    (startTourEvent)="startTour()"
+    (resetSurveyEvent)="resetSurvey()">
 </app-question>
 
 <p-confirmDialog

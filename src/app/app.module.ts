@@ -19,6 +19,7 @@ import { ConfirmDialogModule } from 'primeng/confirmdialog';
 import { SliderModule } from 'primeng/slider';
 import { InputSwitchModule } from 'primeng/inputswitch';
 import { ToggleButtonModule } from 'primeng/togglebutton';
+import { SpeedDialModule } from 'primeng/speeddial';
 
 import { TourMatMenuModule } from 'ngx-ui-tour-md-menu';
 import { MatCardModule } from '@angular/material/card';
@@ -77,6 +78,7 @@ import { ResultquestionComponent } from './resultquestion/resultquestion.compone
     TourMatMenuModule,
     MatCardModule,
     MatIconModule,
+    SpeedDialModule,
   ],
   providers: [ConfirmationService],
   bootstrap: [AppComponent]

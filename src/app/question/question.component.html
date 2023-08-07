@@ -32,9 +32,16 @@
 </div>
 <div class="flex justify-content-between">
     <p-button (onClick)="previousButtonClicked()" label="Zurück" [disabled]="disableBackButton" styleClass="p-button-secondary" tourAnchor="question.button.prev"></p-button>
-    <p-button (click)="showDialog()" icon="pi pi-sliders-h" label="" styleClass="p-button-secondary" tourAnchor="question.button.weights"></p-button>
+    <!-- <p-button (click)="showDialog()" icon="pi pi-sliders-h" label="" styleClass="p-button-secondary" tourAnchor="question.button.weights"></p-button> -->
+    <div tourAnchor="question.button.menu" style="height: 64px; width: 64px;">
+        <p-speedDial [model]="dialItems" direction="down" 
+                    [radius]="80" type="semi-circle" 
+                    showIcon="pi pi-bars" hideIcon="pi pi-times"
+                    buttonClassName="p-button-sm"
+                    ></p-speedDial>
+    </div>
     <p-button label="Weiter" (click)="nextButtonClicked()" tourAnchor="question.button.next"></p-button>
 </div>
-<div style="margin-top: 15px;">
+<!-- <div style="margin-top: 15px;">
   <p-button class="absolute right-0" label="Direkt zur Auswertung" (click)="navigateToResult()" tourAnchor="question.button.toresult"></p-button>
-</div>
+</div> -->

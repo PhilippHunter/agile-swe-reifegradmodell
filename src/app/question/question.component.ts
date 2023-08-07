@@ -1,12 +1,12 @@
-import { Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges } from '@angular/core';
+import { Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges, inject } from '@angular/core';
 import { SingleQuestion } from '../survey/survey.component';
-import { DialogModule } from 'primeng/dialog';
 import { Router } from '@angular/router';
+import { MenuItem } from 'primeng/api';
 
 @Component({
   selector: 'app-question',
   templateUrl: './question.component.html',
-  styleUrls: ['./question.component.css']
+  styleUrls: ['./question.component.css'],
 })
 export class QuestionComponent implements OnInit, OnChanges {
 
@@ -18,12 +18,52 @@ export class QuestionComponent implements OnInit, OnChanges {
   @Output() boostButton = new EventEmitter<boolean>();
   @Output() showWeightsModal = new EventEmitter<boolean>();
   @Output() selectionChanged = new EventEmitter<number>();
+  @Output() startTourEvent = new EventEmitter<boolean>();
+  @Output() resetSurveyEvent = new EventEmitter<boolean>();
 
   public selectedChoice: number;
   public boosted: boolean;
+  public dialItems: MenuItem[] = [
+    {
+        icon: 'pi pi-forward',
+        tooltipOptions: {
+          tooltipLabel: 'Direkt zur Auswertung'
+        },
+        command: () => {
+          this.navigateToResult();
+        }
+    },
+    {
+        icon: 'pi pi-sliders-h',
+        tooltipOptions: {
+          tooltipLabel: 'Gewichtungen anpassen'
+        },
+        command: () => {
+          this.showDialog();
+        }
+    },
+    {
+        icon: 'pi pi-trash',
+        tooltipOptions: {
+          tooltipLabel: 'Angaben zurücksetzen'
+        },
+        command: () => {
+          this.resetSurveyEvent.emit(true);
+        }
+    },
+    {
+        icon: 'pi pi-question',
+        tooltipOptions: {
+          tooltipLabel: 'Tutorial'
+        },
+        command: () => {
+          this.startTourEvent.emit(true);
+        }
+    }
+  ];;
 
   constructor(
-    private router: Router
+    private router: Router,
   ) {
     this.selectedChoice = -1;
     this.boosted = false;

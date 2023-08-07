@@ -81,20 +81,15 @@ export class SurveyComponent implements OnInit {
     content: 'Damit gelangst du zur vorherigen Frage.',
     title: 'Frage - Zurück'
   }, {
-    anchorId: 'question.button.weights',
+    anchorId: 'question.button.menu',
     route: 'survey/' + this.unawnseredQuestionsSurvey,
-    content: 'Hier öffnest du ein Fenster, in dem du deine Schwerpunkte individuell festlegen kannst.',
-    title: 'Frage - Gewichte'
+    content: 'Über dieses Menü können zusätzliche Aktionen zum Fragebogen durchgeführt werden. Zum Beispiel die Einstellung der individuellen Gewichtungen, das Zurücksetzen des Fortschritts und das Überspringen der restlichen Fragen.',
+    title: 'Frage - Menü'
   }, {
     anchorId: 'question.button.next',
     route: 'survey/' + this.unawnseredQuestionsSurvey,
     content: 'Damit gelangst du zur nächsten Frage.',
     title: 'Frage - Weiter'
-  }, {
-    anchorId: 'question.button.toresult',
-    route: 'survey/' + this.unawnseredQuestionsSurvey,
-    content: 'Damit gelangst du direkt zu deinem Ergebnis.',
-    title: 'Frage - Ergebnis'
   }, {
     anchorId: 'results.overview',
     route: 'results',
@@ -294,6 +289,15 @@ export class SurveyComponent implements OnInit {
     console.log('saving weights');
     localStorage.setItem('dimensionWeights', JSON.stringify(this.dimensionWeights));
     this.weightsVisible = false;
+  }
+
+  public startTour() {
+    this.tourService.start();
+  }
+
+  public resetSurvey() {
+    localStorage.clear();
+    window.location.reload();
   }
 }
 
