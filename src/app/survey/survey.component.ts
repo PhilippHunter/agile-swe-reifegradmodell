@@ -22,13 +22,7 @@ export class SurveyComponent implements OnInit {
   public weightsEnabled: boolean = false;
   public enableWeightsVisible: boolean = false;
   public weightsVisible: boolean = false;
-  public dimensionWeights: DimensionWeight = {
-    [Category.processes]: 1,
-    [Category.organisation]: 1,
-    [Category.technology]: 1,
-    [Category.skills_culture]: 1,
-    [Category.strategy]: 1,
-  };
+  public dimensionWeights: DimensionWeight = this.initialWeights();
 
 
   constructor(
@@ -298,6 +292,16 @@ export class SurveyComponent implements OnInit {
   public resetSurvey() {
     localStorage.clear();
     window.location.reload();
+  }
+
+  protected initialWeights() {
+    return {
+      [Category.processes]: 1,
+      [Category.organisation]: 1,
+      [Category.technology]: 1,
+      [Category.skills_culture]: 1,
+      [Category.strategy]: 1,
+    }
   }
 }
 

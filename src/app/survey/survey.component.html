@@ -42,6 +42,7 @@
     [style]="{ width: '50vw' }"
     [draggable]="false"
     [resizable]="false"
+    [closable]="false"
 >
     <ng-template pTemplate="header">
         <div class="flex align-items-center">
@@ -99,7 +100,8 @@
         <p-slider [(ngModel)]="dimensionWeights['strategy']" [step]="0.1" [min]="1" [max]="2" [disabled]="!this.weightsEnabled"></p-slider>
     </div>
     <ng-template pTemplate="footer">
-        <p-button icon="pi pi-save" (click)="saveWeights()" label="Gewichtung speichern" styleClass="p-button-text"></p-button>
+        <p-button icon="pi pi-undo" (click)="this.dimensionWeights = this.initialWeights()" label="Zurücksetzen" styleClass="p-button-text"></p-button>
+        <p-button icon="pi pi-save" (click)="saveWeights()" label="Speichern" styleClass="p-button"></p-button>
     </ng-template>
 </p-dialog>
 
