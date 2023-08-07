@@ -17,6 +17,7 @@ const routes: Routes = [
     { path: 'survey/:unansweredsurvey', component: SurveyComponent, data: { title: 'Fragebogen' } },
     { path: 'results', component: ResultsComponent, data: { title: 'Ergebnis' } },
     { path: 'about', component: AboutComponent, data: { title: 'About Us' } },
+    { path: 'imprint', component: ImpressumComponent, data: { title: 'Impressum' } },
   ] },
 ];
 
