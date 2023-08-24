@@ -277,6 +277,16 @@ export class SurveyComponent implements OnInit {
     if (value == true)
       this.weightsVisible = value;
     this.enableWeightsVisible = false;
+
+    const surveywasvisited = localStorage.getItem('surveywasvisited');
+    console.log('surveywasvisited', surveywasvisited);
+    if (surveywasvisited) {
+      console.log('survey war schon mal da');
+    } else {
+      console.log('nicht da ');
+      this.startTour();
+      localStorage.setItem('surveywasvisited', JSON.stringify(true))
+    }
   }
 
   protected saveWeights() {
