@@ -1,4 +1,4 @@
-<div class="md:mb-8" tourAnchor="question.title">
+<div class="md:mb-4" tourAnchor="question.title">
     <p-card>
         <div class="flex justify-content-between">
             <h2 class="m-0">
@@ -18,7 +18,7 @@
 </div>
 <div class="md:mb-8" tourAnchor="question.answers">
     <p-card>
-        <div class="flex flex-column gap-3">
+        <div class="flex flex-column gap-0">
             <div *ngFor="let answer of this.question.answers; last as isLast; index as idx;">
                 <div class="field-checkbox">
                     <p-radioButton [inputId]="answer.score.toString()" name="category" [value]="idx"
@@ -34,8 +34,8 @@
     <p-button (onClick)="previousButtonClicked()" label="Zurück" [disabled]="disableBackButton" styleClass="p-button-secondary" tourAnchor="question.button.prev"></p-button>
     <!-- <p-button (click)="showDialog()" icon="pi pi-sliders-h" label="" styleClass="p-button-secondary" tourAnchor="question.button.weights"></p-button> -->
     <div tourAnchor="question.button.menu" style="height: 64px; width: 64px;">
-        <p-speedDial [model]="dialItems" direction="down" 
-                    [radius]="80" type="semi-circle" 
+        <p-speedDial [model]="dialItems" direction="down"
+                    [radius]="80" type="semi-circle"
                     showIcon="pi pi-bars" hideIcon="pi pi-times"
                     buttonClassName="p-button-sm"
                     ></p-speedDial>
